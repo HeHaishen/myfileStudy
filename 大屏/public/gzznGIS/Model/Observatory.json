@@ -1,0 +1,1092 @@
+{
+    "type": "FeatureCollection",
+    "totalFeatures": 40,
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "id": "Observatory_4",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3957,
+                    23.3687
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "金鸡山瞭望台",
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇",
+                "JZCZ": "砖瓦",
+                "WZ": "钟落潭镇良田村金鸡山",
+                "SDQK": "不通水电",
+                "HB": 65,
+                "LX": "瞭望台",
+                "LXR": "曾振洪",
+                "LXDH": "13802513087",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": "人数：20",
+                "STID": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_5",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3431,
+                    23.2836
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "太源瞭望塔",
+                "XZQH": "白云区",
+                "SSQZ": "太和镇",
+                "JZCZ": "钢架",
+                "WZ": "太和镇大源村大源三才山",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望塔",
+                "LXR": "谢玉华",
+                "LXDH": "13710679822",
+                "TXQK": "通行人",
+                "BZ": "人数：10",
+                "STID": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_6",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3856,
+                    23.3521
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "头陂瞭望塔",
+                "XZQH": "白云区",
+                "SSQZ": "太和镇",
+                "JZCZ": "钢架",
+                "WZ": "太和镇头陂村白云区林业综合管理中心山顶",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望塔",
+                "LXR": "张锦钟",
+                "LXDH": "87427032",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_7",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3861,
+                    23.3526
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "头陂瞭望塔",
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇",
+                "JZCZ": "框架结构",
+                "WZ": "钟落潭镇金盆村",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望塔",
+                "LXR": "曾振洪",
+                "LXDH": "13802513087",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": "人数：20",
+                "STID": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_8",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4438,
+                    23.3802
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "茅岗荨岭瞭望台",
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇",
+                "JZCZ": "水泥混泥土",
+                "WZ": "钟落潭镇茅岗村",
+                "SDQK": "通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "邓募贞",
+                "LXDH": "13711575628",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": "人数：20",
+                "STID": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_12",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3126,
+                    23.2439
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "孖髻岭瞭望台",
+                "XZQH": "白云区",
+                "SSQZ": "白云山风景",
+                "JZCZ": "钢架",
+                "WZ": "明珠楼、孖髻岭",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "李新春",
+                "LXDH": "13710595756",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 12
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_13",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2984,
+                    23.2356
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "龙虎岗瞭望台",
+                "XZQH": "白云区",
+                "SSQZ": "白云山风景",
+                "JZCZ": "亭廊",
+                "WZ": "龙虎岗",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "常文欣",
+                "LXDH": "13556181536",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 13
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_14",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2895,
+                    23.2294
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "鸡公山瞭望台",
+                "XZQH": "白云区",
+                "SSQZ": "白云山风景",
+                "JZCZ": "钢架",
+                "WZ": "荷依岭、鸡公山",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "马超",
+                "LXDH": "13556155690",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 14
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_15",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.306,
+                    23.2255
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "望景瞭望台",
+                "XZQH": "白云区",
+                "SSQZ": "白云山风景",
+                "JZCZ": "框架板房",
+                "WZ": "摩星岭、望景",
+                "SDQK": "通电不通水",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "常文欣",
+                "LXDH": "13556181536",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": " ",
+                "STID": 15
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_16",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2936,
+                    23.2211
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "鸿翔亭瞭望台",
+                "XZQH": "白云区",
+                "SSQZ": "白云山风景",
+                "JZCZ": "钢架",
+                "WZ": "摩星岭、鸿翔亭",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "常文欣",
+                "LXDH": "13556181536",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 16
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_17",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3049,
+                    23.213
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "岚风亭瞭望台",
+                "XZQH": "白云区",
+                "SSQZ": "白云山风景",
+                "JZCZ": "钢架",
+                "WZ": "鸣春谷、岚风亭",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "陈顶顺",
+                "LXDH": "13570216135",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 17
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_18",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2802,
+                    23.2043
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "鸿鹄楼瞭望台",
+                "XZQH": "白云区",
+                "SSQZ": "白云山风景",
+                "JZCZ": "亭廊",
+                "WZ": "麓湖、鸿鹄楼",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "潘传明",
+                "LXDH": "13710805089",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 18
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_19",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3038,
+                    23.2534
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "元下田瞭望台",
+                "XZQH": "白云区",
+                "SSQZ": "白云山风景",
+                "JZCZ": "钢架",
+                "WZ": "明珠楼、元下田",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "李新春",
+                "LXDH": "13710595756",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 19
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_20",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4167,
+                    23.6306
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "鳌头镇瞭望台",
+                "XZQH": "从化区",
+                "SSQZ": "鳌头镇鳌头",
+                "JZCZ": "水泥混凝土",
+                "WZ": "鳌头镇政府",
+                "SDQK": "通水电",
+                "HB": 58,
+                "LX": "瞭望台",
+                "LXR": "马永南",
+                "LXDH": " ",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": "人数：6",
+                "STID": 20
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_23",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8931,
+                    23.8065
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "吕田镇瞭望台",
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇吕田",
+                "JZCZ": "水泥混凝土",
+                "WZ": "吕田林业工作站（旧）内",
+                "SDQK": "通水电",
+                "HB": 238,
+                "LX": "瞭望台",
+                "LXR": "罗小雄",
+                "LXDH": " ",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": "人数：6",
+                "STID": 23
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_26",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6372,
+                    23.6161
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "温泉镇瞭望台",
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇龙岗",
+                "JZCZ": "水泥混凝土",
+                "WZ": "温泉镇龙岗墟龙泉路74号",
+                "SDQK": "通水电",
+                "HB": 18,
+                "LX": "瞭望台",
+                "LXR": "刘世槐",
+                "LXDH": "13926115969",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": "人数：6",
+                "STID": 26
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_27",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4664,
+                    23.46
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "太平镇瞭望台",
+                "XZQH": "从化区",
+                "SSQZ": "太平镇太平",
+                "JZCZ": "水泥混凝土",
+                "WZ": "广从北路33号",
+                "SDQK": "通水电",
+                "HB": 51,
+                "LX": "瞭望台",
+                "LXR": "邓志彪",
+                "LXDH": " ",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": "人数：6",
+                "STID": 27
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_62",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.42,
+                    23.4954
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "瞭望台",
+                "XZQH": "花都区",
+                "SSQZ": "花东镇鸿鹤",
+                "JZCZ": "水泥混泥土",
+                "WZ": "花都区花东镇九龙湖度假村九湾潭水库附近",
+                "SDQK": "通水通电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": " ",
+                "LXDH": " ",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 62
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_71",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3966,
+                    23.1291
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "长洲街道瞭望台",
+                "XZQH": "黄埔区",
+                "SSQZ": "黄埔区长洲",
+                "JZCZ": "水泥",
+                "WZ": "黄埔区深井社区",
+                "SDQK": "通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "苏志球",
+                "LXDH": "13694251663",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 71
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_74",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4877,
+                    23.1582
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "穗东街道瞭望台",
+                "XZQH": "黄埔区",
+                "SSQZ": "黄埔区穗东",
+                "JZCZ": "水泥",
+                "WZ": "黄埔区夏园社区",
+                "SDQK": "通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "黄伟峰",
+                "LXDH": "13682215147",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 74
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_78",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5224,
+                    23.2127
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "瞭望台",
+                "XZQH": "黄埔区",
+                "SSQZ": "东区街道",
+                "JZCZ": "水泥混泥",
+                "WZ": "东区街道支山山顶",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "陈耀坚",
+                "LXDH": "13556161538",
+                "TXQK": "通行人",
+                "BZ": "2",
+                "STID": 78
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_119",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.9231,
+                    23.3777
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "兰溪林场瞭望台",
+                "XZQH": "增城区",
+                "SSQZ": "兰溪林场",
+                "JZCZ": "水泥",
+                "WZ": "兰溪林场秃顶",
+                "SDQK": "不通水电",
+                "HB": 448,
+                "LX": "瞭望台",
+                "LXR": "聂锦潮",
+                "LXDH": "13544448028",
+                "TXQK": "通行3吨以上消防车",
+                "BZ": "8",
+                "STID": 119
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_128",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8363,
+                    23.3797
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "太寺坑林场瞭望台",
+                "XZQH": "增城区",
+                "SSQZ": "太寺坑林场",
+                "JZCZ": "水泥",
+                "WZ": "太寺坑林场长冚顶",
+                "SDQK": "不通水电",
+                "HB": 480,
+                "LX": "瞭望台",
+                "LXR": "王运坚",
+                "LXDH": "13418092229",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": null,
+                "STID": 128
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_129",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6962,
+                    23.3686
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "三板石防火瞭望台",
+                "XZQH": "增城区",
+                "SSQZ": "广州市增城林场",
+                "JZCZ": "钢筋水泥",
+                "WZ": "白水工区三板石",
+                "SDQK": "不通水电",
+                "HB": 443,
+                "LX": "瞭望台",
+                "LXR": "罗伟明",
+                "LXDH": "13640633036",
+                "TXQK": "通行人",
+                "BZ": null,
+                "STID": 129
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_85",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5086,
+                    23.245
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "萝峰山瞭望台",
+                "XZQH": "黄埔区",
+                "SSQZ": "萝岗街道",
+                "JZCZ": "水泥混凝",
+                "WZ": "萝岗街道萝峰山",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "毕海东",
+                "LXDH": "82080545",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 85
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_86",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4922,
+                    23.2717
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "鸡帝山瞭望台",
+                "XZQH": "黄埔区",
+                "SSQZ": "萝岗街道",
+                "JZCZ": "水泥混泥",
+                "WZ": "萝岗街道鸡帝山",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "毕海东",
+                "LXDH": "82080545",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 86
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_87",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5138,
+                    23.2782
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "鹤斗顶瞭望台",
+                "XZQH": "黄埔区",
+                "SSQZ": "萝岗街道",
+                "JZCZ": "水泥混泥",
+                "WZ": "萝岗街道鹤斗顶",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "毕海东",
+                "LXDH": "82080545",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 87
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_91",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8383,
+                    23.3812
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "太子森林公园瞭望塔",
+                "XZQH": "增城区",
+                "SSQZ": "太寺坑林场",
+                "JZCZ": "水泥混凝土",
+                "WZ": "太子森林公园长冚顶",
+                "SDQK": "不通水电",
+                "HB": 495,
+                "LX": "瞭望台",
+                "LXR": "陈天生",
+                "LXDH": "13809289561",
+                "TXQK": "台阶路",
+                "BZ": "人数：3",
+                "STID": 91
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_95",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7113,
+                    23.358
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "葫芦顶防火瞭望台",
+                "XZQH": "增城区",
+                "SSQZ": "广州市增城林场",
+                "JZCZ": "钢筋水泥",
+                "WZ": "白水工区葫芦顶",
+                "SDQK": "有电无水",
+                "HB": 462,
+                "LX": "瞭望台",
+                "LXR": "罗伟明",
+                "LXDH": "13640633036",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": "人数：3",
+                "STID": 95
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_102",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6929,
+                    23.3718
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "梅花顶防火瞭望台",
+                "XZQH": "增城区",
+                "SSQZ": "广州市增城林场",
+                "JZCZ": "钢筋水泥",
+                "WZ": "白水工区梅花顶",
+                "SDQK": "不通水电",
+                "HB": 464,
+                "LX": "瞭望台",
+                "LXR": "范汉城",
+                "LXDH": "13725374769",
+                "TXQK": "通行人",
+                "BZ": "人数：3",
+                "STID": 102
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_103",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7055,
+                    23.3765
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "森林公园葫芦顶防火瞭望台",
+                "XZQH": "增城区",
+                "SSQZ": "小楼镇邓山",
+                "JZCZ": "钢筋水泥",
+                "WZ": "百花林工区梅花顶",
+                "SDQK": "不通水电",
+                "HB": 496,
+                "LX": "瞭望台",
+                "LXR": "罗伟明",
+                "LXDH": "13640633036",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": "人数：3",
+                "STID": 103
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_110",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8437,
+                    23.5365
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "瞭望台",
+                "XZQH": "增城区",
+                "SSQZ": "正果浪拔",
+                "JZCZ": "水泥混凝土",
+                "WZ": "梳头石",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "曾锐明",
+                "LXDH": "13928999229",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 110
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_29",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4667,
+                    23.4839
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "瞭望台",
+                "XZQH": "从化区",
+                "SSQZ": "太平镇黄溪",
+                "JZCZ": "水泥混凝土",
+                "WZ": "太平镇马仔山公园山顶",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": " ",
+                "LXDH": " ",
+                "TXQK": "台阶路",
+                "BZ": " ",
+                "STID": 29
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_35",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5427,
+                    23.557
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "风云岭瞭望台",
+                "XZQH": "从化区",
+                "SSQZ": "街口街团星",
+                "JZCZ": "水泥混凝土",
+                "WZ": "604乡道风云岭森林公园内",
+                "SDQK": "通水电",
+                "HB": 285,
+                "LX": "瞭望台",
+                "LXR": "黎兴华",
+                "LXDH": "37503929",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": "人数：6",
+                "STID": 35
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_38",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4108,
+                    23.6364
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "鳌头镇瞭望台",
+                "XZQH": "从化区",
+                "SSQZ": "鳌头镇林业",
+                "JZCZ": "水泥混凝土",
+                "WZ": "从化区鳌头镇前进路公仔岭",
+                "SDQK": "通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "邓志彪",
+                "LXDH": "87875319",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": " ",
+                "STID": 38
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_43",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7362,
+                    23.6378
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "插旗顶瞭望台",
+                "XZQH": "从化区",
+                "SSQZ": "大岭山林场",
+                "JZCZ": "水泥混凝土",
+                "WZ": "大岭山林场插旗顶",
+                "SDQK": "通电，不通水",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "李汉坤",
+                "LXDH": "13610299868",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": " ",
+                "STID": 43
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_46",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.744,
+                    23.7447
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "牛角山瞭望台",
+                "XZQH": "从化区",
+                "SSQZ": "流溪河林场",
+                "JZCZ": "水泥混凝土",
+                "WZ": "流溪河林场G105附近牛角山上",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "庾火明",
+                "LXDH": "13902328170/87844262",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 46
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_51",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3155,
+                    23.5579
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "高百丈瞭望台",
+                "XZQH": "花都区",
+                "SSQZ": "梯面镇联丰",
+                "JZCZ": "水泥混泥土",
+                "WZ": "花都区梯面镇高百丈",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "邓建华",
+                "LXDH": "13694212111",
+                "TXQK": "通行5吨以上消防车",
+                "BZ": " ",
+                "STID": 51
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_53",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2255,
+                    23.5375
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "芙蓉峰瞭望台",
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇旗新",
+                "JZCZ": "水泥混泥土",
+                "WZ": "花都区芙蓉度假村",
+                "SDQK": "不通水电",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": "叶贵雄",
+                "LXDH": "13609603181",
+                "TXQK": "通行人",
+                "BZ": " ",
+                "STID": 53
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "Observatory_54",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1702,
+                    23.517
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "MC": "瞭望台",
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇振兴",
+                "JZCZ": "水泥混泥土",
+                "WZ": "花都区狮岭镇盘古黄（公园管理处管理）",
+                "SDQK": "通电不通水",
+                "HB": 0,
+                "LX": "瞭望台",
+                "LXR": " ",
+                "LXDH": " ",
+                "TXQK": "台阶路",
+                "BZ": " ",
+                "STID": 54
+            }
+        }
+    ]
+}

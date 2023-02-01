@@ -1,0 +1,784 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>地图管理</title>
+    <meta charset="UTF-8">
+	<link href="../Content/easyui/themes/default/easyui3.css" rel="stylesheet" type="text/css" />
+	<link href="../Content/easyui/themes/icon.css" rel="stylesheet" type="text/css" />
+	<link href="../Content/layui/css/layui.css" rel="stylesheet" type="text/css" />
+	<script src="../Content/easyui/jquery.min.js" type="text/javascript"></script>
+	<script src="../Content/easyui/jquery.easyui.min.js" type="text/javascript"></script>
+    <style type="text/css">
+	body {
+		margin: 0;
+		padding: 5px;
+	}
+	::-webkit-scrollbar {
+		width: 8px;
+		height: 8px;
+		background-color: #F5F5F5;
+	}
+	::-webkit-scrollbar-track {
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+		border-radius: 10px;
+		background-color: #F5F5F5;
+	}
+	::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+		background-color: #555;
+	}
+	.tree-node-selected {
+		color: #000000;
+	}
+	.tree-node-hover {
+	  color: #000000;
+	}	
+	.textbox{
+		background-color: transparent;
+	}
+	.textbox-text{
+		background-color: transparent;
+		color: #fff;
+	}
+	.combobox-item-hover {	  
+	  color: #000000;
+	}
+	.combobox-item-selected {	  
+	  color: #000000;
+	}
+	.combobox-group{
+		color: #ffe48d;
+	}
+	.l-btn:hover{
+	  color: #000000;
+	}
+	
+</style>
+  </head>
+  <body style="text-align: center; background-color:transparent;height:255px;">
+	<div class="easyui-tabs" style="width:100%;height:auto">
+	  <div title="管理静态地图" style="padding:10px">
+		<div class="easyui-panel" title="" style="width:262px;height:495px;padding:10px;">
+			<ul id="sTree" class="easyui-tree"	data-options="url:'../Model/tree_data_template.json',method:'get',animate:true,checkbox:true">
+			</ul>
+		</div>
+		<div class="easyui-panel" title="" style="position:absolute;left:282px;top:45px;width:502px;height:495px;padding:10px;">
+			<div style="margin-bottom:15px">
+				<input id="sMapName" class="easyui-textbox" label="图层名称：" disabled="disabled" labelPosition="left" style="width:100%;">
+			</div>
+			<div style="margin-bottom:15px">
+				<input id="sMapUrl" class="easyui-textbox" label="图层地址：" disabled="disabled" labelPosition="left" style="width:100%;">
+			</div>
+			<div style="margin-bottom:15px">
+				<input id="sMapLogo" label="图层图标：" class="easyui-combobox" disabled="disabled" name="language" style="width:100%" data-options="
+						url: '../Model/combobox_data.json',
+						method: 'get',
+						valueField:'icon',
+						textField:'text',
+						groupField:'group'
+				">
+			</div>
+			<div style="margin-bottom:15px">
+				<input id="sMapFlag" class="easyui-textbox" label="图层标识：" disabled="disabled" labelPosition="left" style="width:100%;">
+			</div>
+			<div class="layui-btn-group" style="position:absolute;bottom:10px;right:10px">
+				<button title="新增" onclick="sPrompt()" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+				<button title="编辑" onclick="sEdit()" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+				<button title="删除" onclick="sDeleteRow()" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+				<button id="sButton" title="保存" onclick="sSave()" disabled="disabled" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+			</div>
+		</div>
+	  </div>
+	  <div title="管理资源类型" style="padding:10px">
+		<div class="easyui-panel" title="" style="width:262px;height:495px;padding:10px;">
+			<ul id="dTree" class="easyui-tree"	data-options="url:'../Model/tree_data.json',method:'get',animate:true,checkbox:true">
+			</ul>
+		</div>
+		<div class="easyui-panel" title="" style="position:absolute;left:282px;top:45px;width:502px;height:495px;padding:10px;">
+			<div style="margin-bottom:15px">
+				<input id="dMapName" class="easyui-textbox" label="图层名称：" disabled="disabled" labelPosition="left" style="width:100%;">
+			</div>
+			<div style="margin-bottom:15px">
+				<input id="dMapUrl" class="easyui-textbox" label="图层地址：" disabled="disabled" labelPosition="left" style="width:100%;">
+			</div>
+			<div style="margin-bottom:15px">
+				<input id="dMapLogo" label="图层图标：" class="easyui-combobox" disabled="disabled" name="language" style="width:100%" data-options="
+						url: '../Model/combobox_data.json',
+						method: 'get',
+						valueField:'id',
+						textField:'text',
+						groupField:'group'
+				">
+			</div>
+			<div style="margin-bottom:15px">
+				<input id="dMapFlag" class="easyui-textbox" label="图层标识：" disabled="disabled" labelPosition="left" style="width:100%;">
+			</div>
+			<div class="layui-btn-group" style="position:absolute;bottom:10px;right:10px">
+				<button title="新增" onclick="dPrompt()" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+				<button title="编辑" onclick="dEdit()" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+				<button title="删除" onclick="dDeleteRow()" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+				<button id="dButton" title="保存" onclick="dSave()" disabled="disabled" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+			</div>
+		</div>
+	  </div>
+	  <div title="管理图元信息" style="padding:10px">
+		<div class="easyui-panel" title="" style="width:262px;height:495px;padding:10px;">
+			<ul id="yTree" class="easyui-tree"	data-options="url:'../Model/tree_data.json',method:'get',animate:true,checkbox:true">
+			</ul>
+		</div>
+		<div class="easyui-panel" title="" style="position:absolute;left:282px;top:45px;width:502px;height:495px;padding:10px;">
+			<div style="margin-bottom:15px">
+				<input id="yMapName" class="easyui-textbox" label="图层名称："  labelPosition="left" style="width:100%;">
+			</div>
+			<div style="margin-bottom:15px">
+				<input id="yMapFlag" class="easyui-textbox" label="图层类型：" readonly="true" labelPosition="left" style="width:100%;">
+			</div>
+			<div style="margin-bottom:15px">
+				<input id="yMapLogo" label="图层图标：" class="easyui-combobox"  name="language" style="width:100%" data-options="
+						url: '../Model/combobox_data2.json',
+						method: 'get',
+						valueField:'icon',
+						textField:'text',
+						groupField:'group'
+				">
+			</div>
+			<div style="margin-bottom:15px">
+				<input id="yMapType" label="图层样式：" class="easyui-combobox"  name="language" style="width:100%" data-options="
+						url: '../Model/combobox_data3.json',
+						method: 'get',
+						valueField:'icon',
+						textField:'text',
+						groupField:'group'
+				">
+			</div>
+			<div class="layui-btn-group" style="position:absolute;bottom:10px;right:10px">
+				<button title="新增" onclick="yPrompt()" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+				<button title="编辑" onclick="yEdit()" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+				<button title="删除" onclick="yDeleteRow()" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+				<button id="yButton" title="保存" onclick="ySave()" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+			</div>
+		</div>
+	  </div>
+	  <!-- <div title="管理地图资源" style="padding:10px">
+		<div class="layui-btn-group" style="margin-bottom: 5px;">
+			<button title="新增" onclick="prompt()" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+			<button title="编辑" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+			<button title="删除" onclick="deleteRow()" type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+			<button type="button" class="layui-btn layui-btn-sm"><i class="layui-icon"></i></button>
+		</div>
+	  </div> -->
+	</div>
+	<div id="dlg" class="easyui-dialog" title="添加图标" style="width:400px;height:200px;padding:10px;color: black;"
+			data-options="
+				iconCls: 'icon-add',
+				buttons: [{
+					text:'确定',
+					iconCls:'icon-ok',
+					handler:function(){
+						returnData();
+					}
+				},{
+					text:'取消',
+					handler:function(){
+						$('#dlg').dialog('close');
+					}
+				}]
+			">
+			<div style="width:100%;color: black;margin-bottom: 15px;">
+		<input id="nMapGroup" label="图标分组：" class="easyui-combobox"  name="language" style="width:95%;color: black;margin-top: 15px;" data-options="
+						url: '../Model/combobox_data5.json',
+						method: 'get',
+						valueField:'text',
+						textField:'text',
+						groupField:'group'
+				">
+		
+		</div>
+			<div style="width:100%;color: black;margin-bottom: 15px;">
+				<input id="nMapName" class="easyui-textbox" label="图标名称：" value="新增图标1" labelPosition="left" style="width:95%;">
+			</div>
+			<input id="nMapLogo" label="图层图标：" class="easyui-combobox"  name="language" style="width:95%;color: black;" data-options="
+						url: '../Model/combobox_data4.json',
+						method: 'get',
+						valueField:'icon',
+						textField:'text',
+						groupField:'group'
+				">
+		
+	</div>
+  </body>
+  <script type="text/javascript">
+		$(function(){
+			$('#dlg').dialog('close');
+			$('#sMapLogo').combobox({
+				formatter:function(row){
+					var imageFile = '../Content/easyui/themes/icons/' + row.icon;
+					return '<img class="item-img" src="'+imageFile+'"/><span class="item-text">'+row.text+'</span>';
+				},
+				onSelect:function(param){
+					sIcon = 'icon-'+param.icon.split('.')[0];
+				}
+			});
+			$('#dMapLogo').combobox({
+				formatter:function(row){
+					var imageFile = '../Content/easyui/themes/icons/' + row.icon;
+					return '<img class="item-img" src="'+imageFile+'"/><span class="item-text">'+row.text+'</span>';
+				},
+				onSelect:function(param){
+					dIcon = 'icon-'+param.icon.split('.')[0];
+				}
+			});
+			$('#yMapLogo').combobox({
+				formatter:function(row){
+					var imageFile = '../Content/easyui/themes/icons/' + row.icon;
+					return '<img class="item-img" src="'+imageFile+'"/><span class="item-text">'+row.text+'</span>';
+				},
+				onSelect:function(param){
+					dIcon = 'icon-'+param.icon.split('.')[0];
+				}
+			});
+			$('#nMapLogo').combobox({
+				formatter:function(row){
+					var imageFile = '../Content/easyui/themes/icons/' + row.icon;
+					return '<img class="item-img" src="'+imageFile+'"/><span class="item-text">'+row.text+'</span>';
+				},
+				onSelect:function(param){
+					dIcon = 'icon-'+param.icon.split('.')[0];
+				}
+			});
+			yArray = parent.pGzznCore.getIconArray();
+			
+			$.ajax({   
+				url: '../Model/combobox_data2.json',  
+				dataType: 'json',   
+				success: function(jsonstr){
+					for(var key in yArray){
+						var sJson = yArray[key]
+						jsonstr.push(sJson);
+					}
+					$('#yMapLogo').combobox("loadData",jsonstr);
+				}
+			});
+		});
+		function sPrompt(){
+			if(pSNodeID == null){
+				alert("请选中要添加图层的父节点！");
+			}
+			else{
+				$("#sMapName").textbox('enable');
+				$("#sMapUrl").textbox('enable');
+				$("#sMapLogo").textbox('enable');
+				$("#sMapFlag").textbox('enable');
+				$('#sMapName').textbox().next('span').find('input').focus();
+				$('#sButton').removeAttr("disabled");
+			}
+		}
+		function dPrompt(){
+			if(pDNodeID == null){
+				alert("请选中要添加图层的父节点！");
+			}
+			else{
+				$("#dMapName").textbox('enable');
+				$("#dMapUrl").textbox('enable');
+				$("#dMapLogo").textbox('enable');
+				$("#dMapFlag").textbox('enable');
+				$('#dMapName').textbox().next('span').find('input').focus();
+				$('#dButton').removeAttr("disabled");
+			}
+		}
+		function sEdit(){
+			if(pSNode == null){
+				alert("请选中静态图层！");
+			}
+			else{
+				$("#sMapName").textbox('enable');
+				$("#sMapUrl").textbox('enable');
+				$("#sMapLogo").textbox('enable');
+				$("#sMapFlag").textbox('enable');
+				$('#sMapName').textbox().next('span').find('input').focus();
+				$('#sButton').removeAttr("disabled");
+				editFlag = true;
+			}
+		}
+		function dEdit(){
+			if(pDNode == null){
+				alert("请选中静态图层！");
+			}
+			else{
+				$("#dMapName").textbox('enable');
+				$("#dMapUrl").textbox('enable');
+				$("#dMapLogo").textbox('enable');
+				$("#dMapFlag").textbox('enable');
+				$('#dMapName').textbox().next('span').find('input').focus();
+				$('#dButton').removeAttr("disabled");
+				editDFlag = true;
+			}
+		}
+		function sDeleteRow(){
+			if(pSNode!=null){
+				$.messager.confirm('提示框', '你确定要删除吗?',function(data){
+					if(data){
+						$('#sTree').tree('remove',pSNode.target);
+						var sFlag = pSNode.attributes.ObjFlag;
+						parent.pGzznCore.unBindStaticMap(sFlag);
+						pSNode = null;
+					}
+				});
+			}
+			else{
+				alert("请选中静态图层！");
+			}
+		}
+		function dDeleteRow(){
+			if(pDNode!=null){
+				$.messager.confirm('提示框', '你确定要删除吗?',function(data){
+					if(data){
+						$('#sTree').tree('remove',pDNode.target);
+						var sFlag = pDNode.attributes.ObjFlag;
+						parent.pGzznCore.unBindDynamicMap(parent.pGzznCore,sFlag,pDNode.id);
+						pDNode = null;
+					}
+				});
+			}
+			else{
+				alert("请选中静态图层！");
+			}
+		}
+		function sSave(){
+			if($("#sMapName").textbox('getValue')==''){
+				alert("图层名称不能为空！");
+			}
+			else if($("#sMapUrl").textbox('getValue')==''){
+				alert("图层URL不能为空！");
+			}
+			else if($("#sMapFlag").textbox('getValue')==''){
+				alert("图层标识不能为空！");
+			}
+			else{
+				var selected = $('#sTree').tree('getSelected');
+				if(selected.attributes==undefined){					
+					var sName = $("#sMapName").textbox('getValue');
+					var sUrl = $("#sMapUrl").textbox('getValue');
+					var sFlag = $("#sMapFlag").textbox('getValue');
+					if(!parent.pGzznCore.checkwmsLayer(sFlag)){
+						$('#sTree').tree('append', {
+							parent: selected.target,
+							data: [{
+								"text":sName,
+								"iconCls":sIcon,
+								"checked":"true",
+								"attributes":{
+									"ObjFlag":sFlag
+								}
+							}]
+						});
+						var sJson = {};
+						sJson.sName = sName;
+						sJson.sUrl = sUrl;
+						sJson.sFlag = sFlag;
+						sJson.sIcon = sIcon;
+						sJson.uID = selected.id;
+						sJson.uFlag = 0;
+						parent.pGzznCore.bindStaticMap(sJson);
+						$("#sMapName").textbox('disable');
+						$("#sMapUrl").textbox('disable');
+						$("#sMapLogo").textbox('disable');
+						$("#sMapFlag").textbox('disable');
+						$('#sButton').attr("disabled","disabled");
+					}
+					else{
+						alert("图层标识不能重复！");
+					}
+				}
+				else{
+					if(editFlag){
+						parentFlag = selected.attributes.ObjFlag;
+						var sName = $("#sMapName").textbox('getValue');
+						var sUrl = $("#sMapUrl").textbox('getValue');
+						var sFlag = $("#sMapFlag").textbox('getValue');
+						if(parentFlag!=sFlag){
+							if(parent.pGzznCore.checkwmsLayer(sFlag)){
+								alert("图层标识不能重复！");
+								return;
+							}
+						}
+						var parentNode = $('#sTree').tree('getParent', selected.target)
+						$('#sTree').tree('append', {
+							parent: parentNode.target,
+							data: [{
+								"text":sName,
+								"iconCls":sIcon,
+								"checked":"true",
+								"attributes":{
+									"ObjFlag":sFlag
+								}
+							}]
+						});
+						$('#sTree').tree('remove',selected.target);
+						var sJson = {};
+						sJson.sName = sName;
+						sJson.sUrl = sUrl;
+						sJson.sFlag = sFlag;
+						sJson.sIcon = sIcon;
+						sJson.uID = parentNode.id;
+						sJson.uFlag = 0;
+						sJson.pFlag = parentFlag;
+						parent.pGzznCore.reBindStaticMap(sJson);
+						$("#sMapName").textbox('disable');
+						$("#sMapUrl").textbox('disable');
+						$("#sMapLogo").textbox('disable');
+						$("#sMapFlag").textbox('disable');
+						$('#sButton').attr("disabled","disabled");
+						editFlag = false;
+					}
+					else{
+						alert("请选中要添加图层的父节点！");
+					}
+				}
+			}
+		}
+		function dSave(){
+			if($("#dMapName").textbox('getValue')==''){
+				alert("图层名称不能为空！");
+			}
+			else if($("#dMapUrl").textbox('getValue')==''){
+				alert("图层URL不能为空！");
+			}
+			else if($("#dMapFlag").textbox('getValue')==''){
+				alert("图层标识不能为空！");
+			}
+			else{
+				var selected = $('#dTree').tree('getSelected');
+				if(selected.attributes==undefined){					
+					var sName = $("#dMapName").textbox('getValue');
+					var sUrl = $("#dMapUrl").textbox('getValue');
+					var sFlag = $("#dMapFlag").textbox('getValue');
+					if(!parent.pGzznCore.checkwmsLayer(sFlag)){
+						$('#dTree').tree('append', {
+							parent: selected.target,
+							data: [{
+								"text":sName,
+								"iconCls":dIcon,
+								"checked":"true",
+								"attributes":{
+									"ObjFlag":sFlag
+								}
+							}]
+						});
+						var sJson = {};
+						sJson.sName = sName;
+						sJson.sUrl = sUrl;
+						sJson.sFlag = sFlag;
+						sJson.sIcon = dIcon;
+						sJson.uID = selected.id;
+						sJson.uFlag = 1;
+						parent.pGzznCore.bindDynamicMap(sJson);
+						$("#dMapName").textbox('disable');
+						$("#dMapUrl").textbox('disable');
+						$("#dMapLogo").textbox('disable');
+						$("#dMapFlag").textbox('disable');
+						$('#dButton').attr("disabled","disabled");
+					}
+					else{
+						alert("图层标识不能重复！");
+					}
+				}
+				else{
+					if(editDFlag){
+						parentDFlag = selected.attributes.ObjFlag;
+						var sName = $("#dMapName").textbox('getValue');
+						var sUrl = $("#dMapUrl").textbox('getValue');
+						var sFlag = $("#dMapFlag").textbox('getValue');
+						if(parentDFlag!=sFlag){
+							if(parent.pGzznCore.checkMapLayer(sFlag)){
+								alert("图层标识不能重复！");
+								return;
+							}
+						}
+						var parentNode = $('#dTree').tree('getParent', selected.target)
+						$('#dTree').tree('append', {
+							parent: parentNode.target,
+							data: [{
+								"text":sName,
+								"iconCls":dIcon,
+								"checked":"true",
+								"attributes":{
+									"ObjFlag":sFlag
+								}
+							}]
+						});
+						$('#dTree').tree('remove',selected.target);
+						var sJson = {};
+						sJson.sName = sName;
+						sJson.sUrl = sUrl;
+						sJson.sFlag = sFlag;
+						sJson.sIcon = dIcon;
+						sJson.uID = parentNode.id;
+						sJson.uFlag = 0;
+						sJson.pFlag = parentDFlag;
+						parent.pGzznCore.reBindDynamicMap(parent.pGzznCore,sJson);
+						$("#dMapName").textbox('disable');
+						$("#dMapUrl").textbox('disable');
+						$("#dMapLogo").textbox('disable');
+						$("#dMapFlag").textbox('disable');
+						$('#dButton').attr("disabled","disabled");
+						editDFlag = false;
+					}
+					else{
+						alert("请选中要添加图层的父节点！");
+					}
+				}
+			}
+		}
+		var pSNodeID = null;
+		var pSNode = null;
+		var editFlag = false;
+		var parentFlag = null;
+		var sArray;
+		var sIcon = 'underground';
+		$('#sTree').tree({
+			onClick : function(node) {
+				if(node.attributes==undefined){
+					pSNodeID = node.id;
+					$("#sMapName").textbox("setValue", "");
+					$("#sMapUrl").textbox("setValue", "");
+					$("#sMapFlag").textbox("setValue", "");
+				}
+				else{
+					var arr = sArray[node.attributes.ObjFlag];
+					$("#sMapName").textbox("setValue", arr.sName);
+					$("#sMapUrl").textbox("setValue", arr.sUrl);
+					$("#sMapFlag").textbox("setValue", arr.sFlag);
+					pSNode = node;
+				}
+			},
+			onLoadSuccess : function(node, data){
+				sArray = parent.pGzznCore.getStaticArray();
+				for(var key in sArray){
+					var sJson = sArray[key]
+					var selected = $('#sTree').tree('find', sJson.uID);
+					if(selected.attributes==undefined){
+						$('#sTree').tree('append', {
+							parent: selected.target,
+							data: [{
+								"text":sJson.sName,
+								"iconCls":sJson.sIcon,
+								"checked":"true",
+								"attributes":{
+									"ObjFlag":sJson.sFlag
+								}
+							}]
+						});
+					}
+				}
+			}
+		});
+		var pDNodeID = null;
+		var pDNode = null;
+		var editDFlag = false;
+		var parentDFlag = null;
+		var dArray;
+		var dIcon = 'underground';
+		$('#dTree').tree({
+			onClick : function(node) {
+				dArray = parent.pGzznCore.getDynamicArray();
+				if(node.attributes==undefined){
+					pDNodeID = node.id;
+					$("#dMapName").textbox("setValue", "");
+					$("#dMapUrl").textbox("setValue", "");
+					$("#dMapFlag").textbox("setValue", "");
+				}
+				else{
+					var arr = dArray[node.attributes.ObjFlag];
+					if(arr!=null){
+						$("#dMapName").textbox("setValue", arr.sName);
+						$("#dMapUrl").textbox("setValue", arr.sUrl);
+						$("#dMapFlag").textbox("setValue", arr.sFlag);
+					}
+					else{
+						$("#dMapName").textbox("setValue", node.text);
+						$("#dMapUrl").textbox("setValue", '');
+						$("#dMapFlag").textbox("setValue", node.attributes.ObjFlag);
+					}
+					pDNode = node;
+				}
+			},
+			onLoadSuccess : function(node, data){
+				dArray = parent.pGzznCore.getDynamicArray();
+				for(var key in dArray){
+					var sJson = dArray[key]
+					var selected = $('#dTree').tree('find', sJson.uID);
+					if(selected.attributes==undefined){
+						$('#dTree').tree('append', {
+							parent: selected.target,
+							data: [{
+								"text":sJson.sName,
+								"iconCls":sJson.sIcon,
+								"checked":"true",
+								"attributes":{
+									"ObjFlag":sJson.sFlag
+								}
+							}]
+						});
+					}
+				}
+			}
+		});
+		
+		var pYNodeID = null;
+		var pYNode = null;
+		var editYFlag = false;
+		var parentYFlag = null;
+		var yArray;
+		var yIcon = 'underground';
+		$('#yTree').tree({
+			onClick : function(node) {
+				yArray = parent.pGzznCore.getIconArray();
+				if(node.attributes==undefined){
+					pYNodeID = node.id;
+					$("#yMapName").textbox("setValue", "");
+					$("#yMapFlag").textbox("setValue", "");
+				}
+				else{
+					var arr = yArray[node.attributes.ObjFlag];
+					if(arr!=null){
+						//$("#yMapName").textbox("setValue", arr.sName);
+						//$("#yMapFlag").textbox("setValue", arr.sFlag);
+					}
+					else{
+						$("#yMapName").textbox("setValue", node.text);
+						$("#yMapFlag").textbox("setValue", node.attributes.LayerFlag);
+					}
+					pYNode = node;
+				}
+			},
+			onLoadSuccess : function(node, data){
+				
+			}
+		});
+		
+		function yPrompt(){
+			$('#dlg').dialog('open');
+			$(".combo-panel:last").css("color","#000000"); 
+			$(".textbox-text:last").css("color","#000000");
+			$(".combo-panel").eq(-2).css("color","#000000"); 
+			$(".textbox-text").eq(-2).css("color","#000000"); 
+			$(".textbox-text").eq(-3).css("color","#000000"); 
+		}
+		function returnData(){
+			var gValue = $("#nMapLogo").combobox("getValue");
+			var gText = $('#nMapName').textbox('getValue');
+			var groupText = $('#nMapGroup').combobox('getText');
+			$.ajax({   
+				url: '../Model/combobox_data2.json',  
+				dataType: 'json',   
+				success: function(jsonstr){
+					yArray = parent.pGzznCore.getIconArray();
+					if(tempNode == null){
+						for(var key in yArray){
+							var sJson = yArray[key]
+							jsonstr.push(sJson);
+						}
+						var temp = {
+							"id":jsonstr.length + 1,
+							"text":gText,
+							"icon":gValue,
+							"group":groupText
+						};
+						if(!parent.pGzznCore.setIconArray(temp)){						
+							jsonstr.push(temp);
+							$('#yMapLogo').combobox("loadData",jsonstr);
+							$('#dlg').dialog('close');
+						}
+						else{
+							alert("已经添加过该图标了。");
+						}
+					}
+					else{
+						if(tempNode.icon == gValue){ //没有改图标
+							for(var key in yArray){
+								var sJson = yArray[key]
+								if(sJson.icon == tempNode.icon){
+									sJson.text = gText;
+									sJson.group = groupText;
+								}
+								jsonstr.push(sJson);
+							}
+							$('#yMapLogo').combobox("loadData",jsonstr);
+							$('#dlg').dialog('close');
+						}
+						else{
+							var temp = {
+								"id":jsonstr.length + 1,
+								"text":gText,
+								"icon":gValue,
+								"group":groupText
+							};
+							if(!parent.pGzznCore.setIconArray(temp)){						
+								jsonstr.push(temp);
+								$('#yMapLogo').combobox("loadData",jsonstr);
+								$('#dlg').dialog('close');
+							}
+							else{
+								alert("已经添加过该图标了。");
+							}
+						}
+					}
+				}
+			});
+		}
+		var tempNode = null;
+		function yEdit(){
+			var gValue = $("#yMapLogo").combobox("getValue");
+			if(parent.pGzznCore.checkIconArray(gValue)){
+				$('#dlg').dialog('open');
+				$("#dlg").dialog({title:'编辑图标'});
+				tempNode = parent.pGzznCore.getIconArray(gValue);
+				$("#nMapGroup").combobox('select', tempNode.group);
+				$("#nMapName").textbox("setValue", tempNode.text);
+				$("#nMapLogo").combobox('select', tempNode.icon);
+			}
+			else{
+				alert("只能编辑新增的图标。");
+			}
+		}
+		function yDeleteRow(){
+			var gValue = $("#yMapLogo").combobox("getValue");
+			if(parent.pGzznCore.checkIconArray(gValue)){
+				parent.pGzznCore.delIconArray(gValue);
+				$.ajax({   
+					url: '../Model/combobox_data2.json',  
+					dataType: 'json',   
+					success: function(jsonstr){
+						yArray = parent.pGzznCore.getIconArray();						
+						for(var key in yArray){
+							var sJson = yArray[key]
+							jsonstr.push(sJson);
+						}							
+						$('#yMapLogo').combobox("loadData",jsonstr);					
+					}
+				});
+			}
+			else{
+				alert("只能删除新增的图标。");
+			}
+		}
+		function ySave(){
+			var selected = $('#yTree').tree('getSelected');
+			if(selected.attributes!=undefined){
+				var tFlag = $("#yMapFlag").textbox("getValue");
+				if(tFlag=="点"){
+					var gObj = selected.attributes.ObjFlag;
+					var gValue = $("#yMapLogo").combobox("getValue");
+					parent.pGzznCore.changedDataIcon(gObj,gValue);
+				}
+				else if(tFlag=="线"){
+					var gObj = selected.attributes.ObjFlag;
+					var gValue = $("#yMapType").combobox("getValue");
+					parent.pGzznCore.changedLayerStyle(gObj,gValue);
+				}
+			}
+		}
+	</script>
+</html>

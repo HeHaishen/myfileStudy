@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>空间分析</title>
+<script src="../Content/easyui/jquery.min.js" type="text/javascript"></script>
+<link href="../Content/layui/css/layui.css" rel="stylesheet" type="text/css" />
+<script src="../Content/layui/layui.all.js" type="text/javascript"></script>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 5px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #555;
+}
+.site-doc-icon li .layui-anim{
+	width: 50px;
+    height: 50px;
+    line-height: 150px;
+    margin: 0 auto 10px;
+    text-align: center;
+    background-color: #009688;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 50%;
+}
+.site-doc-icon li {
+    display: inline-block;
+    vertical-align: middle;
+    width: 127px;
+    line-height: 25px;
+    padding: 20px 0;
+    margin-right: -1px;
+    margin-bottom: -1px;
+    border: 1px solid #e2e2e2;
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    transition: all .3s;
+    -webkit-transition: all .3s;
+}
+li {
+    list-style: none;
+}
+.code{
+	color: white;
+}
+.site-doc-icon{
+	padding-top: 10px;
+}
+</style>
+</head>
+<body style="text-align: center; background-color:transparent;">
+	<ul class="site-doc-icon">
+	  <li>
+		<div id="sunlight" class="layui-anim layui-anim-up" data-anim="layui-anim-up" style="background-color:#FF5722;"></div>
+		<div class="code">日照分析</div>
+	  </li>
+	  <li>
+		<div id="viewshed" class="layui-anim layui-anim-upbit" data-anim="layui-anim-upbit" style="background-color:#FFB800;"></div>
+		<div class="code">可视域分析</div>
+	  </li>
+	  <li>
+		<div id="visibility" class="layui-anim layui-anim-scale" data-anim="layui-anim-scale" style="background-color:#FFFF00;"></div>
+		<div class="code">通视分析</div>
+	  </li>
+	   <li>
+		<div id="terrainTransparency" class="layui-anim layui-anim-scaleSpring" data-anim="layui-anim-scaleSpring" style=""></div>
+		<div class="code">地表透明</div>
+	  </li>
+	  <li>
+		<div id="excavation" class="layui-anim layui-anim-scale" data-anim="layui-anim-scale" style="background-color:#2F4056;"></div>
+		<div class="code">地形开挖</div>
+	  </li>
+	   <li>
+		<div id="bufferArea" class="layui-anim layui-anim-scaleSpring" data-anim="layui-anim-scaleSpring" style="background-color:#1E9FFF;"></div>
+		<div class="code">缓冲区分析</div>
+	  </li>
+	</ul>
+  	
+	<script type="text/javascript">
+		document.getElementById('sunlight').addEventListener('click', function () {
+			parent.pGzznCore.sunlightAnalysis();
+		}, false);
+		document.getElementById('viewshed').addEventListener('click', function () {
+			parent.pGzznCore.measureInit({'Flag':11,'Unit':'m'});
+		}, false);
+		document.getElementById('visibility').addEventListener('click', function () {
+			parent.pGzznCore.measureInit({'Flag':12,'Unit':'m'});
+		}, false);
+		document.getElementById('terrainTransparency').addEventListener('click', function () {
+			parent.pGzznCore.terrainTransparency();
+		}, false);
+		document.getElementById('excavation').addEventListener('click', function () {
+			parent.pGzznCore.terrainExcavation();
+			parent.pGzznCore.terrainClipPlanClear();
+			parent.pGzznCore.measureInit({'Flag':13,'Unit':'m'});
+		}, false);
+		document.getElementById('bufferArea').addEventListener('click', function () {
+			parent.pGzznCore.bufferAreaParam();
+			parent.pGzznCore.measureInit({'Flag':14,'Unit':'m'});
+		}, false);
+	</script>
+</body>
+</html>

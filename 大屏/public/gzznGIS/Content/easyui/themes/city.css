@@ -1,0 +1,50 @@
+.city-picker-dropdown{
+	position:absolute;left: 0px; top: 0px;outline:0;-webkit-tap-highlight-color:rgba(0,0,0,0);min-width:355px;margin-bottom:20px
+	}
+.city-select-tab{
+	border-bottom:1px solid #ccc;background:rgba(30,36,50,.6);font-size:13px
+	}
+.city-select-tab>a{
+	width:calc(49%);display:inline-block;padding:8px 22px;border-left:1px solid #ccc;border-bottom:1px solid transparent;color:#fff;text-align:center;outline:0;text-decoration:none;cursor:pointer;font-size:13px;margin-bottom:-1px
+	}
+.city-select-tab>a.active{
+	background-color:transparent!important;border-bottom:1px solid #0000ff;color:#fff
+	}
+.city-select-tab>a:first-child{
+	border-left:none
+	}
+.city-select-tab>a:last-child.active{
+	border-right:none
+	}
+dl{
+	line-height: 2;
+    clear: both;
+    padding: 3px 0px;
+    margin: 0px;
+    margin-top:10px;
+}
+dt{
+	position: absolute;
+    color:#fff;
+    width: 2.5em;
+    font-weight: 500;
+    text-align: right;
+    line-height: 2;
+}
+dd{
+    line-height: 2;
+    margin-left:10 !important;
+}
+dd a{
+	color: rgb(255, 255, 255);
+    text-decoration: none;
+	display: inline-block;
+    white-space: nowrap;
+    margin-right: 2px;    
+    cursor: pointer;
+    padding: 0px 10px;
+    outline: 0px;
+}
+dd a:hover{
+	background-color:#fff;
+}

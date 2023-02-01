@@ -1,0 +1,78 @@
+@import "../common.less";
+.send-message{
+    width:640vw*@w;
+    min-height:600vh*@h;
+    .layer-contents{
+        width:100%;
+        min-height: 100%;
+        height:auto;
+    }
+}
+.detail-content{
+    width:100%;
+    min-height:100%;
+    .list{
+        width:100%;
+        height:auto;
+        li{
+            width: 100%;
+            min-height:30vh*@h;
+            height:auto;
+            color:white;
+            font-size:20vh*@h;
+            display:flex;
+            margin:12vh*@h 0;
+            label{
+                flex-shrink: 0;
+                word-wrap:nowrap;
+                display:block;
+                width:120vw*@w;
+                text-align: right;
+                word-break:keep-all;           /* 不换行 */
+                white-space:nowrap;          /* 不换行 */
+                overflow:hidden;               /* 内容超出宽度时隐藏超出部分的内容 */
+            }
+            span{
+                .c-big-areatext{
+                    font-size:20vh*@h; 
+                }
+                .ant-input{
+                    // border:1px #ddd solid;
+                    display:block;
+                    width:490vw*@w;
+                    font-size:20vh*@h; 
+                    background:rgba(0,0,0,0.6);
+                    color:white;
+                }
+            }
+        }
+    }
+    .send-message-btn{
+        width:100%;
+        height:auto;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        position:absolute;
+        bottom:18vh*@h;
+        left:0;
+        p{
+            cursor: pointer;
+            height:32vh*@h;
+            line-height: 32vh*@h;
+            padding:0 14vw*@w;
+            .box-sizing();
+            border:1px solid #00ffff;
+            font-size:20vh*@h;
+            color:white;
+            margin:0 10vw*@w;
+        }
+    }
+    .send-msg-type{
+        height:24vh*@h;
+        line-height: 24vh*@h;
+        text-align: center;
+        font-size:20vh*@h;
+        color:white;
+    }
+}

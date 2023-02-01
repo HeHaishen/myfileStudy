@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>navigation</title>
+<script src="../Content/easyui/jquery.min.js" type="text/javascript"></script>
+<link href="../Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="../Content/bootstrap/js/bootstrap.min.js"	type="text/javascript"></script>
+<link href="../Content/easyui/themes/city.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background-color:transparent">
+<div class="city-picker-dropdown">
+	<div class="city-select-tab">
+		<!--<a class="active" id="province">省份</a> -->
+		<a id="city" class="active">城市</a>
+		<a id="district" class="" >区县</a>
+	</div>
+	<div class="city-select-content">
+		<div class="city-select city" id="select-city" style="display: block;">
+			<dl class="clearfix">
+			<dd style="margin-left:55px;">
+				<a title="广州市" data-code="440000" class="" href="javascript:void(0)" onclick="showArea(this)">广州市</a>
+			</dd>
+			</dl>
+		</div>
+		<div class="city-select district" id="select-district" style="display: none;">
+			<dl class="clearfix">
+			<dd>
+				<a title="白云区" data-code="440000" class="" href="javascript:void(0)" onclick="showArea(this)">白云区</a>
+				<a title="越秀区" data-code="440000" class="" href="javascript:void(0)" onclick="showArea(this)">越秀区</a>
+				<a title="天河区" data-code="440000" class="" href="javascript:void(0)" onclick="showArea(this)">天河区</a>
+				<a title="番禺区" data-code="440000" class="" href="javascript:void(0)" onclick="showArea(this)">番禺区</a>
+				<a title="黄埔区" data-code="440000" class="" href="javascript:void(0)" onclick="showArea(this)">黄埔区</a>
+				<a title="南沙区" data-code="440000" class="" href="javascript:void(0)" onclick="showArea(this)">南沙区</a>
+				<a title="海珠区" data-code="440000" class="" href="javascript:void(0)" onclick="showArea(this)">海珠区</a>
+				<a title="荔湾区" data-code="440000" class="" href="javascript:void(0)" onclick="showArea(this)">荔湾区</a>
+				<a title="从化区" data-code="440000" class="" href="javascript:void(0)" onclick="showArea(this)">从化区</a>
+				<a title="花都区" data-code="440000" class="" href="javascript:void(0)" onclick="showArea(this)">花都区</a>
+				<a title="增城区" data-code="440000" class="" href="javascript:void(0)" onclick="showArea(this)">增城区</a>
+			</dd>
+			</dl>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	document.getElementById('city').addEventListener('click', function () {
+		document.getElementById('city').classList.add("active");		
+		document.getElementById('district').classList.remove("active");
+		document.getElementById('select-city').style.display="block";
+		document.getElementById('select-district').style.display="none";
+	}, false);
+	document.getElementById('district').addEventListener('click', function () {
+		document.getElementById('city').classList.remove("active");
+		document.getElementById('district').classList.add("active");
+		document.getElementById('select-city').style.display="none";
+		document.getElementById('select-district').style.display="block";
+	}, false);
+	function showArea(vValue){
+		parent.pGzznCore.showArea(vValue.innerText);
+	}
+</script>
+</body>
+</html>

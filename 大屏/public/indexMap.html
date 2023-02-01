@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>地图子页面</title>
+	<link href="./gzznGIS/Crystal/Widgets/CrystalWidgets.css" rel="stylesheet" type="text/css" />
+	<link href="./gzznGIS/Crystal/Widgets/crystal-navigation.css" rel="stylesheet" type="text/css" />
+<style>
+body,html{
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+	<div id="crystalContainer">
+		<div id="envCenterInfo" class="status-bar" style="left: 0px;right: 0px;bottom: 0px;">
+			<div id="camera_alt">视点高：NaN米</div>
+			<div id="env_alt">海拔：NaN米</div>
+			<div id="env_lat">纬度：NaN</div>
+			<div id="env_lon">经度：NaN</div>
+		</div>
+	</div>
+   <script>
+		var reg = new RegExp("(^|&)strJson=([^&]*)(&|$)", "i"); 
+		var r = window.location.search.substr(1).match(reg); 
+		var value;
+		if (r != null){ 
+			value = unescape(r[2]);
+		}
+   </script>
+   <script type="text/javascript" src="./gzznGIS/Content/config.js" ></script>
+   <script type="text/javascript" src="./gzznGIS/Content/data.js" ></script>
+   <script type="text/javascript" src="./gzznGIS/Content/turf.min.js" ></script>
+   <script type="text/javascript" src="./gzznGIS/Content/easyui/jquery.min.js"></script>
+   <script type="text/javascript" src="./gzznGIS/Content/layui/layui.all.js"></script>
+   <script type="text/javascript" src="./gzznGIS/Crystal/Crystal.js"></script>
+   <script type="text/javascript" src="./gzznGIS/Content/gzznCore.js" ></script>
+   <script type="text/javascript" src="./gzznGIS/Content/CrystalHeatmap.js" ></script>
+   <script type="text/javascript" src="./gzznGIS/Content/CrystalNavigation.umd.js" ></script>
+   <script>
+		parent.pGzznCore = new gzznCore("crystalContainer");
+		if(value!=undefined){
+			parent.pGzznCore.FlyTo(value);
+		}
+   </script>
+</body>
+</html>

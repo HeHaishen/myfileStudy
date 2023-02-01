@@ -1,0 +1,816 @@
+@w:100 /5760;
+@h:100 /1080;
+@color:rgb (0,255,255);
+.box-sizing() {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.border-radisu(@x, @y) {
+  border-radius: @x @y;
+  -o-border-radius: @x @y;
+  -ms-border-radius: @x @y;
+  -moz-border-radius: @x @y;
+  -webkit-border-radiucity-hidden-danger-lefts: @x @y;
+}
+.box-shadow() {
+  box-shadow: 0 0 10vh * @h #00eaff inset;
+  -o-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -ms-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -moz-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -webkit-box-shadow: 0 0 10vh * @h #00eaff inset;
+}
+.c-cityDangerFirm-overview {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/emergencyOverview/bg.png");
+  background-size: 100% 100%;
+}
+/*公共样式 */
+/* 标题 */
+.shine-model-title {
+  font-size: 30vh * @h;
+  color: #eaeff2;
+  font-weight: bold;
+  .box-sizing();
+}
+.model-title {
+  height: 40vh * @h;
+  width: 100%;
+  font-size: 29vh * @h;
+  color: #eaeff2;
+  font-weight: bold;
+  line-height: 40vh * @h;
+  padding-left: 20vw * @w;
+  .box-sizing();
+}
+.model-little-title {
+  width: 100%;
+  height: 37vh * @h;
+  line-height: 37vh * @h;
+  font-size: 24vh * @h;
+  color: white;
+  padding-left: 21vw * @w;
+}
+// 按钮正常样式
+.type-btn {
+  height: 34vh * @h;
+  width: auto;
+  padding: 0 12vw * @w;
+  margin: 0 12vw * @w;
+  line-height: 34vh * @h;
+  font-size: 24vh * @h;
+  border: 2px #00eaff solid;
+  color: white;
+  cursor: pointer;
+}
+// 按钮点击的样式
+.btn-active-type {
+  .box-shadow();
+}
+.c-select-wrap {
+  font-size: 24vh * @h;
+  color: white;
+}
+.c-select {
+  height: 34vh * @h;
+  border: 2px solid #00eaff;
+  font-size: 24vh * @h;
+  background: #091c42;
+  color: white;
+}
+.chart-opation {
+  display: flex;
+}
+/* 更新事件 */
+.update-time {
+  width: auto;
+  font-size: 12vh * @h;
+  color: #dce6f1;
+}
+/* 内容 */
+.cityDangerFirm-overview-content {
+  height: calc(100% - 6vh);
+  width: 100%;
+  position: fixed;
+  top: 6vh;
+  left: 38vw * @w;
+  padding: 28vh * @h 30vw * @w;
+  .box-sizing();
+  display: flex;
+  justify-content: space-around;
+  .left {
+    width: 1850vw * @w;
+    height: 100%;
+  }
+  .center {
+    width: 1880vw * @w;
+    height: 100%;
+  }
+  .right {
+    width: 1730vw * @w;
+    height: 100%;
+  }
+}
+
+/* 内容---左边 */
+
+// 盒子内标题公共样式
+.left-box-title {
+  width: 100%;
+  height: 70vh * @h;
+  font-size: 28vh * @h;
+  line-height: 70vh * @h;
+  font-weight: bold;
+}
+.chemicals-left-box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  .title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+  .time-box {
+    min-width: @w*260vw;
+  }
+  .left-left {
+    width: 870vw * @w;
+    height: 100%;
+    background: url("../../assets/images/hazardousChemicals/bg_middle.png")
+      no-repeat no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+    color: #fff;
+    padding: 30vh * @h 42vw * @w;
+    .box-sizing();
+    /*监测预警 */
+    .early-warn {
+      color: #fff;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .warnNumber {
+        margin-top: @h*30vh;
+        .early-desc {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          p {
+            height: @h*40vh;
+            line-height: @h*40vh;
+            font-size: @h*16vh;
+          }
+          .block {
+            width: @w*160vw;
+            text-align: center;
+            div {
+              height: @h*46vh;
+              background-image: url("./images/warnNumBorder.png");
+              background-size: 100% 100%;
+              background-repeat: no-repeat;
+              text-align: center;
+              line-height: @h*46vh;
+              font-size: @h*26vh;
+              font-weight: 700;
+              color: rgb(1, 255, 255);
+            }
+          }
+        }
+      }
+      .early-form {
+        margin-top: 40vh * @h;
+        margin-bottom: 30vh * @h;
+        .table-list {
+          width: 100%;
+          height: @h*340vh;
+          margin-top: 20vh * @h;
+        }
+      }
+      .warn-tip {
+        border: @h*1vh solid rgb(160, 52, 89);
+        background-color: rgb(52, 38, 77);
+        margin-top: @h*24vh;
+        padding: 12vh * @h 12vw * @w;
+        width: 100%;
+        height: @h*160vh;
+        text-align: center;
+
+        .tip-title {
+          height: @h*32vh;
+          line-height: @h*32vh;
+          font-size: @h*16vh;
+          font-weight: 700;
+          margin-bottom: 10vh * @h;
+        }
+        .warn-desc {
+          height: @h*24vh;
+          line-height: @h*24vh;
+          font-size: @h*14vh;
+          text-align: left;
+          text-indent: 2em;
+        }
+      }
+    }
+  }
+
+  .left-right {
+    width: 870vw * @w;
+    height: 100%;
+    background: url("../../assets/images/hazardousChemicals/bg_middle.png")
+      no-repeat no-repeat center;
+    background-size: 100% 100%;
+    position: relative;
+    color: #fff;
+    padding: 30vh * @h 42vw * @w;
+    .box-sizing();
+    /*重点监管区域 */
+    .key-area {
+      color: #fff;
+      position: relative;
+      width: 100%;
+      height: 100%;
+      .area-list {
+        margin-top: @h*30vh;
+        width: 100%;
+        //height: @h*188vh;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        li {
+          width: @w*380vw;
+          height: @h*110vh;
+          background-image: url("./images/skyblueBorder.png");
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          margin-bottom: @h*36vh;
+          .area-title {
+            height: @h*28vh;
+            line-height: @h*28vh;
+            font-size: @h*16vh;
+            padding-left: @w*22vw;
+            display: flex;
+            justify-content: space-between;
+            .location {
+              width: 36vw * @w;
+              height: 18vh * @h;
+              line-height: 18vh * @h;
+              text-align: center;
+              font-size: 12vh * @h;
+              background-color: #0084e9;
+              margin-top: 5vh * @h;;
+              cursor: pointer;
+            }
+          }
+          .area-information {
+            display: flex;
+            justify-content: space-between;
+            font-size: @h*14vh;
+            .infor-left {
+              width: 50%;
+              height: 100%;
+              text-align: center;
+              .infor-name {
+                display: inline-block;
+              }
+              .infor-number {
+                display: inline-block;
+                font-size: @h*28vh;
+                font-weight: 900;
+                color: rgb(230, 57, 93);
+                margin: @h*20vh @w*20vw;
+              }
+            }
+            .infor-right {
+              width: 50%;
+              height: 100%;
+              text-align: left;
+              p {
+                margin-top: 16vh * @h;
+              }
+            }
+          }
+        }
+        li:first-child {
+          //background-image: url("./images/redBorder.png");
+        }
+      }
+      .resource {
+        margin-top: @h*55vh;
+        /* .resource-title {
+          height: @h*72vh;
+          line-height: @h*72vh;
+          font-size: @h*28vh;
+          font-weight: 700;
+        } */
+        .resource-list {
+          width: 100%;
+          display: flex;
+          justify-content: space-around;
+          margin-top: @h*45vh;
+          li {
+            width: 100%;
+            height: @h*110vh;
+            display: flex;
+            .resource-left {
+              //width: @w * 60vw;
+              height: @h * 110vh;
+              padding: 0 @w*10vw;
+              font-size: @h*16vh;
+              //font-weight: 700;
+              writing-mode: vertical-lr;
+              text-align: center;
+              background-color: #0084e9;
+            }
+            .resource-right {
+              flex: 1;
+              background-image: linear-gradient(
+                to right,
+                rgba(12, 64, 128, 1),
+                transparent
+              );
+              .static {
+                margin: @h*14vh 0 0 @w*10vw;
+                display: flex;
+                align-items: baseline;
+                .title {
+                  width: 50%;
+                  margin-bottom: @h*14vh;
+                  padding-left: @w*14vw;
+                  font-size: @h*14vh;
+                }
+                .total {
+                  width: 50%;
+                  text-align: left;
+                  font-size: @h*10vh;
+                  .number {
+                    font-size: @h*22vh;
+                    font-weight: 700;
+                    color: #0dffff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      /* 知识库 */
+      .knowledge-base{
+        margin-top: @h*55vh;
+        .knowledge-list {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          margin-top: @h*45vh;
+          li {
+            width: @w*380vw;
+            height: @h*70vh;
+            line-height: @h*70vh;
+            display: flex;
+            border: 1vh*@h solid #007aff;
+            background-image: linear-gradient(
+                to right,
+                rgba(12, 64, 128, 1),
+                transparent
+              );
+            font-size: 18vh*@h;
+            font-weight: 700;
+            .name {
+              width: 50%;
+              text-align: center;
+              font-weight: 700;
+            }
+            .number {
+              width: 50%;
+              text-align: center;
+              font-size: 26vh*@h;
+              color: #0091ff;
+              font-weight: 700;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 内容---中间 */
+
+.city-hidden-danger-center {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/images/hazardousChemicals/bg_border_large.png")
+    no-repeat no-repeat center;
+  background-size: 100% 100%;
+  color: #fff;
+  padding: 30vh * @h 61vw * @w;
+  display: flex;
+  justify-content: space-between;
+  .box-sizing();
+  .map-bg {
+    width: @w*1300vw;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    background: url("../../assets/images/hazardousChemicals/map.png") no-repeat
+      no-repeat center;
+    background-size: 100% 100%;
+  }
+  .center-left-top {
+    position: absolute;
+    top: @h*60vh;
+    left: @w*80vw;
+    //margin-top: @h*60vh;
+    display: flex;
+    width: @w*1450vw;
+    height: auto;
+    padding: @h*20vh @w*24vw;
+    justify-content: space-around;
+    border: @w*1vw solid #00ffff;
+    .box-shadow();
+    .list {
+      box-sizing: border-box;
+      width: 25%;
+      padding: 0 @w*20vw;
+      text-align: left;
+      border-right: @w*1vw solid #00ffff;
+
+      .name {
+        font-size: @h*30vh;
+      }
+      .unit {
+        font-size: @h*20vh;
+      }
+      .number {
+        width: 100%;
+        height: @h*60vh;
+        margin-top: @h*24vh;
+        font-size: @h*50vh;
+        font-weight: 700;
+        color: #00ffff;
+      }
+    }
+    .list:last-child {
+      border-right: none;
+    }
+  }
+  /* 左侧选择操作栏 */
+  .center-right-select {
+    @w:100 /5760;
+    // @h:100 /1079;
+    @h:100 /1080;
+    //transform: scale(1.6,1.6);
+    position: absolute;
+    font-size: 16vh * @h;
+    bottom: 40vh * @h;
+    left: 26vw * @w;
+    height: 627vh * @h;
+    width: 280vw * @w;
+    border: 1px solid #00ffff;
+    border-left: none;
+    .box-sizing();
+    // background-color: pink;
+    color: #fff;
+    padding: 24vh * @h 30vw * @w;
+    .select-item {
+      width: 100%;
+      p {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15vh * @h;
+        color: #00ffff;
+        width: 100%;
+        span {
+          display: block;
+          height: 15vh * @h;
+          width: 15vw * @w;
+          border-radius: 50%;
+          // background-color: #094365;
+          border: 1px solid #00ffff;
+        }
+
+        span.active-span {
+          width: 15vw * @w;
+          height: 15vh * @h;
+          background-color: #00ffff;
+          border: 1px solid #00ffff;
+          border-radius: 50%;
+          box-shadow: 0 0 0 3px #fff inset;
+        }
+      }
+
+      ul {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // width: 215vw * @w;
+        width: 100%;
+        padding-left: 5vw * @w;
+        .box-sizing();
+
+        li {
+          display: flex;
+          justify-content: space-between;
+          width: 46%;
+          margin-bottom: 15vh * @h;
+          color: #fff;
+
+          span {
+            display: block;
+            height: 15vh * @h;
+            width: 15vw * @w;
+            border-radius: 50%;
+            // background-color: #094365;
+            border: 1px solid #00ffff;
+          }
+
+          span.active-span {
+            width: 15vw * @w;
+            height: 15vh * @h;
+            background-color: #00ffff;
+            border: 2px solid #00ffff;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px #fff inset;
+          }
+        }
+      }
+    }
+  }
+
+  .icon {
+    left: 650vw * @w;
+    bottom: 60vh * @h;
+    position: absolute;
+    display: flex;
+  }
+  .map-bt-bg {
+    position: relative;
+    width: @w*200vw;
+    height: @h*80vh;
+    background: url("../../assets/images/hazardousChemicals/map_bt_bg.png")
+      no-repeat no-repeat center;
+    background-size: 100% 100%;
+    cursor: pointer;
+    img {
+      display: inline-block;
+      width: @w*50vw;
+      height: auto;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  /* 综合统计（右侧） begin */
+  .composite-statistics {
+    width: @w*1780vw;
+    height: @h*1600vh;
+    position: absolute;
+    right: @w*26vw;
+    top: @h*60vh;
+    padding-right: @w*100vw;
+    .composite-title {
+      font-size: @h*50vh;
+      padding-bottom: @h*50vh;
+    }
+    .composite-sub-title {
+      width: @w*360vw;
+      height: @h*85vh;
+      line-height: @h*85vh;
+      background: url("../../assets/images/hazardousChemicals/composite_sub_title_bg.png")
+        no-repeat no-repeat center;
+      background-size: 100% 100%;
+      font-size: @h*34vh;
+      text-align: center;
+    }
+    .composite-top {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+
+      .composite-top-left {
+        width: 50%;
+        .composite-statistics-echart {
+          width: 100%;
+          height: @h*500vh;
+        }
+      }
+      .composite-top-right {
+        width: 50%;
+        .supervise-statistics-echart {
+          width: 100%;
+          height: @h*500vh;
+        }
+      }
+    }
+    .composite-bt {
+      width: 100%;
+      margin-top: @h*150vh;
+      .stock-statistics {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        height: @h*80vh;
+        line-height: @h*80vh;
+        margin-left: 50%;
+        margin-top: @h*30vh;
+        transform: translate(-50%);
+        border: 1px solid #00ffff;
+        font-size: @h*26vh;
+        .number {
+          display: inline-block;
+          font-size: @h*50vh;
+          font-weight: 700;
+          color: #00ffff;
+          margin: 0 @w*20vw 0 @w*50vw;
+        }
+        .unit {
+          font-size: @h*24vh;
+        }
+        .stock-statistics-left {
+          width: 50%;
+          text-align: center;
+        }
+        .stock-statistics-right {
+          width: 50%;
+          text-align: center;
+          .number {
+            color: #de3860;
+          }
+        }
+      }
+      .stock-statistics-echart {
+        margin-top: @h*40vh;
+        width: 100%;
+        height: @h*550vh;
+      }
+    }
+  }
+  /* 综合统计（右侧） end */
+}
+
+/* 内容---右边*/
+.right-box {
+  width: 100%;
+  height: 100%;
+}
+/* 本年危化品企业执法情况统计 begin */
+.right-top {
+  width: 100%;
+  height: 50%;
+  height: 49%;
+  margin-bottom: 2%;
+  background: url("../../assets/images/hazardousChemicals/bg_border_middle.png")
+    no-repeat no-repeat center;
+  background-size: 100% 100%;
+  position: relative;
+  color: #fff;
+  padding-top: 70vh * @h;
+  .box-sizing();
+  .enforce-the-law {
+    position: relative;
+    width: @w*2000vw;
+    height: @h*750vh;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    .tab-box {
+      margin-top: @h*60vh;
+      display: flex;
+      width: 100%;
+      height: auto;
+      justify-content: space-around;
+      .tab-bt {
+        width: @w*570vw;
+        height: auto;
+        padding: @h*20vh @w*24vw;
+        font-size: @h*32vh;
+        font-weight: 700;
+        text-align: center;
+        border: 1px solid #00ffff;
+        .box-shadow();
+        .title {
+          font-size: @h*30vh;
+        }
+        .list-box {
+          margin-top: @h*20vh;
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          height: auto;
+          .list {
+            box-sizing: border-box;
+            width: 25%;
+            text-align: center;
+            .number {
+              width: 100%;
+              height: @h*60vh;
+              line-height: @h*60vh;
+              font-size: @h*34vh;
+              font-weight: 700;
+              border-right: @w*2vw solid #00ffff;
+              text-align: center;
+              color: #00ffff;
+            }
+            .name {
+              font-size: @h*18vh;
+            }
+          }
+          .list:last-child {
+            .number {
+              border-right: none;
+            }
+          }
+        }
+      }
+    }
+    .sub-title {
+      margin-top: @h*40vh;
+      height: @h*72vh;
+      line-height: @h*72vh;
+      font-size: @h*40vh;
+      font-weight: 700;
+    }
+    .enforcement-documents-chart {
+      margin-left: 50%;
+      transform: translate(-50%, 0);
+      width: 100%;
+      height: @h*360vh;
+    }
+  }
+}
+/* 本年危化品企业执法情况统计 end */
+
+/* 本年危化品企业隐含排查情况统计 begin */
+.right-bt {
+  width: 100%;
+  height: 50%;
+  height: 49%;
+  background: url("../../assets/images/hazardousChemicals/bg_border_middle.png")
+    no-repeat no-repeat center;
+  background-size: 100% 100%;
+  position: relative;
+  color: #fff;
+  padding-top: 70vh * @h;
+  .box-sizing();
+  .investigate {
+    position: relative;
+    width: @w*2000vw;
+    height: @h*750vh;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+    .tab-box {
+      margin-top: @h*60vh;
+      display: flex;
+      width: 100%;
+      height: auto;
+      justify-content: space-around;
+      .tab-bt {
+        width: @w*560vw;
+        height: @h*90vh;
+        line-height: @h*90vh;
+        //padding: 0 @w*50vw;
+        font-size: @h*32vh;
+        font-weight: 700;
+        text-align: center;
+        border: 1px solid #00ffff;
+        box-shadow: 0 0 0.92592593vh #00eaff inset;
+        margin-right: 0.10416667vw;
+        .number {
+          display: inline-block;
+          margin-left: @w*50vw;
+          margin-right: @w*10vw;
+          font-size: @h*40vh;
+          font-weight: 700;
+          color: #00ffff;
+        }
+        .unit {
+          font-size: @h*18vh;
+        }
+      }
+    }
+    .sub-title {
+      margin-top: @h*40vh;
+      height: @h*72vh;
+      line-height: @h*72vh;
+      font-size: @h*40vh;
+      font-weight: 700;
+    }
+    .hidden-trouble-statistics {
+      margin-left: 50%;
+      transform: translate(-50%, 0);
+      width: 90%;
+      height: @h*470vh;
+    }
+  }
+}
+/* 本年危化品企业隐含排查情况统计 end */

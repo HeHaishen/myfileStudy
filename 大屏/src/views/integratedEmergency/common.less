@@ -1,0 +1,102 @@
+@w:100 /15357;
+// @h:100 /1079;
+@h:100 /2160;
+.box-sizing() {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.border-radisu(@x, @y) {
+  border-radius: @x @y;
+  -o-border-radius: @x @y;
+  -ms-border-radius: @x @y;
+  -moz-border-radius: @x @y;
+  -webkit-border-radius: @x @y;
+}
+.box-shadow() {
+  box-shadow: 0 0 10vh * @h #00eaff inset;
+  -o-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -ms-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -moz-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -webkit-box-shadow: 0 0 10vh * @h #00eaff inset;
+}
+
+*::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 2px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+*::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 2px;
+  box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+  background: #2c98ff;
+}
+*::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+  border-radius: 2px;
+  background: #030c22;
+}
+/*公共样式 */
+/* 标题 */
+.model-title {
+  height: 60vh * @h;
+  width: 100%;
+  font-size: 47vh * @h;
+  color: #01ffff;
+  font-weight: bold;
+  line-height: 60vh * @h;
+  text-align: center;
+  .box-sizing();
+  position: absolute;
+  top: -18vh * @h;
+  left: 0;
+}
+.model-little-title {
+  width: 100%;
+  height: 73vh * @h;
+  line-height: 73vh * @h;
+  font-size: 33vh * @h;
+  color: white;
+}
+// 按钮正常样式
+.type-btn {
+  width: 131vw * @w;
+  height: 40vh * @h;
+  text-align: center;
+  line-height: 40vh * @h;
+  font-size: 24vh * @h;
+  border: 2px #00eaff solid;
+  color: white;
+  cursor: pointer;
+  .box-shadow();
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+// 按钮点击的样式
+.btn-active-type {
+  .box-shadow();
+}
+.c-select-wrap {
+  font-size: 24vh * @h;
+  color: white;
+}
+.chart-opation {
+  display: flex;
+}
+input::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+  color: #b1b1b7;
+  font-size: 14vh * @h;
+}
+/* 更新事件 */
+.update-time {
+  width: auto;
+  font-size: 12vh * @h;
+  color: #dce6f1;
+}

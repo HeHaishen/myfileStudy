@@ -1,0 +1,53 @@
+@import "../../common.less";
+
+.dangerous-supervise{
+  .send-message {
+    z-index: 99999;
+    width: 1024vw * @w;
+    min-height: 500vh*@h;
+
+    /deep/ .detail-content {
+      padding: 10vh *@h 10vw * @w ;
+
+      .list {
+        li {
+          label {
+            flex-shrink: 0;
+            word-wrap: nowrap;
+            display: block;
+            width: 200vw*@w;
+            text-align: right;
+            word-break: keep-all;
+            /* 不换行 */
+            white-space: nowrap;
+            /* 不换行 */
+            overflow: hidden;
+            /* 内容超出宽度时隐藏超出部分的内容 */
+          }
+
+          span {
+            margin-left: 10vw * @w ;
+            width: 100%;
+
+            .c-big-areatext {
+              font-size: 20vh*@h;
+            }
+
+            .ant-input {
+              // border:1px #ddd solid;
+              display: block;
+              width: 100%;
+              font-size: 20vh*@h;
+              background: rgba(0, 0, 0, 0.6);
+              color: white;
+            }
+          }
+        }
+      }
+
+      .send-message-btn {
+        position: unset
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+
+.around-video-content{
+    width:1231px;
+    height:1194px;
+    .box-sizing();
+    ul{
+        width:100%;
+        height:100%;
+        display:flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        li{
+            width:559px;
+            height:334px;
+            background:black;
+            position: relative;
+            video {
+                width: 100%;
+                height: 100%;
+            }
+            .video-name-text {
+                width: 100%;
+                height: 73px;
+                font-size: 34px;
+                line-height: 73px;;
+                color: white;
+                text-align: center;
+                position: absolute;
+                left: 0;
+                top: 0;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+              }
+        }
+    }
+  
+    .show-video-wall{
+      font-size:40px;
+      color:#00ffff;
+      position:absolute;
+      left:-20px;
+      top:50%;
+      cursor: pointer;
+    }
+    /deep/ .search-input-wrap{
+      input{
+        width:260px;
+      }
+      span{
+       width: 100px;
+      }
+     
+    }
+      
+}
+.c-loading {
+    position: absolute;
+    border-left: 2px solid #5470c6;
+    border-right: 2px solid #54c2c6;
+    border-bottom: 2px solid #722d6c;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% 50%);
+    animation: myload 1s linear infinite;
+    width: 60px;
+    height: 60px;
+    .border-radius(50%,50%);
+  }
+  @keyframes myload {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .rightTitle {
+    position: absolute;
+    top: 0;
+    right:30px;
+    line-height: 64px;
+    color: white;
+    font-size: 22px;
+    .more {
+      cursor: pointer;
+    }
+  }

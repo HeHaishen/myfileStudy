@@ -1,0 +1,774 @@
+.show-map {
+  height: 100%;
+  width: calc(100% - 2866px);
+  position: fixed;
+  top: 0;
+  left: 1882px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.forest-fire {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-image: linear-gradient(to right, #182734 35%, transparent 25%, transparent 50%, #182734 50%, #182734 75%, transparent 75%, #182734 35%);
+}
+/* 公共部分 */
+.fire-model-title {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 46px;
+  font-weight: bold;
+  color: #01ffff;
+  position: absolute;
+  left: 50%;
+  top: -21px;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+.fire-list-header {
+  width: 100%;
+  height: 70px;
+  background: #113953;
+  color: #feffff;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.file-model-all {
+  padding: 62px 14px 10px 14px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.file-model-all p {
+  text-align: center;
+}
+.file-model-all p:nth-child(1) {
+  flex: 1 0 30%;
+}
+.file-model-all p:nth-child(2) {
+  flex: 1 0 20%;
+}
+.file-model-all p:nth-child(3) {
+  flex: 1 0 20%;
+}
+.file-model-all p:nth-child(4) {
+  flex: 1 0 20%;
+}
+.fire-list-content {
+  width: 100%;
+  height: calc(100% - 133px);
+  overflow: hidden;
+}
+.fire-list-content li {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  font-size: 28px;
+  color: #feffff;
+  border-bottom: 2px #314c53 solid;
+  min-height: 78px;
+}
+.fire-list-content li div {
+  text-align: center;
+}
+.fire-list-content li div:nth-child(1) {
+  flex: 1 0 30%;
+  cursor: pointer;
+}
+.fire-list-content li div:nth-child(2) {
+  flex: 1 0 20%;
+}
+.fire-list-content li div:nth-child(3) {
+  flex: 1 0 20%;
+}
+.fire-list-content li div:nth-child(4) {
+  flex: 1 0 20%;
+}
+.fire-list-content li:nth-child(1) {
+  margin-top: 22px;
+}
+.fire-list-content li:last-child {
+  border-bottom: 0px;
+}
+/* 左侧模块 */
+.forest-left {
+  width: 2249px;
+  min-height: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  padding-top: 220px;
+  background-image: linear-gradient(to right, #182734, #182734, #182734, rgba(20, 27, 53, 0.4));
+  box-shadow: 0 0 190px #182734;
+  z-index: 666;
+}
+.forest-left .forest-left-top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  /* 顶部右测 */
+}
+.forest-left .forest-left-top .left-top-meteorology {
+  height: 725px;
+  width: 1500px;
+  background-color: rgba(3, 55, 100, 0.5);
+  position: relative;
+  padding: 50px 0 0 0;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-right: 40px;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-title {
+  padding: 0 28px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  font-size: 46px;
+  font-weight: bold;
+  color: #01ffff;
+  position: absolute;
+  left: 50%;
+  top: -21px;
+  transform: translateX(-50%);
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show {
+  width: 100%;
+  height: 150px;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 20px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li {
+  flex: 1 0 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li .li-content-img {
+  display: flex;
+  justify-content: flex-start;
+  margin-right: 23px;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li .li-content-img img {
+  display: block;
+  width: 120px;
+  height: auto;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li .li-content-logo {
+  width: auto;
+  height: 100%;
+  margin-right: 30px;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li .li-content-logo .li-img-text {
+  font-size: 28px;
+  color: white;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li .li-content-logo .li-img-icon {
+  display: block;
+  width: auto;
+  height: auto;
+  margin-bottom: 6px;
+  margin-top: 8px;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li .li-content-logo .li-img-icon img {
+  display: block;
+  width: 57px;
+  height: 67px;
+  margin: 0 auto;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li .li-content-detail {
+  width: 138px;
+  height: 100%;
+  position: relative;
+  padding-left: 6px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  color: #01ffff;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li .li-content-detail .li-now-tem {
+  width: 100%;
+  height: 92px;
+  font-size: 55px;
+  font-weight: bold;
+  font-family: "微软雅黑";
+  color: #01ffff;
+  padding: 24px 0 0 0;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin-bottom: 9px;
+  text-shadow: 0 0 20px #aef;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li .li-content-detail .li-about-tem {
+  font-size: 24px;
+  color: #01ffff;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li .li-content-detail .li-now-unit {
+  position: absolute;
+  top: 14px;
+  right: 17px;
+  color: #01ffff;
+  font-size: 23px;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li .li-content-detail .li-now-state {
+  position: absolute;
+  top: 55px;
+  right: 7px;
+  color: #01ffff;
+  font-size: 29px;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li .detail-padding {
+  padding-top: 27px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-show ul li .detail-padding p {
+  line-height: 42px;
+  font-size: 26px;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-chart {
+  width: 100%;
+  height: 488px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.forest-left .forest-left-top .left-top-meteorology .meteorology-chart .meteorology-chart-line {
+  flex: 1 0 50%;
+}
+.forest-left .forest-left-top .left-top-right .left-wood-fire {
+  width: 706px;
+  height: 216px;
+  background: url("../../assets/images/forestFire/bg_wood_fire_model.png") no-repeat center center;
+  background-color: rgba(3, 55, 100, 0.5);
+  text-align: center;
+  background-size: 100%;
+  padding: 25px 25px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.forest-left .forest-left-top .left-top-right .left-wood-fire div {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  font-size: 46px;
+  color: #00ffff;
+  line-height: 145px;
+  font-weight: bold;
+}
+.forest-left .forest-left-top .left-top-right .fire-holiday-statistics {
+  width: 714px;
+  height: 454px;
+  margin-top: 60px;
+  background-color: rgba(3, 55, 100, 0.5);
+  position: relative;
+  padding-top: 50px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.forest-left .forest-left-top .left-top-right .fire-holiday-statistics ul {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 88px 0 44px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.forest-left .forest-left-top .left-top-right .fire-holiday-statistics ul li {
+  width: 190px;
+  height: 196px;
+  background: url("../../assets/images/forestFire/bg_holiday_li.png") no-repeat center center;
+  position: relative;
+}
+.forest-left .forest-left-top .left-top-right .fire-holiday-statistics ul li .fire-holiday-number {
+  width: 100%;
+  height: 100%;
+  line-height: 196px;
+  text-align: center;
+  font-size: 80px;
+  color: #01ffff;
+  font-weight: 900;
+}
+.forest-left .forest-left-top .left-top-right .fire-holiday-statistics ul li .fire-holiday-unit {
+  position: absolute;
+  right: -47px;
+  top: 133px;
+  color: white;
+  font-size: 37px;
+}
+.forest-left .forest-left-top .left-top-right .fire-holiday-statistics ul li .fire-holiday-type {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: -47px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 37px;
+}
+.forest-left .forset-left-bottom {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 95px;
+}
+.forest-left .forset-left-bottom .left-bottom-content {
+  flex: 1 1 715px;
+  height: 826px;
+  background-color: rgba(3, 55, 100, 0.5);
+  position: relative;
+  /* 救火物资情况 */
+}
+.forest-left .forset-left-bottom .left-bottom-content .left-bottom-material {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding-top: 80px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.forest-left .forset-left-bottom .left-bottom-content .left-bottom-material li {
+  flex-shrink: 0;
+  width: 50%;
+  height: 109px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.forest-left .forset-left-bottom .left-bottom-content .left-bottom-material li .material-img {
+  display: block;
+  height: 81px;
+  width: auto;
+}
+.forest-left .forset-left-bottom .left-bottom-content .left-bottom-material li .material-detail {
+  height: 100%;
+  width: auto;
+  position: relative;
+}
+.forest-left .forset-left-bottom .left-bottom-content .left-bottom-material li .material-detail .material-detail-type {
+  word-wrap: nowrap;
+  color: white;
+  font-size: 28px;
+  line-height: 48px;
+}
+.forest-left .forset-left-bottom .left-bottom-content .left-bottom-material li .material-detail .material-detail-number {
+  word-wrap: nowrap;
+  color: #00ffff;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 48px;
+}
+.forest-left .forset-left-bottom .left-bottom-content .left-bottom-material li .material-detail .material-detail-unit {
+  word-wrap: nowrap;
+  color: white;
+  font-size: 28px;
+  position: absolute;
+  right: -32px;
+  bottom: 16px;
+}
+.forest-left .forset-left-bottom .left-bottom-margin {
+  margin: 0 38px;
+}
+/* 2020年火灾统计 */
+.forest-center {
+  width: 3328px;
+  height: 186px;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("../../assets/images/forestFire/bg_year-center.png") no-repeat no-repeat center;
+  background-size: 100% 100%;
+  padding: 0 50px;
+}
+.forest-center .forest-center-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: hidden;
+}
+.forest-center .forest-center-list li {
+  width: 20%;
+  flex-shrink: 0;
+  padding: 0 52px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.forest-center .forest-center-list li .center-list-event {
+  font-size: 28px;
+  font-weight: bold;
+  color: #00fefc;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 28px;
+}
+.forest-center .forest-center-list li .center-list-detail {
+  display: flex;
+  justify-content: space-around;
+  font-size: 26px;
+  color: white;
+}
+.forest-center .forest-center-list li .center-list-detail p span {
+  color: #00fefc;
+  padding-right: 6px;
+}
+/* 右侧模块 */
+.forest-right {
+  width: 2133px;
+  min-height: 100%;
+  height: auto;
+  position: absolute;
+  right: 0;
+  padding-top: 220px;
+  padding-right: 252px;
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(to left, #182734, #182734, #182734, rgba(20, 27, 53, 0.4));
+  box-shadow: 0 0 190px #182734;
+  z-index: 666;
+}
+.forest-right .forest-right-left {
+  width: 856px;
+  height: auto;
+}
+.forest-right .forest-right-left .right-left-connection {
+  width: 100%;
+  height: 514px;
+  background-color: rgba(3, 55, 100, 0.5);
+  position: relative;
+  margin-bottom: 76px;
+  padding: 56px 37px 12px 37px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.forest-right .forest-right-left .right-left-connection .connection-datas {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  font-size: 28px;
+  color: white;
+}
+.forest-right .forest-right-left .right-left-connection .connection-datas p {
+  flex: 1 0 50%;
+  text-align: center;
+}
+.forest-right .forest-right-left .right-left-connection .connection-datas p span {
+  font-size: 32px;
+  color: #05fffe;
+  margin: 0 6px;
+}
+.forest-right .forest-right-left .right-left-connection .connection-chart {
+  width: 100%;
+  height: 400px;
+}
+.forest-right .forest-right-left .right-left-uav {
+  width: 100%;
+  height: 1070px;
+  background-color: rgba(3, 55, 100, 0.5);
+  position: relative;
+  padding: 65px 65px 0 60px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.forest-right .forest-right-left .right-left-uav .uav-list-wrap {
+  width: auto;
+  height: 463px;
+  overflow: hidden;
+}
+.forest-right .forest-right-left .right-left-uav .uav-list-wrap .left-uav-list {
+  width: 730px;
+  height: 463px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  float: left;
+}
+.forest-right .forest-right-left .right-left-uav .uav-list-wrap .left-uav-list li {
+  width: 50%;
+  flex: 2 0 46%;
+  height: 194px;
+  padding: 0 14px 0 14px;
+}
+.forest-right .forest-right-left .right-left-uav .uav-list-wrap .left-uav-list li div {
+  height: 100%;
+  background: black;
+  border: 1px #04c8e0 dashed;
+  cursor: pointer;
+}
+.forest-right .forest-right-left .right-left-uav .left-uav-title {
+  width: 100%;
+  font-size: 46px;
+  font-weight: bold;
+  color: #00fffe;
+  text-align: center;
+  margin-bottom: 26px;
+}
+.forest-right .forest-right-right {
+  width: 978px;
+  height: auto;
+}
+.forest-right .forest-right-right .right-left-water {
+  width: 100%;
+  height: 780px;
+  background-color: rgba(3, 55, 100, 0.5);
+  position: relative;
+  margin-bottom: 83px;
+  padding: 78px 44px 55px 44px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.forest-right .forest-right-right .right-left-water .water-chart-btn {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 50px;
+}
+.forest-right .forest-right-right .right-left-water .water-chart-btn p {
+  height: 78px;
+  line-height: 78px;
+  font-size: 26px;
+  color: white;
+  text-align: center;
+  border: 1px #00ffff solid;
+  margin-right: 12px;
+  padding: 0 60px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-shadow: 0 0 20px #00ffff inset;
+  -o-box-shadow: 0 0 20px #00ffff inset;
+  -ms-box-shadow: 0 0 20px #00ffff inset;
+  -moz-box-shadow: 0 0 20px #00ffff inset;
+  -webkit-box-shadow: 0 0 20px #00ffff inset;
+}
+.forest-right .forest-right-right .right-left-water .water-chart {
+  width: 100%;
+  height: 546px;
+}
+.forest-right .forest-right-right .right-left-fire {
+  width: 100%;
+  height: 780px;
+  background-color: rgba(3, 55, 100, 0.5);
+  position: relative;
+  padding: 60px 50px;
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.forest-right .forest-right-right .right-left-fire .fire-chart {
+  height: 50%;
+  width: 100%;
+}
+.forest-message {
+  width: 482px;
+  height: auto;
+  position: absolute;
+  bottom: 50px;
+  right: 2177px;
+  margin-bottom: 26px;
+}
+/*植被信息  */
+.forest-vegetation {
+  width: 482px;
+  height: auto;
+  border: 3px #42c6ae solid;
+  background: #0a1f4e;
+  opacity: 0.6;
+  margin-bottom: 20px;
+}
+.forest-vegetation .forest-vegetation-title {
+  width: 100%;
+  height: 58px;
+  border-bottom: 1px #516798 solid;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.forest-vegetation .forest-vegetation-title .vegetation-title-icon {
+  width: 6px;
+  height: 25px;
+  background: #00fefe;
+  margin: 0 16px 0 22px;
+}
+.forest-vegetation .forest-vegetation-title .vegetation-title-text {
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+}
+.forest-vegetation .forest-vegetation-title .vegetation-title-close {
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  cursor: pointer;
+}
+.forest-vegetation .forest-vegetation-statices {
+  width: 100%;
+  height: auto;
+  line-height: 45px;
+  color: white;
+  font-size: 28px;
+  margin: 17px 0 28px 0 ;
+}
+.forest-vegetation .forest-vegetation-statices p {
+  margin-left: 14px ;
+}
+.forest-vegetation .forest-vegetation-statices p span {
+  color: #42c6ae;
+}
+.forest-vegetation .forest-vegetation-list {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.forest-vegetation .forest-vegetation-list li {
+  width: 128px;
+  flex-shrink: 0;
+  height: 116px;
+  margin-left: 24px;
+}
+.forest-vegetation .forest-vegetation-list li .li-num {
+  width: 100%;
+  height: 61px;
+  background: url("../../assets/images/forestFire/bg_vegetation.png") no-repeat no-repeat center;
+  background-size: 100% 100%;
+  font-size: 28px;
+  color: #01ffff;
+  text-align: center;
+  line-height: 61px;
+}
+.forest-vegetation .forest-vegetation-list li .li-num span {
+  font-size: 16px;
+}
+.forest-vegetation .forest-vegetation-list li .li-name {
+  height: 56px;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  line-height: 56px;
+}
+.forest-vegetation .forest-vegetation-hidden {
+  width: 100%;
+  height: 58px;
+  color: #01ffff;
+  font-size: 26px;
+  position: relative;
+}
+.forest-vegetation .forest-vegetation-hidden .vegetation-title-center {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-weight: bold;
+  line-height: 58px;
+}
+.forest-vegetation .forest-vegetation-hidden .vegetation-title-open {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  line-height: 58px;
+  height: 58px;
+  cursor: pointer;
+}
+.center-fixed-icon {
+  width: auto;
+  height: auto;
+  position: absolute;
+  bottom: 20px;
+  right: -120px;
+  width: 88px;
+  height: 32px;
+  z-index: 8800;
+}
+.center-fixed-icon .btn-video {
+  width: 88px;
+  height: 32px;
+  cursor: pointer;
+}
+.center-fixed-icon .btn-video img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

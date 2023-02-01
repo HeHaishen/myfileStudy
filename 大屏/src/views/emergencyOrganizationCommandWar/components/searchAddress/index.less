@@ -1,0 +1,58 @@
+@import "../../common.less";
+.warp-search{
+    width:auto;
+    height:68vh*@h;
+    display:flex;
+    position:fixed;
+    top:158vh*@h;
+    left:1130vw*@w;
+    align-items: center;
+    z-index:9000;
+    .map-icon-svg{
+        width:52vw*@w;
+        height:52vh*@h;
+        font-size:52vh*@h;
+        svg{
+            width:100%;
+            height:100%;
+        }
+    }
+    .show-address{
+        height:52vh*@h;
+        width:186vw*@w;
+        font-size:30vh*@h;
+        color:#30b1e8;
+        line-height: 52vh*@h;
+        margin-left:20vw*@w;
+        font-weight: bold;
+    }
+    .search-input{
+        width:382vw*@w;
+        height:62vh*@h;
+        background:#0a3174;
+        display:flex;
+        border:1px solid #00a0e8;
+        position:relative;
+        input{
+            display:block;
+            width:100%;
+            height:100%;
+            background:#0a3174;
+            font-size:30vh*@h;
+            color:white;
+            border:none;
+            padding:0 56vw*@w 0 30vw*@w;
+            .box-sizing();
+        }
+        img{
+            display:block;
+            width:32vw*@w;
+            height:32vh*@h;
+            position:absolute;
+            top:50%;
+            right:13vw*@w;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+    }
+}

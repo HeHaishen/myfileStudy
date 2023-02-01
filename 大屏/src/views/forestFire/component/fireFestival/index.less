@@ -1,0 +1,61 @@
+@import "../../../../components/APicture/common.less";
+@w:100 /9120;
+// @h:100 /1079;
+@h:100 /1890;
+*::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 2px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+*::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 2px;
+  box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+  background: #2c98ff;
+}
+*::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+  border-radius: 2px;
+  background: #030c22;
+}
+
+.fire-festival {
+  width: 2170vw * @w;
+  height: 1596vh * @h;
+  padding: 0 20vw * @w;
+  .box-sizing();
+  left: 0.4%;
+  top: 13%;
+  transform: none;
+  .list {
+    display: flex;
+    color: white;
+    font-size: 40vh * @h;
+    margin-top: 20vh * @h;
+    margin-bottom: 20vh * @h;
+    .child {
+      width: 176vw * @w;
+      height: 56vh * @h;
+      text-align: center;
+      margin-right: 40vw * @w;
+      .box-sizing();
+      line-height: 56vh * @h;
+      border: 2vh * @h solid #0066cc;
+    }
+
+    .active {
+      background-color: #0066cc;
+    }
+  }
+
+  .festival-chart {
+    width: 2130vw * @w;
+    height: 700vh * @h;
+    margin-bottom: 40vh * @h;
+    // margin: auto;
+  }
+  .table-list {
+    height: 600vh * @h;
+  }
+}

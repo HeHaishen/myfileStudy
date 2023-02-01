@@ -1,0 +1,60 @@
+<!--
+ * @Description: 
+ * @Version: 1.0
+ * @Autor: sude
+ * @LastEditors: hehaishen
+ * @Date: 2021-06-01 14:09:38
+ * @LastEditTime: 2021-08-28 14:01:00
+-->
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="./gzznGIS/Crystal/Widgets/CrystalWidgets.css" rel="stylesheet" type="text/css" />
+  <link href="./gzznGIS/Crystal/Widgets/crystal-navigation.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <style>#loading-mask{position:fixed;left:0;top:0;height:100%;width:100%;background:#fff;user-select:none;z-index:1000;overflow:hidden}.loading-wrapper{position:absolute;top:50%;left:50%;transform:translate(-50%,-100%)}.loading-dot{animation:antRotate 1.2s infinite linear;transform:rotate(45deg);position:relative;display:inline-block;font-size:64px;width:64px;height:64px;box-sizing:border-box}.loading-dot i{width:22px;height:22px;position:absolute;display:block;background-color:#1890ff;border-radius:100%;transform:scale(.75);transform-origin:50% 50%;opacity:.3;animation:antSpinMove 1s infinite linear alternate}.loading-dot i:nth-child(1){top:0;left:0}.loading-dot i:nth-child(2){top:0;right:0;-webkit-animation-delay:.4s;animation-delay:.4s}.loading-dot i:nth-child(3){right:0;bottom:0;-webkit-animation-delay:.8s;animation-delay:.8s}.loading-dot i:nth-child(4){bottom:0;left:0;-webkit-animation-delay:1.2s;animation-delay:1.2s}@keyframes antRotate{to{-webkit-transform:rotate(405deg);transform:rotate(405deg)}}@-webkit-keyframes antRotate{to{-webkit-transform:rotate(405deg);transform:rotate(405deg)}}@keyframes antSpinMove{to{opacity:1}}@-webkit-keyframes antSpinMove{to{opacity:1}}</style>
+</head>
+
+<body>
+  <noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled.
+        Please enable it to continue.</strong>
+  </noscript>
+  <div id="app">
+    <div id="loading-mask">
+      <div class="loading-wrapper">
+        <span class="loading-dot loading-dot-spin"><i></i><i></i><i></i><i></i></span>
+      </div>
+    </div>
+  </div>
+  <!-- built files will be auto injected -->
+  <!-- 关掉二维的地图，用Crystal二三维一体化框架 -->
+  <script charset="utf-8" src="https://map.qq.com/api/js?v=2.exp&key=27UBZ-2DWCP-XAYDM-VYOM2-DRU2Z-EMFL5"></script> 
+  <style>
+    body,html{
+      height: 100%;
+      width: 100%;
+      overflow: auto;
+    }
+  </style>
+   <script src="./socketIo/socket.io.js"></script>
+  <script type="text/javascript" src="./gzznGIS/Content/config.js" ></script>
+  <script type="text/javascript" src="./gzznGIS/Content/data.js" ></script>
+  <script type="text/javascript" src="./gzznGIS/Content/turf.min.js" ></script>
+  <script type="text/javascript" src="./gzznGIS/Content/easyui/jquery.min.js"></script>
+  <script type="text/javascript" src="./gzznGIS/Content/layui/layui.all.js"></script>
+  <script type="text/javascript" src="./gzznGIS/Crystal/Crystal.js"></script>
+  <script type="text/javascript" src="./gzznGIS/Content/gzznCore.js" ></script>
+  <script type="text/javascript" src="./gzznGIS/Content/CrystalHeatmap.js" ></script>
+  <script type="text/javascript" src="./gzznGIS/Content/CrystalNavigation.umd.js" ></script>
+</body>
+
+</html>

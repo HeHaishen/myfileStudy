@@ -1,0 +1,206 @@
+@import "../common.less";
+*::-webkit-scrollbar {
+    /*滚动条整体样式*/
+    width: 2px; /*高宽分别对应横竖滚动条的尺寸*/
+    height: 1px;
+  }
+  *::-webkit-scrollbar-thumb {
+    /*滚动条里面小方块*/
+    border-radius: 2px;
+    box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+    background: #2c98ff;
+  }
+  *::-webkit-scrollbar-track {
+    /*滚动条里面轨道*/
+    box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+    border-radius: 2px;
+    background: #030c22;
+  }
+.video-tree-list{
+    min-width: 400vw * @w;
+    height: 640vh * @h;
+    width:auto;
+    /deep/ .layer-contents {
+      width: 100%;
+      height: calc(100% - 30vh * @h);
+      overflow: auto;
+    }
+}
+/deep/.c-popup-layer{
+  min-width: 700vw*@w;
+  height:auto;
+  padding: 10vh*@h;
+  width:auto;
+}
+.detail-content{
+    width:100%;
+    height:100%;
+    overflow: hidden;
+    display: flex;
+    .chose-type{
+        flex-shrink: 0;
+        min-height: 100%;
+        min-width:130vw*@w;
+        width:auto;
+        height:auto;
+        margin-top:8vh*@h;
+        border-right:1px solid #00ffff;
+        padding: 0 10vw*@w;
+        .box-sizing();
+        .btns-div{
+            // width:160vw*@w;
+            width:auto;
+            height:36vh*@h;
+            line-height: 36vh*@h;
+            font-size:24vh*@h;
+            color:white;
+            border:1px solid #00ffff;
+            padding:0 14vw*@w;
+            .box-sizing();
+            cursor: pointer;
+            margin-bottom: 8vw*@w;
+            text-align: center;
+        }
+        .btn-active{
+            .box-shadow();
+        }
+    }
+    .content-right{
+      height:100%;
+      overflow: auto;
+      min-width:600vw*@w;
+      width:auto;
+      padding: 10vh*@h 14vw*@w;
+      .box-sizing();
+        // flex-shrink: 0;
+      //  width:60%;
+        /deep/ span {
+            color: white;
+            font-size: 18vh * @h;
+            line-height: 28vh * @h;
+          }
+          & /deep/ .ant-tree-switcher {
+            font-size: 18vh * @h;
+            line-height: 28vh * @h;
+          }
+          & /deep/ .ant-tree-switcher i {
+            font-size: 18vh * @h;
+            line-height: 28vh * @h;
+          }
+          & /deep/ .ant-tree-switcher .ant-tree-switcher-icon {
+            font-size: 18vh * @h !important;
+            line-height: 28vh * @h;
+          }
+          & /deep/ .ant-tree-node-selected {
+            background-color: transparent;
+          }
+          /deep/ .ant-tree-node-selected span {
+            color: #2de9e8;
+          }
+          /deep/ .ant-tree-switcher {
+            width: auto;
+          }
+          /deep/ .ant-tree-node-content-wrapper .ant-tree-title {
+            padding: 10vh * @h 0;
+            .box-sizing();
+          }
+          /deep/ .ant-tree > li:first-child {
+            margin-top: 10vh * @h;
+          }
+          /deep/ .ant-tree li {
+            margin: 10vh * @h 0;
+          }
+          /deep/ .ant-tree li span.ant-tree-checkbox{
+              padding:0 0;
+            //   width:24vw*@w;
+            //   height:24vw*@w;
+          }
+          /deep/ .ant-tree-checkbox-inner{
+            width:24vh*@h;
+            height:24vh*@h;
+            font-size:18vh*@h;
+            line-height: 24vh*@h;
+          }
+        .tree-search-div{
+          width:100%;
+          height:auto;
+          .right-content-search {
+            width: 100%;
+            height: 67vh * @h;
+            display: flex;
+            align-items: center;
+            padding-left: 38vw * @w;
+            .box-sizing();
+            div {
+              width: auto;
+              min-height: 34vh * @h;
+              border: 1px #3573fc solid;
+              display: flex;
+              align-items: center;
+              input {
+                display: flex;
+                width: 276vw * @w;
+                height: 100%;
+                border: 0 solid #fff;
+                color: white;
+                background: #062447;
+                font-size: 16vh * @h;
+                margin: 2vh * @h 2vh * @h 2vh * @h 2vh * @h;
+              }
+              span {
+                display: block;
+                height: 100%;
+                width: 84vw * @w;
+                height: 30vh * @h;
+                background: #074990;
+                color: white;
+                margin: 2vh * @h 2vh * @h 2vh * @h 2vh * @h;
+                font-size: 16vh * @h;
+                line-height: 30vh * @h;
+                text-align: center;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .tree-key-search{
+          width:100%;
+          height:440vh*@h;
+        }
+        .tree-change-pages{
+          padding:10vh*@h 0 ;
+          display: flex;
+          justify-content: flex-end;
+          .box-sizing();
+        }
+      /deep/  .c-talbe-select{
+          width:18vh*@h;
+          height:18vh*@h;
+          border:1px solid #00ffff;
+          text-align: center;
+          line-height: 18vh*@h;
+          font-size:14vh*@h;
+          font-weight: bold;
+          color:white;
+          cursor: pointer;
+        }
+    }
+}
+
+.show-video-icon{
+  margin-left:10vw*@w;
+  font-size:28vh*@h;
+}
+/* 按钮 */
+.click-btn{
+  height:auto;
+  width: auto;
+  padding:8vh*@h 16vw*@w;
+  .box-sizing();
+  background:rgb(54, 152, 243,0.8);
+  color:white;
+  cursor: pointer;
+  font-size:14vh*@h;
+  margin-left:10vw*@w;
+}
+

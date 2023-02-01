@@ -1,0 +1,89 @@
+@import "../../../common.less";
+.base-message{
+    width:798vw*@w;
+    height:auto;
+    .people{
+        width:100%;
+        height:348vh*@h;
+        border:1px #0b3567 solid;
+        box-shadow:0  0 10vh*@h  rgba(10,53,104,1) inset;
+        margin-bottom:21vh*@h;
+        ul{
+            padding:33vh*@h 22vw*@w 0 0; 
+            .box-sizing();
+            li{
+                width:100%;
+                height:119vh*@h;
+                margin-bottom:34vh*@h;
+                display:flex;
+                justify-content: flex-start;
+                div{
+                    height:100%;
+                    display:flex;
+                }
+                div:nth-child(1){
+                    width:243vw*@w;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        display:block;
+                        height:112vh*@h;
+                    }
+                    
+                }
+                div:nth-child(2){
+                    justify-content: flex-start;
+                    align-items: center;
+                    width:190vw*@w;
+                    color:white;
+                    font-size:33vh*@h;
+                }
+                div:nth-child(3){
+                    width:336vw*@w;
+                    justify-content: center;
+                    align-items: center;
+                    span{
+                        display:block;
+                        color:#fee844;
+                        font-size:39vh*@h;
+                        font-family: "hanyicusongti";
+                    }
+                    label{
+                        display:block;
+                        color:#f4f5f7;
+                        font-size:33vh*@h;
+                    }
+                }
+            }
+        }
+    }
+    .message{
+        width:100%;
+        height:auto;
+        ul{
+            width:100%;
+            height:auto;
+            li{
+                width:100%;
+                height:72vh*@h;
+                border-bottom:1px solid #042f62;
+                margin-bottom:26vh*@h;
+                display:flex;
+                justify-content: space-between;
+                .li-title{
+                    color:#19a4ff;
+                    font-size:33vh*@h;
+                    text-align: left;
+                }
+                .li-num{
+                    color:#fee844;
+                    font-size:39vh*@h;
+                    font-family: "hanyicusongti";
+                    text-align: right;
+                    padding-right:73vw*@w;
+                    .box-sizing();
+                }
+            }
+        }
+    }
+}

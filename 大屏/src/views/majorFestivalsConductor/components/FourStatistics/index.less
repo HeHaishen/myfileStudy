@@ -1,0 +1,122 @@
+@import "../../common.less";
+.FourContent{
+  ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18vh *@h;
+    li{
+      width: 220vw *@w;
+      min-height: 218vh *@h;
+      height:auto;
+      text-align: center;
+      padding: 15vh *@h  15vw *@w;
+      cursor: pointer;
+      position: relative;
+      .box-sizing();
+      img{
+          width: 90vw *@w;
+          height: 100vh *@h;
+          display: block;
+          margin: auto;
+      } 
+      p{
+        margin-top: 17vh *@h;
+        font-size: 24vh *@h;
+        color: #fff;
+      }
+      span{
+        display: block;
+        margin-top: 17vh *@h;
+        font-size: 30vh *@h;
+        font-weight: 600;
+      }
+       .selected {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        background: none;
+        img {
+          width: 150vw * @w;
+          height: 150vh * @h;
+        }
+      }
+    }
+    :nth-child(1){
+        background: url(../../../../assets/images/majorFestivalsConductor/Fourbg1.png)center no-repeat ;
+         background-size: 100% 100%;
+      span{
+      color: #2892FF;
+      }
+      img,p,span{
+        background-image: none;
+      }
+    }
+    :nth-child(2){
+    
+        background: url(../../../../assets/images/majorFestivalsConductor/Fourbg2.png)center no-repeat;
+        background-size: 100% 100%;
+      span{
+        color: #E27B36;
+        background-image: none;
+      }
+      img,p,span{
+        background-image: none;
+      }
+     
+  
+    }
+    :nth-child(3){
+      span{
+      color:#01EE9C;
+      }
+      background: url(../../../../assets/images/majorFestivalsConductor/Fourbg3.png)center no-repeat ;
+      background-size: 100% 100%;
+      img,p,span{
+        background-image: none;
+      }
+    }
+    :nth-child(4){
+      span{
+      color: #FDEC77;
+      }
+      background: url(../../../../assets/images/majorFestivalsConductor/Fourbg4.png)center no-repeat ;
+      background-size: 100% 100%;
+      img,p,span{
+        background-image: none;
+      }
+    }
+
+  }
+}
+  
+
+/deep/.c-model-box{
+   min-height: 345vh *@h;
+   padding: 20vh *@h  15vw *@w 25vh *@h 20vw *@w;
+    // background: url(../../../../assets/images/majorFestivalsConductor/FourBG.png) no-repeat center;
+    // background-size: 100% 100% ;
+    position: absolute;
+    left: 1;
+    top: 500vh *@h;
+    .box-sizing();
+    .text{
+      font-weight: 600;
+    }
+    .model-header{
+  
+      .box-sizing();
+      // &:after {
+      //   content: " ";
+      //   display: block;
+      //   width: 76vw *@w;
+      //   height: 6vh *@h;
+      //   position: absolute;
+      //   left: 0;
+      //   bottom: -1;
+      //   background-color:#1C76FE ;
+      //   font-size: 0;
+      // }
+    }
+}

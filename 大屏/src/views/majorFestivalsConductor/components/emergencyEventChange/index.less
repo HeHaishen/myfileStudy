@@ -1,0 +1,81 @@
+@import "../../common.less";
+.major-contents .c-mybox-position{
+    top:116vh*@h;
+    padding-bottom:0;
+}
+.emergency-event-content{
+    width:940vw*@w;
+    height :294vh*@h;
+    margin:0 auto;
+    display: flex;
+    .event-inner{
+        width:100%;
+        height:284vh*@h;
+        ul{
+            width:100%;
+            height:100%;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            li{
+                width:444vw*@w;
+                height:122vh*@h;
+                display:flex;
+                background:url("../../../../assets/images/majorFestivalsConductor/bg_event2.png") center no-repeat;
+                background-size:100% 100%;
+                justify-content: flex-start;
+                padding-top:21vh*@h;
+                .box-sizing();
+                cursor: pointer;
+                div{
+                    height:100%;
+                    p{
+                        width:100%;
+                        text-align: center;
+                    }
+                }
+                div:nth-child(2){
+                    width:236vw*@w;
+                    p{
+                        font-size:34vh*@h;
+                        height:100%;
+                        line-height: 100vh*@h;
+                        font-weight: bold;
+                    }
+                }
+                div:nth-child(1){
+                    width:208vw*@w;
+                    .icon{
+                        height:55vh*@h;
+                        display:flex;
+                        justify-content: center;
+                      img{
+                        display:block;
+                        height:55vh*@h;
+                      }  
+                    }
+                    .name{
+                        height:48vh*@h;
+                        width:100%;
+                        text-align: center;
+                        color:white;
+                        line-height: 48vh*@h;
+                        font-size:24vh*@h;
+                    }
+                }
+            }
+        }
+    }
+    .rightTitle {
+        position: absolute;
+        top: 0;
+        right: 30vw * @w;
+        line-height: 64vh * @h;
+        color: white;
+        font-size: 22vh * @h;
+        .more {
+          cursor: pointer;
+        }
+      }
+}

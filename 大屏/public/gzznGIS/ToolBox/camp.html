@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>粒子效果</title>
+<link href="../Content/easyui/themes/default/easyui3.css" rel="stylesheet" type="text/css" />
+<link href="../Content/easyui/themes/icon.css" rel="stylesheet" type="text/css" />
+<script src="../Content/easyui/jquery.min.js" type="text/javascript"></script>
+<script src="../Content/easyui/jquery.easyui.min.js" type="text/javascript"></script>
+<style type="text/css">
+body {
+	margin: 0;
+	padding: 5px;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #555;
+}
+.datagrid-row-selected{
+	background: rgba(30,36,50,.8);
+}
+.datagrid-row{height: 32px;}
+</style>
+</head>
+<body style="text-align: center; background-color:transparent;">
+  	<table id="dg"></table>
+	<script type="text/javascript">
+		$('#dg').datagrid({
+			columns:[[
+				{field:'name',title:'粒子名称',width:225,align:'center'},
+				{field:'flag',title:'标识',width:45,align:'center',hidden:'true'},
+				{field:'operation',title:'操作',width:80,align:'center',formatter:function(value,row,index){
+					var str = '<a href="#" name="opera" class="easyui-linkbutton" onclick="clickButton('+index+')"></a>';
+					return str;
+				}},
+			]],
+			data: [
+				{name:'火',flag:1},{name:'烟',flag:2},{name:'雨',flag:3},{name:'雾',flag:4},{name:'雪',flag:5}
+			],
+			onLoadSuccess:function(data){
+				$("a[name='opera']").linkbutton({text:'添加',plain:true,iconCls:'icon-ok'});
+			},
+			singleSelect:true,
+			onClickRow:function(rowIndex, rowData){
+				rowID = rowIndex;
+			}
+	    });
+		function clickButton(index){
+			var row =$('#dg').datagrid('getRows')[index];
+			if(row.flag == 1 || row.flag == 2){
+				parent.pGzznCore.measureInit({'Flag':9,'Unit':'auto','Data':row.flag});	
+			}
+			else{
+				parent.pGzznCore.particleSwitch({'Flag':9,'Unit':'auto','Data':row.flag});	
+			}
+		}
+		var rowID = 0;
+	</script>
+</body>
+</html>

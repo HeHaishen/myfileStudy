@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>layer</title>
+<link href="../Content/easyui/themes/default/easyui.css" rel="stylesheet" type="text/css" />
+<link href="../Content/easyui/themes/icon.css" rel="stylesheet" type="text/css" />
+<script src="../Content/easyui/jquery.min.js" type="text/javascript"></script>
+<script src="../Content/easyui/jquery.easyui.min.js" type="text/javascript"></script>
+<style type="text/css">
+html {
+	height: calc(100% - 10px);
+}
+
+body {
+	margin: 0;
+	padding: 5px;
+	height: 100%;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+	background-color: #555;
+}
+#u316 {
+    position: absolute;
+    height: 30px;
+	left: 10px;
+	width: 80%;
+}
+#u316_input {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 30px;
+	font-family: 'Arial Normal', 'Arial';
+	font-weight: 400;
+	font-style: normal;
+	font-size: 13px;
+	text-decoration: none;
+	color: #868686;
+	text-align: left;
+	padding: 1px 0px 1px 0px;
+    box-sizing: border-box;
+    background-color:transparent;
+}
+#u314 {
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 30px;
+	height: 30px;
+	color: #868686;
+}
+#u314_img {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: 23px;
+    height: 25px;
+}
+.tree-title {
+  font-size: 28px;
+}
+.tree-node {
+  height: 28px;
+}
+.tree-node {
+  padding: 2px;
+}
+</style>
+</head>
+<body>
+	<div class="easyui-panel"style="background-color: transparent; color: #fff; border: 0;">
+		<div id="u316" class="ax_default text_field1">
+      		<input id="u316_input" type="text" autocomplete="off" value="" maxlength="-2147483648" style="color: #fff;border:1px solid #add9c0" placeholder="请输入资源名称" οnkeypress="onSearch();">
+    	</div>
+    	<div id="u314" class="ax_default" style="cursor: pointer;">
+	       <img id="u314_img" title="查询" src="../Image/u314.svg" tabindex="0" style="">
+	    </div>
+		<ul id="tt" class="easyui-tree"	data-options="url:'../Model/tree_data216.json',method:'get',animate:true,checkbox:true,onContextMenu: function(e,node){
+					e.preventDefault();
+					$(this).tree('select',node.target);
+					$('#mm').menu('show',{
+						left: e.pageX,
+						top: e.pageY
+					});
+				}" style="margin-top: 40px;">
+		</ul>
+	</div>
+	<div id="mm" class="easyui-menu" style="width:120px;">
+		<div id="dStatistics" onclick="dStatistics()" data-options="iconCls:'icon-ok'">地区统计</div>
+		<div id="yStatistics" onclick="yStatistics()" data-options="iconCls:'icon-ok'">园区统计</div>
+		<div id="closeStatistics" onclick="closeStatistics()" data-options="iconCls:'icon-remove'">取消统计</div>
+		<div class="menu-sep"></div>
+		<div id="cStatistics" onclick="cStatistics()" data-options="iconCls:'icon-edit'">圆形统计</div>
+		<div id="rStatistics" onclick="rStatistics()" data-options="iconCls:'icon-edit'">矩形统计</div>
+		<div id="pStatistics" onclick="pStatistics()" data-options="iconCls:'icon-edit'">多边形统计</div>
+	</div>
+	<script type="text/javascript">
+		$('#tt').tree({
+			onClick : function(node) {
+				if(node.checked){
+					parent.pGzznCore.lookAt(node.attributes.ObjFlag);
+				}
+			},
+			onCheck : function(node,checked) {
+				if(node.attributes!=undefined&&node.attributes.ObjFlag!=undefined){
+					if(node.attributes.TypeFlag==0){
+						parent.pGzznCore.wmsViewer(node.attributes.ObjFlag,checked);
+					}
+					else if(node.attributes.TypeFlag==1){
+						parent.pGzznCore.mapViewer(node.attributes.ObjFlag,checked);
+					}
+					else{
+						parent.pGzznCore.dataSourcesViewer(node.attributes.ObjFlag,checked);
+					}
+				}
+				else {
+					var childrenNodes = $('#tt').tree('getChildren',node.target);
+					if(checked){
+						for(var i=0;i<childrenNodes.length;i++){
+							if(childrenNodes[i].attributes!=undefined&&childrenNodes[i].attributes.ObjFlag!=undefined){
+								if(childrenNodes[i].attributes.TypeFlag==0){
+									parent.pGzznCore.wmsViewer(childrenNodes[i].attributes.ObjFlag,false);
+								}
+								else if(childrenNodes[i].attributes.TypeFlag==1){
+									parent.pGzznCore.mapViewer(childrenNodes[i].attributes.ObjFlag,false);
+								}
+								else{
+									parent.pGzznCore.dataSourcesViewer(childrenNodes[i].attributes.ObjFlag,false);
+								}
+							}
+						}
+					}
+					for(var i=0;i<childrenNodes.length;i++){
+						if(childrenNodes[i].attributes!=undefined&&childrenNodes[i].attributes.ObjFlag!=undefined){
+							if(childrenNodes[i].attributes.TypeFlag==0){
+								parent.pGzznCore.wmsViewer(childrenNodes[i].attributes.ObjFlag,checked);
+							}
+							else if(childrenNodes[i].attributes.TypeFlag==1){
+								parent.pGzznCore.mapViewer(childrenNodes[i].attributes.ObjFlag,checked);
+							}
+							else{
+								parent.pGzznCore.dataSourcesViewer(childrenNodes[i].attributes.ObjFlag,childrenNodes[i].checked);
+							}
+						}
+					}
+				}
+			}
+		});
+		var iLoop;
+		$(function(){
+			//iLoop = window.setInterval(iTreeHeight, 50);
+			document.getElementsByClassName('easyui-panel')[0].style.height = (window.innerHeight-10) +'px';
+		});
+		function iTreeHeight(){
+			var pNode = $('#tt').tree('find', 12);
+		    if (pNode != null) {
+		        window.clearInterval(iLoop);
+		        $.ajax({
+		        	url:'../Content/easyui/tree_bim.json',
+		        	cache: false,
+			        async: true,
+			        success: function(data) {
+			        	$('#tt').tree('append', {
+							parent: pNode.target,
+							data: data
+						});
+			        },
+			        error: function(data) {
+			        	console.log("error");
+			        }
+		        });
+		    }
+		}
+		document.getElementById('u314').addEventListener('click', function () {
+			var selected = $('#tt').tree('getSelected');
+			if(selected ==null){
+				selected = $('#tt').tree('find',1);
+			}
+			var arrNode = getChildren(selected.id);
+			var arrFlag = [];
+			for(var i = 0;i< arrNode.length;i++){
+				if(arrNode[i].attributes!=undefined){
+					arrFlag.push(arrNode[i].attributes.ObjFlag);
+				}
+			}
+			if(arrNode.length==0){
+				if(selected.attributes!=undefined){
+					arrFlag.push(selected.attributes.ObjFlag);
+				}
+			}
+			if($('#u316_input').val()!=''){
+				parent.pGzznCore.QueryLocation($('#u316_input').val(),arrFlag);	
+			}
+			else{
+				alert('请输入企业名称');
+			}
+	    }, false);
+		$('#u316_input').bind('keydown', function (event) {
+			var event = window.event || arguments.callee.caller.arguments[0];
+			if (event.keyCode == 13){
+			   var selected = $('#tt').tree('getSelected');
+				if(selected ==null){
+					selected = $('#tt').tree('find',1);
+				}
+				var arrNode = getChildren(selected.id);
+				var arrFlag = [];
+				for(var i = 0;i< arrNode.length;i++){
+					if(arrNode[i].attributes!=undefined){
+						arrFlag.push(arrNode[i].attributes.ObjFlag);
+					}
+				}
+				if(arrNode.length==0){
+					if(selected.attributes!=undefined){
+						arrFlag.push(selected.attributes.ObjFlag);
+					}
+				}
+				if($('#u316_input').val()!=''){
+					parent.pGzznCore.QueryLocation($('#u316_input').val(),arrFlag);	
+				}
+				else{
+					alert('请输入资源名称');
+				}
+			}
+		});
+		function appendTreeNode(sJson){
+			var selected = $('#tt').tree('find', sJson.uID);
+			if(selected.attributes==undefined){
+				var subNodes = getSubChildren(selected.id);
+				var strID = subNodes[subNodes.length-1].id + 1;
+				if(sJson.uFlag==0){
+					$('#tt').tree('append', {
+						parent: selected.target,
+						data: [{
+							"id":strID,
+							"text":sJson.sName,
+							"iconCls":sJson.sIcon,
+							"checked":"true",
+							"attributes":{
+								"ObjFlag":sJson.sFlag,
+								"TypeFlag":0
+							}
+						}]
+					});
+					parent.pGzznCore.setsFlagArray(sJson.sFlag,strID);
+				}
+				else if(sJson.uFlag==1){
+					$('#tt').tree('append', {
+						parent: selected.target,
+						data: [{
+							"id":strID,
+							"text":sJson.sName,
+							"iconCls":sJson.sIcon,
+							"checked":"true",
+							"attributes":{
+								"ObjFlag":sJson.sFlag,
+								"TypeFlag":1
+							}
+						}]
+					});
+					parent.pGzznCore.setdFlagArray(sJson.sFlag,strID);
+				}
+			}
+		}
+		function delTreeNode(uID){
+			var selected = $('#tt').tree('find', uID);
+			$('#tt').tree('remove',selected.target);
+		}
+		function setTreeNode(uID){
+			var selected = $('#tt').tree('find', uID);
+			$('#tt').tree('check',selected.target);
+		}
+		function getTreeNodeState(uID){
+			var selected = $('#tt').tree('find', uID);
+			return selected.checked;
+		}
+		function getChildren(id){
+		    var $tree = $('#tt');
+		    var node = $tree.tree('find',id);
+		    var childrenNodes = $tree.tree('getChildren',node.target);
+		    return childrenNodes;
+		}
+		function getSubChildren(id){
+		    var $tree = $('#tt');
+		    var node = $tree.tree('find',id);
+		    var subNodes = [];
+		    $(node.target).next().children().children("div.tree-node").each(function(){
+		        subNodes.push($tree.tree('getNode',this));
+		    });
+		   return subNodes;
+		}
+		function cStatistics(){
+			parent.pGzznCore.measureInit(10);
+		}
+		function rStatistics(){
+			parent.pGzznCore.measureInit(11);
+		}
+		function pStatistics(){
+			parent.pGzznCore.measureInit(5,true);
+		}
+		var dataCityCode={"44":{"荔湾区":"416","越秀区":"339","海珠区":"98","天河区":"91","白云区":"84","黄埔区":"66","番禺区":"59","花都区":"25","南沙区":"23","从化区":"22","增城区":"18"}};
+		var dataCountyCode={"44":{"昌华街道":"416","茶滘街道":"339","多宝街道":"98","中南街道":"91","花地街道":"84","石围塘街道":"66","沙面街道":"59","彩虹街道":"25","南源街道":"23","金花街道":"22","东漖街道":"18","海龙街道":"416","西村街道":"339","华林街道":"98","白鹤洞街道":"91","站前街道":"84","逢源街道":"66","岭南街道":"59","冲口街道":"25","东沙街道":"23","龙津街道":"22","桥中街道":"18"}};
+		var dataCityMinMaxCode={"44":{"Min":18,"Max":416}};
+		function dStatistics(){
+			/**调用服务得到统计的数据，如果没有则先模拟
+			$.ajax({
+		       	url:'../Content/easyui/tree_bim.json',
+		       	cache: false,
+			    async: true,
+			    success: function(data) {
+					parent.pGzznCore.stretchArea(data);
+			    },
+			    error: function(data) {
+			       	
+				}
+		    }); */
+			
+			parent.pGzznCore.stretchArea(dataCityCode['44'],dataCityMinMaxCode['44']);
+		}
+		function closeStatistics(){
+			parent.pGzznCore.closeStatistics();
+		}
+		function yStatistics(){
+			parent.pGzznCore.stretchYuanArea(dataCountyCode['44'],dataCityMinMaxCode['44']);
+		}
+	</script>
+</body>
+</html>

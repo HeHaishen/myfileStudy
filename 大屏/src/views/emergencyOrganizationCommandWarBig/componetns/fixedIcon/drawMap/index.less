@@ -1,0 +1,111 @@
+@import "../common.less";
+.show-draw-layer{
+    width:600vw*@w;
+    min-height:400vh*@h;
+    height:auto;
+    background: rgba(0,0,0,0.6);
+    position:absolute;
+    top:72vh*@h;
+    left:0;
+    padding:18vh*@h 18vw*@w;
+    .box-sizing();
+    .show-draw-title{
+        width:100%;
+        height:38vh*@h;
+        line-height:38vh*@h;
+        font-size:28vh*@h;
+        color:white;
+    }
+    ul{
+        width:100%;
+        height:auto;
+        display:flex;
+        justify-content: space-around;
+        padding:14vh*@h 0;
+        .box-sizing();
+        .km-li{
+            padding:8vh*@h 12vw*@w;
+            .box-sizing();
+            font-size:24vh*@h;
+            color:white;
+            border:1px solid #00a0e8;
+        }
+        .click-li{
+            border:1px solid #00fff1;
+            color:#00fff1;
+        }
+        .icon-li{
+            width: 90vw*@w;
+            height:75vh*@h;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            svg{
+                display:block;
+                width:100%;
+                height:100%;
+            }
+        }
+        
+    }
+}
+.chose-color{
+    width:100%;
+    height:auto;
+    display:flex;
+    position: relative;
+    p{
+        width:30%;
+        color:white;
+        font-size:24vh*@h;
+    }
+    span{
+        display:block;
+        width:55vw*@w;
+        height:40vh*@h;
+        background:red;
+    }
+    .chose-color-list{
+        width:400vw*@w;
+        height:250vh*@h;
+        position:absolute;
+        top:55vh*@h;
+        left:0;
+        background:rgba(0,0,0,0.8);
+        border:1px solid #00a0e8;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap:wrap;
+        li{
+            width:50vw*@h;
+            height:40vh*@h;
+        }
+        .click-li{
+            border:1px solid #00fff1;
+            color:#00fff1;
+        }
+    }
+    
+}
+.btn-wrap{
+    width:100%;
+    height:auto;
+    padding:18vh*@h 18vw*@w;
+    .box-sizing();
+    display:flex;
+    justify-content: center;
+    p{
+        width:30%;
+        height:60vh*@h;
+        background:#00a0e8;
+        color:white;
+        font-size:28vh*@h;
+        line-height: 60vh*@h;
+        margin-right:28vw*@h;
+        text-align: center;
+    }
+    p:hover{
+        background:#0d4661;
+    }
+}

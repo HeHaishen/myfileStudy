@@ -1,0 +1,55 @@
+.event-details {
+  color: #fff;
+  border: 2px solid #015ebd;
+  width: 100%;
+  height: 983px;
+  position: relative;
+  background-color: #001941;
+}
+.public-content {
+  font-size: 32px;
+  height: 810px;
+  overflow: auto;
+}
+.list > li {
+  display: flex;
+  margin-bottom: 30px;
+}
+.list > li .li-label {
+  width: 210px;
+  flex-shrink: 0;
+}
+.list > li .li-label label {
+  display: inline-block;
+  width: 100%;
+  text-align: right;
+  font-size: 31px;
+}
+.list > li .li-content {
+  width: calc(100% - 188px);
+  font-size: 31px;
+  display: flex;
+}
+.list > li .li-content .text-btn {
+  color: #1deafd;
+  cursor: pointer;
+}
+.list > li:nth-of-type(1) .li-content {
+  color: #1deafd;
+}
+.list .li-gird {
+  width: 50%;
+}
+.detail-btn {
+  position: absolute;
+  top: 90px;
+  right: 20px;
+  width: 90px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #185bcc;
+  background-color: #013ba9;
+  cursor: pointer;
+}

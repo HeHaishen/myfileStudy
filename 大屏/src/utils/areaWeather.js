@@ -1,0 +1,1 @@
+export const areaWeather = '440100000000'

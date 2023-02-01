@@ -1,0 +1,102 @@
+@import "../common.less";
+.c-page-all {
+    .ant-pagination-prev {
+        min-width:32vw*@w;
+        height:32vh*@h;
+        line-height: 32vh*@h;
+      .ant-pagination-item-link {
+        color: white;
+        background-color: rgba(2, 14, 35, 0.8);
+        font-size: 18vh @h;
+      
+      }
+     
+    }
+    .ant-pagination-item {
+        background: rgba(2, 14, 35, 0.8);
+        font-size: 18vh @h;
+        min-width:32vw*@w;
+        height:32vh*@h;
+        line-height: 32vh*@h;
+        a {
+          color:#ffffff;
+        }
+    }
+   
+  
+    .ant-pagination-next {
+        min-width:32vw*@w;
+        height:32vh*@h;
+        line-height: 32vh*@h;
+        .ant-pagination-item-link {
+          color:#ffffff;
+            background-color: rgba(2, 14, 35, 0.8);
+            font-size: 18vh @h;
+          }
+    }
+    .ant-pagination-jump-next{
+      font-size: 18vh* @h;
+      color:#ffffff;
+      .ant-pagination-item-link{
+        .ant-pagination-item-container{
+          font-size: 18vh* @h;
+          color:#ffffff;
+          i{
+            font-size: 18vh* @h;
+            color:#ffffff;
+          }
+          span{
+            font-size: 18vh* @h;
+            color:#ffffff;
+          }
+        }
+      }
+    }
+    .ant-pagination-jump-prev{
+      font-size: 18vh* @h;
+      color:white;
+      .ant-pagination-item-link{
+        .ant-pagination-item-container{
+          font-size: 18vh* @h;
+          color:#ffffff;
+          i{
+            font-size: 18vh* @h;
+            color:#ffffff;          
+;
+          }
+          span{
+            font-size: 18vh* @h;
+            color:#ffffff;
+          }
+        }
+      }
+    }
+
+    .ant-pagination-jump-next-custom-icon{
+      .ant-pagination-item-link{
+        .ant-pagination-item-container{
+          .ant-pagination-item-ellipsis{
+            color:white;
+            font-size: 18vh* @h;
+          }
+        }
+      }
+    }
+  }
+  /deep/ .ant-pagination-item-ellipsis{
+    color:white;
+    font-size:18vh*@h;
+  }
+  /deep/ .ant-pagination-item-container i{
+    font-size: 18vh* @h;
+    color:#ffffff;
+  }
+  /deep/ .ant-pagination-item-container .ant-pagination-item-ellipsis {
+    font-size: 18vh *@h;
+    color:#ffffff;
+  }
+  /deep/ .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis,/deep/ .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis{
+    color:white;
+    font-size: 18vh *@h;
+
+  }

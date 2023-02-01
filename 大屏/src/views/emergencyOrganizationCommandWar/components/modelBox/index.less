@@ -1,0 +1,41 @@
+@import "../../common.less";
+.c-model-box{
+    width:986vw*@w;
+    height:auto;
+    background:rgba(5,24,57,0.8);
+    position: fixed;
+    padding:6vw*@w 6vh*@h;
+    left:32vw*@w;
+    top:0;
+    z-index:888;
+    .box-sizing();
+    .model-header{
+        width:940vw*@w;
+        height:64vh*@h;
+        // border-bottom:2vh*@h solid #0b2a58;
+        border-bottom:2vh*@h solid #223f6a;     
+        margin:0 auto;
+        .text{
+            width:auto;
+            height:100%;
+            line-height: 64vh*@h;
+            color:white;
+            font-size:32vh*@h;
+            position:relative;
+        }
+        .text:after{
+            content: " ";
+           // border:2px solid #1b77ff;
+            background:#1b77ff;
+            width:10%;
+            height:5vh*@h;
+            position:absolute;
+            left:0;
+            bottom:0;
+        }
+    }
+    .model-content{
+        width:100%;
+        height:auto;
+    }
+}

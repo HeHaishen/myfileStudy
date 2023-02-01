@@ -1,0 +1,1026 @@
+@w:100 /5760;
+// @h:100 /1079;
+@h:100 /1080;
+@color:rgb(0,255,255);
+.box-sizing() {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+p{
+  margin-bottom: 0;
+}
+.border-radisu(@x, @y) {
+  border-radius: @x @y;
+  -o-border-radius: @x @y;
+  -ms-border-radius: @x @y;
+  -moz-border-radius: @x @y;
+  -webkit-border-radius: @x @y;
+}
+.box-shadow() {
+  box-shadow: 0 0 10vh * @h #00eaff inset;
+  -o-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -ms-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -moz-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -webkit-box-shadow: 0 0 10vh * @h #00eaff inset;
+}
+.c-cityDangerFirm-overview {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/emergencyOverview/bg.png");
+  background-size: 100% 100%;
+}
+/*公共样式 */
+/* 标题 */
+.shine-model-title {
+  font-size: 33vh * @h;
+  color: #eaeff2;
+  font-weight: bold;
+  position: absolute;
+  left:50%;
+  top: 0;
+  transform: translateX(-50%);
+  .box-sizing();
+  text-shadow: 0px 0px 47vh * @h #216b98, -2vw * @w 2vh * @h 47vw * @w #216b98,
+  2vw * @w -2vh * @h 47vw * @w #216b98, -2vw * @w 2vh * @h 47vw * @w #216b98;
+}
+.model-little-title {
+  width: 100%;
+  height: 37vh * @h;
+  line-height: 37vh * @h;
+  font-size: 24vh * @h;
+  color: white;
+  padding-left: 21vw * @w;
+}
+// 按钮正常样式
+.type-btn {
+  height: 34vh * @h;
+  width: auto;
+  padding: 0 12vw * @w;
+  margin: 0 12vw * @w;
+  line-height: 34vh * @h;
+  font-size: 24vh * @h;
+  border: 2px #00eaff solid;
+  color: white;
+  cursor: pointer;
+}
+// 按钮点击的样式
+.btn-active-type {
+  .box-shadow();
+}
+.c-select-wrap {
+  font-size: 24vh * @h;
+  color: white;
+}
+.c-select {
+  height: 34vh * @h;
+  border: 2px solid #00eaff;
+  font-size: 24vh * @h;
+  background: #091c42;
+  color: white;
+}
+.chart-opation {
+  display: flex;
+}
+/* 更新事件 */
+.update-time {
+  width: auto;
+  font-size: 12vh * @h;
+  color: #dce6f1;
+}
+// 搜索
+.center-search {
+  height: 40vh * @h;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #fff;
+  .c-input {
+    width: 300vw * @w;
+    height: 100%;
+    border: 1px rgb(1, 210, 233) solid;
+    background-color: rgb(20, 38, 78);
+
+    font-size: 14vh * @h;
+    display: flex;
+    align-items: center;
+    padding-left: 10vw * @w;
+    .box-sizing();
+  }
+
+  img {
+    display: block;
+    width: 23vh * @h;
+    height: 23vh * @h;
+    position: absolute;
+    right: 1%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+// 搜索样式
+.talbe-search{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* 分页 */
+.list-change-page{
+  margin-top: 8vh*@h;
+  display: flex;
+  justify-content: flex-end;
+}
+/* 内容 */
+.cityDangerFirm-overview-content {
+  height: calc(100% - 6vh);
+  width: 100%;
+  position: fixed;
+  top: 6vh;
+  left: 38vw * @w;
+  padding: 28vh * @h 30vw * @w;
+  .box-sizing();
+  display: flex;
+  justify-content: space-around;
+  .left {
+    width: 1280vw * @w;
+    height: 100%;
+  }
+  .center {
+    width: 2862vw * @w;
+    height: 100%;
+  }
+  .right {
+    width: 1267vw * @w;
+    height: 100%;
+  }
+}
+
+/* 内容---左边 */
+// 小手状态
+.cursor-five{
+  cursor: pointer;
+}
+// 盒子内标题公共样式
+.left-box-title{
+  width: 100%;
+  height: 70vh*@h;
+  font-size: 28vh*@h;
+  line-height: 70vh*@h;
+  font-weight: bold;
+}
+.city-hidden-danger-left{
+  width: 100%;
+  height: 100%;
+  background: url("../../assets/images/cityHiddenDanger/bg_left_border.png") no-repeat no-repeat center;
+  background-size: 100% 100%;
+  position: relative;
+  color: #fff;
+  padding-top: 70vh*@h;
+  .box-sizing();
+  .left-top{
+    width: 1122vw*@w;
+    height: 110vh*@h;
+    margin: auto;
+
+    ul{
+      width: 100%;
+      height:100%;
+      display: flex;
+      justify-content: space-between;
+      li{
+        width: 20%;
+        height: 100%;
+        text-align: right;
+        .top-title{
+          height: 42vh*@h;
+          font-size: 16vh*@h;
+          font-weight: bold;
+          margin-left: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+        }
+        .top-desc{
+          height: 68vh*@h;
+          line-height: 68vh*@h;
+          font-size: 38vh*@h;
+          color: @color;
+          font-weight: bold;
+          border-bottom: 1px solid @color;
+        }
+
+      }
+     
+      li span{
+        display: inline-block;
+        width: 32vw*@w;
+        height: 18vh*@h;
+        padding-right: 10px;
+        .box-sizing();
+      }
+      li:nth-of-type(1) span{
+        background: url('../../assets/images/cityHiddenDanger/icon_skyBlue.png') no-repeat no-repeat center;
+        background-size: 100% 100%;
+      }
+      li:nth-of-type(2) span{
+        background: url('../../assets/images/cityHiddenDanger/icon_blue.png') no-repeat no-repeat center;
+        background-size: 100% 100%;
+      }
+      li:nth-of-type(3) span{
+        background: url('../../assets/images/cityHiddenDanger/icon_orange.png') no-repeat no-repeat center;
+        background-size: 100% 100%;
+      }
+      li:nth-of-type(4) span{
+        background: url('../../assets/images/cityHiddenDanger/icon_red.png') no-repeat no-repeat center;
+        background-size: 100% 100%;
+      }
+      li:nth-of-type(2) .top-desc{
+        color: rgb(26,144,254);
+      }
+      li:nth-of-type(3) .top-desc{
+        color: rgb(255,174,16);
+      }
+      li:nth-of-type(4) .top-desc{
+        color: rgb(254,0,2);
+      }
+    }
+
+  }
+
+  .left-center{
+    width: 1150vw*@w;
+    height: 354vh*@h;
+    margin: auto;
+    margin-top: 42vh*@h;
+    .center-content{
+      width: 100%;
+      height: 272vh*@h;
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10vh*@h;
+      .center-content-left{
+        width: 244vw*@w;
+        height: 100%;
+        background: url('../../assets/images/cityHiddenDanger/bg_left_center_2.png') no-repeat center;
+        // background-color: #fff;
+        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        p:first-child{
+          font-size: 20vh*@h;
+          line-height: 50vh*@h;
+          height: 50vh*@h;
+        }
+        p:last-child{
+          font-size:32vh*@h;
+          line-height: 72vh*@h;
+          height: 72vh*@h;
+          color: rgb(1,154,244);
+          font-weight: bold;
+          i{
+          font-size:16vh*@h;
+          color: #fff;
+          }
+        }
+      }
+      .center-content-center,.center-content-center-right{
+        width: 410vw*@w;
+        height: 100%;
+        padding: 24vh*@h 30vw*@w 0;
+        background: url('../../assets/images/cityHiddenDanger/bg_left_center_1.png') no-repeat center;
+        background-size: 100% 100%;
+
+        p:first-child{
+          width: 100%;
+          height: 78vh*@h;
+          line-height:78vh*@h;
+          font-size: 24vh*@h;
+          text-align: center;
+          span{
+            color: rgb(0,255,255);
+            font-weight: bold;
+            padding: 0 24vw*@w;
+            .box-sizing();
+            font-size: 24vh*@h;
+          }
+        }
+        p{
+          line-height: 52vh*@h;
+          height: 52vh*@h;
+          font-size: 18vh*@h;
+          display: flex;
+          justify-content: center;
+          .number{
+            color: @color;
+            font-weight: bold;
+            padding: 0 8vw*@w;
+            .box-sizing();
+          }
+          i{
+            padding-right: 32vw*@w;
+            .box-sizing();
+          }
+        }
+      }
+      .center-content-center-right{
+        background: url('../../assets/images/cityHiddenDanger/bg_left_center_3.png') no-repeat center;
+        width: 410vw*@w;
+        height: 100%;
+        padding: 24vh*@h 30vw*@w 0;
+        background-size: 100% 100%;
+        p:first-child span{
+          color:rgb(116,109,254)
+          
+        }
+        p{
+          .number{
+            color:rgb(116,109,254)
+          }
+        }
+
+      }
+    }
+  }
+
+  .left-right{
+    width: 1150vw*@w;
+    height: 298vh*@h;
+    margin: auto;
+    margin-top: 50vh*@h;
+    .left-right-title{
+      display: flex;
+      justify-content: space-between;
+      .left-box-title{
+        width: auto;
+      }
+      .class-btn{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        a{
+          width: 96vw*@w;
+          height: 34vh*@h;
+          line-height: 34vh*@h;
+          font-size: 12vh*@h;
+          white-space: nowrap;
+          text-align: center;
+          border: 1px solid rgb(0,255,255);
+        color: #fff;
+
+        }
+        a:last-child{
+          width: 116vw*@w;
+          margin-left: 12vw*@w;
+        }
+      }
+    }
+
+    .class-content{
+      width: 100%;
+      height: 194vh*@h;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      /deep/ .slick-slide {
+        text-align: center;
+        overflow: hidden;
+      }
+      /deep/.ant-carousel {
+        width: 100%;
+      }
+      /deep/.slick-slider{
+        padding-left: 16vw*@w;
+      }
+      .circle{
+        width: 116vw*@w;
+        height: 100%;
+        .circle-top{
+          width: 116vw*@w;
+          height: 116vh*@h;
+          background: url('../../assets/images/cityHiddenDanger/bg_circle.png') no-repeat center;
+          background-size: 100% 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 16vh*@h;
+          font-weight: bold;
+          color: @color;
+          margin-top: 26vh*@h;
+        }
+        .circle-text{
+          width: 116vw*@w;
+          height: 52vh*@h;
+          line-height: 52vh*@h;
+          text-align: center;
+          font-size: 20vh*@h;
+          font-weight: bold;
+          color: #fff;
+        }
+      }
+      .left-btn,.right-btn{
+        position: absolute;
+        top: 45%;
+        transform: translateY(-50%);
+        width: 25vw*@w;
+        height: 42vh*@h;
+        cursor: pointer;
+      }
+      .left-btn{
+        left: -24vw*@w;;
+        background: url('../../assets/images/cityHiddenDanger/bg_left_btn.gif') no-repeat;
+        background-size: 100% 100%;
+      }
+      .right-btn{
+        right: -24vw*@w;
+        background: url('../../assets/images/cityHiddenDanger/bg_right_btn.gif') no-repeat;
+        background-size: 100% 100%;
+      }
+
+    }
+  }
+  .leftTable{
+    width: 1000vw * @w;
+    height: 600vh*@h;
+
+    /deep/.layer-title {
+      width: 100%;
+      color: #fff;
+      height: 60vh*@h;
+      line-height: 60vh*@h;
+    }
+    /deep/.layer-contents{
+      width: 100%;
+      height: calc(100% - 60vh*@h);
+      }
+      .industry-content{
+        width: 100%;
+        height: 100%;
+        .industry-type{
+          color: #fff;
+          font-size:22vh*@h;
+          height: 50vh*@h;
+          display: flex;
+          align-items: center;
+          width: 50%;
+          >select{
+            color: #fff;
+            width: 239vw*@w;
+            height: 40vh*@h;
+            background-color: #102048;
+            border: 1px solid #747474;
+          }
+          span{
+            display: inline-block;
+          }
+        }
+        .table{
+          width: 100%;
+          height: calc(100% - 50vh*@h - 40vh*@h );
+          /deep/.c-tables{
+              .list-header{ 
+              background-color: rgb(16,31,71);
+              padding: 16vh*@h 0;
+              p{
+                margin-bottom: 0;
+              }
+          }
+
+        }  
+
+      }
+    }
+    .ordinary-content{
+      width: 100%;
+      height: 100%;
+      .table{
+        width: 100%;
+        height: calc(100% - 40vh*@h - 40vh*@h);
+        /deep/.c-tables{
+            .list-header{ 
+            background-color: rgb(16,31,71);
+            padding: 16vh*@h 0;
+            p{
+              margin-bottom: 0;
+            }
+        }
+
+      }  
+
+    }
+  }
+
+  }
+
+}
+
+/* 内容---中间 */
+
+.city-hidden-danger-center{
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/images/cityHiddenDanger/bg_center_border.png');
+  background-size: 100% 100%;
+  color: #fff;
+  padding:30vh*@h 61vw*@w;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  .box-sizing();
+  .center-left{
+    width: 296vw*@w;
+    height: calc(100% - 30vh*@h - 30vh*@h);
+    border: 1px solid @color;
+    position: absolute;
+    top: 30vh*@h;
+    left: 61vw*@w;
+    z-index: 10000;
+    .center-left-search{
+        width:100%;
+        height:70vh*@h;
+        position:relative;
+        padding: 0 10vw*@w;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .c-input{
+          width:266vw*@w;
+          height:42vh*@h;
+          border:1px @color solid;
+          background-color: rgb(20,38,78);
+          font-size:18vh*@h;
+          display: flex;
+          align-items: center;
+          padding-left: 10vw*@w;
+          .box-sizing();
+        }
+        img{
+          display:block;
+          width:23vw*@w;
+          height:20vh*@h;
+          position:absolute;
+          right:16vw*@w;
+          cursor:pointer
+        }
+    }
+    .center-left-select{
+      height: calc(100% - 70vh*@h);
+      overflow-y: auto;
+      .select-item{
+        width: 100%;
+        height: auto;
+        margin-bottom: 16vh*@h;
+        p{
+          width: 100%;
+          height: 42vh*@h;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 25vw*@w  0 28vw*@w;
+          font-size: 18vh*@h;
+          font-weight: bold;
+          color: @color;
+          background-image: linear-gradient(to right, rgb(41,136,164), rgb(37,106,135), rgba(37,106,135,0.6), rgba(37,106,135, 0.3));
+          cursor: pointer;
+          .active-span{
+            color: #fff;
+            background-color: rgb(1,255,255);
+          }
+          span{
+            font-size: 18vh*@h;
+            text-align: center;
+            font-weight: bold;
+            // display: inline-block;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 18vw*@w;
+            height: 18vh*@h;
+            border: 1px solid @color;
+            border-radius: 5vh*@h;
+          }
+        }
+        ul{
+
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          padding: 0 25vw*@w  0 28vw*@w;
+          li{
+            width: 40%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 5vh*@h;
+            label{
+              font-size: 16vh*@h;
+              flex: 1;
+            }
+            .active-span{
+              color:#fff;
+              background-color: rgb(1,255,255);
+            }
+            span{  
+              text-align: center;
+              font-weight: bold;
+              // display: inline-block;
+              line-height:  18vh*@h;
+              font-size: 16vh*@h;
+              width: 18vw*@w;
+              height: 18vh*@h;
+              border: 1px solid @color;
+              border-radius: 5vh*@h;
+            }
+          }
+        }
+      }
+      &::-webkit-scrollbar {
+        /*滚动条整体样式*/
+        width: 2px; /*高宽分别对应横竖滚动条的尺寸*/
+        height: 1px;
+      }
+      &::-webkit-scrollbar-thumb {
+        /*滚动条里面小方块*/
+        border-radius: 2px;
+        box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+        background: #2c98ff;
+      }
+      &::-webkit-scrollbar-track {
+        /*滚动条里面轨道*/
+        box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+        border-radius: 2px;
+        background: #030c22;
+      }
+    
+    
+    }
+    
+  }
+  .center-right{
+    width: 715vw*@w;
+    height: 876vh*@h;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 30vh*@h;
+    right: 61vw*@w;
+    z-index: 10000;
+    .center-right-type{
+      width: 100%;
+      height: 415vh*@h;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .type-header{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        height: auto;
+        p{
+          padding: 10vh*@h 26vw*@w;
+          font-size: 18vh*@h;
+          border: 1px solid @color;
+          margin-right: 6vw*@w;
+          cursor: pointer;
+        }
+      }
+      .type-all{
+        height: 351vh*@h;
+        ul{
+          height: 100%;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          li{
+            width: 33%;
+            height: 100%;
+            border: 1px solid @color;
+            padding: 22vh*@h 18vw*@w 15vh*@h;
+            .box-sizing();
+            .type-all-title{
+              height: 50vh*@h;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              font-size: 24vh*@h;
+              font-weight: bold;
+            }
+            p{
+              height: 66vh*@h;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              font-size: 14vh*@h;
+              .number{
+                font-size: 22vh*@h;
+                font-weight: bold;
+                color: @color;
+                padding-left: 6vw*@w;
+                padding-right: 6vw*@w;
+                .box-sizing();
+                width: 40%;
+              }
+              span{
+                width: 40%;
+              }
+              i{
+                width: 20%;
+                text-align: right;
+              }
+            }
+          }
+        }
+
+      }
+      .center-right-area,.center-right-eight{
+        width: 715vw*@w;
+        height: 361vh*@h;
+        .box-sizing();
+        .area-type{
+          width: 100%;
+          display: flex;
+          justify-content: flex-end;
+          align-items: center;
+          height: 60vh*@h;
+          p{
+            height: 32vh*@h;
+            font-size: 16vh*@h;
+            padding: 0 18vw*@w;
+            display: flex;
+            align-items: center;
+            border: 1px solid rgb(0,102,204);
+            background-color: rgb(13,53,76);
+            margin-left: 8vw*@w;
+          }
+          .area-type-active{
+            background: rgb(0,102,204);
+          }
+          
+        }.area-type-chart{
+          width: 715vw*@w;
+            height: calc(361vh*@h - 60vh*@h)
+        }
+        .eight-type-chart{
+          width: 715vw*@w;
+            height: calc(361vh*@h - 60vh*@h)
+        }
+      }
+
+    }
+    .center-right-accident{
+      .accident-title{
+        height: 66vh*@h;
+        font-size: 30vh*@h;
+        display: flex;
+        align-items: center;
+      }
+    }
+    .chart-accident{
+      width: 715vw*@w;
+      height: 390vh*@h;
+    }
+    /deep/.centerTable{
+      width: 800vw*@w;
+      height: 500vh*@h;
+    }
+    .table-content{
+      width: 100%;
+      height: 100% ;
+    }
+    /deep/.layer-title {
+      width: 100%;
+      color: #fff;
+      height: 60vh*@h;
+      line-height: 60vh*@h;
+    }
+    /deep/.layer-contents{
+      width: 100%;
+      height: calc(100% - 60vh*@h);
+    }
+    .tables{
+      width: 100%;
+      height: calc(100% - 50vh*@h - 40vh*@h);
+    }
+  }
+  .center-fixed-icon {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 100vh * @h;
+    left: 400vw * @w;
+    width: 88vw * @w;
+    height: 32vh * @h;
+    z-index: 8800;
+    .btn-video {
+      width: 88vw * @w;
+      height: 32vh * @h;
+      cursor: pointer;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+
+}
+
+
+/* 内容---右边*/
+.city-hidden-danger-right{
+  width: 100%;
+  height: 100%;
+  background: url('../../assets/images/cityHiddenDanger/bg_left_border.png');
+  background-size: 100% 100%;
+  position: relative;
+  .box-sizing();
+  padding: 76vh*@h 74vw*@w 62vh*@h 114vw*@w;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .right-top{
+    width: 100%;
+    height: 400vh*@h;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+        
+    // 标题
+    .condition-title{
+      height: 42vh*@h;
+      font-size: 20vh*@h;
+      font-weight: bold;
+      color: #fff;
+      display: flex;
+      align-items: center;
+    }
+    .right-top-type{
+      display: flex;
+      justify-content: flex-start;
+      p{
+        padding: 12vh*@h 28vw*@w;
+        border: 1px solid @color;
+        font-size: 18vh*@h;
+        color: #fff;
+        margin-right: 8vw*@w;
+        cursor: pointer;
+      }
+    }
+    .risk-condition{
+      width: 100%;
+      height: 323vh*@h;
+      display: flex;
+      justify-content: space-between;
+      .risk-showBtn-active{
+        background: url('../../assets/images/cityHiddenDanger/bg_active.png') no-repeat center;
+        background-size: 100% 100%;
+        color: @color;
+        font-weight: bold;
+        padding-left: 14vw*@w;
+        padding-bottom: 4vh*@h;
+      }
+      .accident-ranked{
+        width: 301vw*@w;
+        height: 100%;
+        padding: 20vh*@h 40vw*@w 28vh*@h 18vw*@w;
+        .box-sizing();
+        .ranked-content{
+          width: 100%;
+          height: 222vh*@h;
+          display: flex;
+          justify-content: space-between;
+          flex-wrap: wrap;
+          background: url('../../assets/images/cityHiddenDanger/bg_ten.png') no-repeat center;
+          background-size: 100% 100%;
+          .ranked-0{
+            border-left: 1px solid;
+            border-right: 1px solid;
+            border-width: 100%;
+            border-image: linear-gradient(
+              #00ffff,
+              transparent,
+              transparent,
+                transparent,
+                transparent
+              )
+              60;
+          }
+          div{
+            width: 50%;
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            span{
+              font-size: 14vh*@h;
+              color: #fff;
+            }
+            i{
+              font-size: 22vh*@h;
+              font-weight: bold;
+              color: @color;
+              margin-bottom: 14vh*@h;
+            }
+          }
+        }
+      }
+      .accident-analyse{
+        width: 301vw*@w;
+        height: 100%;
+        padding: 20vh*@h 12vw*@w 22vh*@h 22vw*@w;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .box-sizing();
+        // .analyse-title{
+        //   color: #fff;
+        //   font-size: 14vh*@h;
+        //   display: flex;
+        //   div{
+        //     margin-right: 16vw*@w;
+        //   }
+        // }
+        .analyse-chart{
+          width: 100%;
+          flex: 1;
+        }
+      }
+      .enterprise-distribution{
+        width: 350vw*@w;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 20vh*@h 12vw*@w 22vh*@h 22vw*@w;
+        .box-sizing();
+        .enterprise-chart{
+          flex: 1;
+        }
+      }
+    }
+  }
+  .right-bottom{
+    width: 100%;
+    height: 384vh*@h;
+    .showBtn-active{
+      background: url('../../assets/images/cityHiddenDanger/bg_active.png') no-repeat center;
+      background-size: 100% 100%;
+      color: @color;
+      font-weight: bold;
+      padding-left: 18vw*@w;
+    }
+    .show-type{
+      width: 100%;
+      height: 78vh*@h;
+      color: #fff;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      p{
+        font-size: 22vh*@h;
+        height: 35vh*@h;
+        margin-right: 18vw*@w;
+      }
+    }
+    .show-total{
+      width: 100%;
+      height: 306vh*@h;
+
+    }
+  }
+  .rightTable{
+    width: 1000vw * @w;
+    height: 600vh*@h;
+
+
+ 
+
+    .table-content{
+      width: 100%;
+      height: 100% ;
+    }
+    /deep/.layer-title {
+      width: 100%;
+      color: #fff;
+      height: 60vh*@h;
+      line-height: 60vh*@h;
+    }
+    /deep/.layer-contents{
+      width: 100%;
+      height: calc(100% - 60vh*@h);
+    }
+    .tables{
+      width: 100%;
+      height: calc(100% - 50vh*@h - 40vh*@h);
+    }
+  }
+}

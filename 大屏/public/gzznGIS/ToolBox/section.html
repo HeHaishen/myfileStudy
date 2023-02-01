@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html style="height: 100%; margin: 0">
+<head>
+<meta charset="UTF-8">
+<title>剖面分析</title>
+</head>
+<body style="height: 100%; margin: 0">
+<div id="container" style="height:100%"></div>
+<script type="text/javascript" src="../Content/echarts.min.js"></script>
+<script type="text/javascript">
+	var reg = new RegExp("(^|&)strJson=([^&]*)(&|$)", "i"); 
+	var r = window.location.search.substr(1).match(reg); 
+	var value;
+	if (r != null){ 
+		value= unescape(r[2]);
+	}
+	var date = [];
+	var data = [];
+	var arr= value.split('-');
+	var team= arr[0].split(',');
+	var team1= arr[1].split(',');
+	for(var i=0;i<team.length;i++){
+		date.push(team[i]);
+		data.push(team1[i]);
+	}
+	var dom = document.getElementById("container");
+	var myChart = echarts.init(dom);
+	var app = {};
+	var option = null;
+	option = {
+	    tooltip: {
+	        trigger: 'axis',
+	        position: function (pt) {
+	            return [pt[0], '10%'];
+	        }
+	    },
+	    title: {
+	        left: 'center',
+	        text: '剖面分析图',
+	        textStyle: {	              
+	              color: "#fff"
+	        }
+	    },
+	    toolbox: {
+	        feature: {
+	            dataZoom: {
+	                yAxisIndex: 'none'
+	            },
+	            restore: {},
+	            saveAsImage: {}
+	        }
+	    },
+	    xAxis: {
+	        type: 'category',
+	        boundaryGap: false,
+	        data: date,
+	        axisLine:{
+                lineStyle:{
+                    color:'#fff'                    
+                }
+            },
+            axisLabel:{formatter:'{value} 米'}
+	    },
+	    yAxis: {
+	        type: 'value',
+	        boundaryGap: [0, '100%'],
+	        axisLine:{
+                lineStyle:{
+                    color:'#fff'                    
+                }
+            },
+            axisLabel:{formatter:'{value} 米'}
+	    },
+	    series: [
+	        {
+	            name:'高程',
+	            type:'line',
+	            smooth:true,
+	            symbol: 'none',
+	            sampling: 'average',
+	            itemStyle: {
+	                color: 'rgb(255, 70, 131)'
+	            },
+	            areaStyle: {
+	                color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+	                    offset: 0,
+	                    color: 'rgb(255, 158, 68)'
+	                }, {
+	                    offset: 1,
+	                    color: 'rgb(255, 70, 131)'
+	                }])
+	            },
+	            data: data
+	        }
+	    ]
+	};
+	if (option && typeof option === "object") {
+	    myChart.setOption(option, true);
+	}
+</script>
+</body>
+</html>

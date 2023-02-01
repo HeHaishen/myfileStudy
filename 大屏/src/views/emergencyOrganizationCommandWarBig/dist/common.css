@@ -1,0 +1,146 @@
+*::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 1px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+*::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 2px;
+  box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+  background: #2c98ff;
+}
+*::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+  border-radius: 2px;
+  background: #030c22;
+}
+.angel {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 10px solid;
+}
+.angel.lt {
+  left: 5px;
+  top: 5px;
+  border-color: #015ebd transparent transparent #015ebd;
+}
+.angel.rt {
+  right: 5px;
+  top: 5px;
+  border-color: #015ebd #015ebd transparent transparent;
+}
+.angel.rb {
+  bottom: 5px;
+  right: 5px;
+  border-color: transparent #015ebd #015ebd transparent;
+}
+.angel.lb {
+  bottom: 5px;
+  left: 5px;
+  border-color: transparent transparent #015ebd #015ebd;
+}
+.public-head {
+  width: 100%;
+  height: 84px;
+  padding: 0 40px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 84px;
+  position: relative;
+}
+.public-head:after {
+  content: ' ';
+  background: #1b77ff;
+  width: 8%;
+  height: 5px;
+  position: absolute;
+  left: 40px;
+  bottom: 0;
+}
+.public-content {
+  padding: 37px 22px;
+}
+.big_pagination.pagination {
+  padding: 10px 0 10px 10px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-prev {
+  min-width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-prev .ant-pagination-item-link {
+  font-size: 32px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-item {
+  font-size: 32px;
+  min-width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-next {
+  min-width: 32px;
+  height: 32px;
+  line-height: 32px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-next .ant-pagination-item-link {
+  font-size: 32px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-jump-next {
+  font-size: 32px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-jump-next .ant-pagination-item-link .ant-pagination-item-container {
+  font-size: 32px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-jump-next .ant-pagination-item-link .ant-pagination-item-container i {
+  font-size: 32px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-jump-next .ant-pagination-item-link .ant-pagination-item-container span {
+  font-size: 32px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-jump-prev {
+  font-size: 32px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-jump-prev .ant-pagination-item-link .ant-pagination-item-container {
+  font-size: 32px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-jump-prev .ant-pagination-item-link .ant-pagination-item-container i {
+  font-size: 32px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-jump-prev .ant-pagination-item-link .ant-pagination-item-container span {
+  font-size: 32px;
+}
+.big_pagination.pagination /deep/ .c-page-all .ant-pagination-jump-next-custom-icon .ant-pagination-item-link .ant-pagination-item-container .ant-pagination-item-ellipsis {
+  font-size: 32px;
+}
+.big_pagination.pagination /deep/ .ant-pagination-item-ellipsis,
+.big_pagination.pagination /deep/ .ant-pagination-item-container i,
+.big_pagination.pagination /deep/ .ant-pagination-item-container .ant-pagination-item-ellipsis,
+.big_pagination.pagination /deep/ .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis,
+.big_pagination.pagination /deep/ .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis {
+  font-size: 32px;
+}
+.big_pop_up_layer /deep/ .layer-title {
+  height: 32px;
+  line-height: 32px;
+  font-size: 32px;
+  padding-left: 10px;
+}
+.big_pop_up_layer /deep/ .layer-title::before {
+  font-size: 32px;
+}
+.big_pop_up_layer /deep/ .layer-close {
+  height: 32px;
+  line-height: 32px;
+  font-size: 32px;
+  right: 10px;
+  top: 2px;
+  width: 32px;
+}
+.big_pop_up_layer /deep/ .layer-close p {
+  line-height: 32px;
+  font-size: 32px;
+}

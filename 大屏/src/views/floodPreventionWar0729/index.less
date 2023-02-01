@@ -1,0 +1,1236 @@
+.show-map{
+    height:100%;
+    width:calc(100% - 2866px);
+    background-image: linear-gradient(to right, #182734 35%, transparent 25%, transparent 50%, #182734 50%, #182734 75%, transparent 75%, #182734 35%);
+    // width:calc(100% - 4442px);
+    // width:4690px;
+    position:fixed;
+    top:0;
+    left:1882px;
+    left:50%;
+    transform: translateX(-50%);
+  }
+  .forest-fire {
+    width: 100%;
+    height: 100%;
+    // background: url("../../assets/images/bg_map.png") no-repeat center;
+    // background-size: 100% 100%;
+    position: relative;
+  }
+  /* 公共部分 */
+  .fire-model-title {
+    //   padding: 0 28px;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: 46px;
+    font-weight: bold;
+    color: #01ffff;
+    position: absolute;
+    left: 50%;
+    top: -21px;
+    transform: translateX(-50%);
+    white-space: nowrap;
+  }
+  .scroll-wrap{
+      width: 100%;
+      height:636px;
+      margin: 0 auto;
+      overflow: hidden;
+  }
+  .fire-list-header {
+    width: 100%;
+    height: 70px;
+    background: #113953;
+    color: #feffff;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .file-model-all {
+    padding: 62px 14px 10px 14px;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    p {
+      text-align: center;
+    }
+    p:nth-child(1) {
+      flex: 1 0 30%;
+    }
+    p:nth-child(2) {
+      flex: 1 0 20%;
+    }
+    p:nth-child(3) {
+      flex: 1 0 20%;
+    }
+    p:nth-child(4) {
+      flex: 1 0 20%;
+    }
+  }
+  .fire-list-content {
+    width: 100%;
+    height: calc(100% - 133px);
+    overflow: hidden;
+    li {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: nowrap;
+      font-size: 28px;
+      color: #feffff;
+      border-bottom: 2px #314c53 solid;
+      min-height: 78px;
+      
+      div {
+        text-align: center;
+      }
+      div:nth-child(1) {
+        flex: 1 0 30%;
+        cursor: pointer;
+      }
+      div:nth-child(2) {
+        flex: 1 0 20%;
+      }
+      div:nth-child(3) {
+        flex: 1 0 20%;
+      }
+      div:nth-child(4) {
+        flex: 1 0 20%;
+      }
+    }
+    li:nth-child(1) {
+      margin-top: 22px;
+    }
+    & li:last-child {
+      border-bottom: 0px;
+    }
+  }
+  /* 左侧模块 */
+  .forest-left {
+    width: 2249px;
+    height: 100%;
+    // height:calc(100% - 220px);
+    position: absolute;
+    left: 0;
+    top: 0px;
+    padding-top:220px;
+    background-image: linear-gradient(to right, #182734, #182734, #182734, rgba(20, 27, 53, 0.4));
+    box-shadow: 0 0 190px #182734;
+    /*  padding: 50px 0 0 0;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; */
+    .forest-left-top {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      .left-top-meteorology {
+        height: 753px;
+        width: 1500px;
+        background: url("../../assets/images/forestFire/bg_meteorology.png")
+          no-repeat center;
+        //   background-size: 100% 100%;
+        position: relative;
+        padding: 50px 0 0 0;
+        box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        margin-right: 40px;
+        .meteorology-title {
+          padding: 0 28px;
+          box-sizing: border-box;
+          -o-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          font-size: 46px;
+          font-weight: bold;
+          color: #01ffff;
+          position: absolute;
+          left: 50%;
+          top: -21px;
+          transform: translateX(-50%);
+        }
+        .meteorology-show {
+          width: 100%;
+          height: 150px;
+          ul {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: flex-start;
+            padding: 0 20px;
+            box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            li {
+              flex: 1 0 25%;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              .li-content-img {
+                display: flex;
+                justify-content: flex-start;
+                margin-right: 23px;
+                img {
+                  display: block;
+                  width: 120px;
+                  height: auto;
+                }
+              }
+              .li-content-logo {
+                width: auto;
+                height: 100%;
+                margin-right: 30px;
+                .li-img-text {
+                  font-size: 28px;
+                  color: white;
+                }
+                .li-img-icon {
+                  display: block;
+                  width: auto;
+                  height: auto;
+                  margin-bottom: 6px;
+                  margin-top: 8px;
+                  img {
+                    display: block;
+                    width: 57px;
+                    height: 67px;
+                    margin: 0 auto;
+                  }
+                }
+              }
+              .li-content-detail {
+                width: 138px;
+                height: 100%;
+                position: relative;
+                padding-left: 6px;
+                box-sizing: border-box;
+                -o-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                color: #01ffff;
+                .li-now-tem {
+                  width: 100%;
+                  height: 92px;
+                  font-size: 55px;
+                  font-weight: bold;
+                  font-family: "微软雅黑";
+                  color: #01ffff;
+                  padding: 24px 0 0 0;
+                  box-sizing: border-box;
+                  -o-box-sizing: border-box;
+                  -ms-box-sizing: border-box;
+                  -moz-box-sizing: border-box;
+                  -webkit-box-sizing: border-box;
+                  margin-bottom: 9px;
+                  text-shadow: 0 0 20px #aef;
+                }
+                .li-about-tem {
+                  font-size: 24px;
+                  color: #01ffff;
+                }
+                .li-now-unit {
+                  position: absolute;
+                  top: 14px;
+                  right: 17px;
+                  color: #01ffff;
+                  font-size: 23px;
+                }
+                .li-now-state {
+                  position: absolute;
+                  top: 55px;
+                  right: 7px;
+                  color: #01ffff;
+                  font-size: 29px;
+                }
+              }
+              .detail-padding {
+                padding-top: 27px;
+                box-sizing: border-box;
+                -o-box-sizing: border-box;
+                -ms-box-sizing: border-box;
+                -moz-box-sizing: border-box;
+                -webkit-box-sizing: border-box;
+                p {
+                  line-height: 42px;
+                  font-size: 26px;
+                }
+              }
+            }
+          }
+        }
+        .meteorology-chart {
+          width: 100%;
+          height: 488px;
+          display: flex;
+          justify-content: space-between;
+          padding: 0 30px;
+          box-sizing: border-box;
+          -o-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          .meteorology-chart-line {
+            flex: 1 0 50%;
+          }
+        }
+      }
+      /* 顶部右测 */
+      .left-top-right {
+        .wood-fire-spread {
+          width: 706px;
+          height: 216px;
+          background: url("../../assets/images/forestFire/bg_wood_fire_model.png")
+            no-repeat center center;
+          text-align: center;
+          background-size: 100%;
+          padding: 25px 25px;
+          box-sizing: border-box;
+          -o-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          display: flex;
+          justify-content: space-around;
+          div {
+            width: 40%;
+            flex-shrink: 0;
+            height: 100%;
+            cursor: pointer;
+            font-size: 46px;
+            color: #00ffff;
+            font-weight: bold;
+            padding: 20px 0 0 0;
+            box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            p {
+              width: 202px;
+              height: 72px;
+              line-height: 72px;
+              font-size: 30px;
+              color: white;
+              border: 1px #15bfcc solid;
+              margin: 18px 0px 0 39px;
+              box-shadow: 0 0 30px #00ffff inset;
+            }
+          }
+        }
+        /* 靶向短信 */
+        .fire-targeting-msg {
+          width: 714px;
+          height: 471px;
+          margin-top: 60px;
+          background: url("../../assets/images/forestFire/bg_holiday.png")
+            no-repeat center center;
+          position: relative;
+          padding: 50px 34px 0 34px;
+          box-sizing: border-box;
+          -o-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          .targeting-msg-chose {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: flex-start;
+            p {
+              width: auto;
+              min-height:50px;
+              height:auto;
+              margin-right: 8px;
+              padding: 0 21px;
+              box-sizing: border-box;
+              -o-box-sizing: border-box;
+              -ms-box-sizing: border-box;
+              -moz-box-sizing: border-box;
+              -webkit-box-sizing: border-box;
+              color: white;
+              font-size: 25px;
+              border: 1px #01ffff solid;
+              line-height: 48px;
+              cursor: pointer;
+            }
+            p:hover {
+              opacity: 0.8;
+            }
+            .chose-p {
+              box-shadow: 0 0 20px #01ffff;
+              background: rgba(22, 139, 156, 0.6);
+            }
+          }
+          .targeting-msg-chart {
+            width: 100%;
+            height: 252px;
+            margin-top: 20px;
+            .msg-chart-wrap1 {
+              margin: 0 auto;
+              width: 570px;
+              height: 252px;
+              border-radius: 50% 50%;
+              background: rgba(48, 212, 178, 0.4);
+              display: flex;
+              align-items: center;
+              position: relative;
+  
+              .chart-show-number {
+                position: absolute;
+                height: 157px;
+                width: 187px;
+                bottom: 9px;
+                left: 50%;
+                transform: translateX(-50%);
+                background: url("../../assets/images/forestFire/bg_targeting_number.png")
+                  no-repeat no-repeat center;
+                z-index: 8888;
+                line-height: 91px;
+                text-align: center;
+                font-size: 22px;
+                color: #01274c;
+              }
+              .msg-chart-wrap2 {
+                margin: 0 auto;
+                width: 379px;
+                height: 161px;
+                border-radius: 50% 50%;
+                background: rgba(48, 212, 178, 0.7);
+                border: 5px #4ece9b solid;
+                display: flex;
+                align-items: center;
+                position: relative;
+                .chart-show-number {
+                  position: absolute;
+                  height: 157px;
+                  width: 187px;
+                  bottom: 9px;
+                  left: 50%;
+                  transform: translateX(-50%);
+                  background: url("../../assets/images/forestFire/bg_targeting_number.png")
+                    no-repeat no-repeat center;
+                  z-index: 8888;
+                  line-height: 91px;
+                  text-align: center;
+                  font-size: 22px;
+                  color: #01274c;
+                }
+                .msg-chart-wrap3 {
+                  margin: 0 auto;
+                  width: 225px;
+                  height: 100px;
+                  border-radius: 50% 50%;
+                  background: rgba(48, 212, 178, 1);
+                  position: relative;
+                  .chart-show-number {
+                    position: absolute;
+                    height: 157px;
+                    width: 187px;
+                    bottom: 9px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    background: url("../../assets/images/forestFire/bg_targeting_number.png")
+                      no-repeat no-repeat center;
+                    z-index: 8888;
+                    line-height: 91px;
+                    text-align: center;
+                    font-size: 22px;
+                    color: #01274c;
+                  }
+                }
+              }
+            }
+          }
+          .targeting-msg-btn {
+            width: 206px;
+            height: 50px;
+            border: 1px #01ffff solid;
+            color: white;
+            font-size: 25px;
+            line-height: 50px;
+            margin: 13px auto 0;
+            text-align: center;
+            cursor: pointer;
+          }
+          .targeting-msg-btn:hover {
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+    .forset-left-bottom {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin-top: 30px;
+      .left-bottom-content {
+        flex: 1 1 715px;
+        height: 826px;
+        background: url("../../assets/images/forestFire/bg_material.png")
+          no-repeat center center;
+        position: relative;
+        /* 救火物资情况 */
+        .left-bottom-material {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+          padding-top: 80px;
+          box-sizing: border-box;
+          -o-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          li {
+            width:50%;
+            flex-shrink:0;
+            height: 109px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor:pointer;
+            //   margin-top: 80px;
+            .material-img {
+              display: block;
+              height: 81px;
+              width: auto;
+            }
+            .material-detail {
+              height: 100%;
+              width: auto;
+              position: relative;
+              .material-detail-type {
+                word-wrap: nowrap;
+                color: white;
+                font-size: 28px;
+                line-height: 48px;
+              }
+              .material-detail-number {
+                word-wrap: nowrap;
+                color: #00ffff;
+                font-size: 32px;
+                font-weight: bold;
+                line-height: 48px;
+              }
+              .material-detail-unit {
+                word-wrap: nowrap;
+                color: white;
+                font-size: 28px;
+                position: absolute;
+                right: -32px;
+                bottom: 16px;
+              }
+            }
+          }
+        }
+      }
+      .left-bottom-margin {
+        margin: 0 38px;
+      }
+    }
+  }
+  /* 2020年火灾统计 */
+  .forest-center {
+    width: 3328px;
+    // height: 186px;
+    min-height: 6vh;
+    position: fixed;
+    // top: 20%;
+    // top:250px;
+    top:8vh;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url("../../assets/images/forestFire/bg_year-center.png") no-repeat
+      no-repeat center;
+    background-size: 100% 100%;
+    padding: 30px 50px 10px 50px;
+    .forest-center-list {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      overflow: hidden;
+      li {
+        width: 20%;
+        flex-shrink: 0;
+        padding: 0 52px;
+        box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        .center-list-event {
+          font-size: 28px;
+          font-weight: bold;
+          color: #00fefc;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 10px;
+        }
+        .center-list-detail {
+          display: flex;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          font-size: 26px;
+          color: white;
+          p {
+            span {
+              color: #00fefc;
+              padding-right: 6px;
+            }
+          }
+        }
+      }
+      li:nth-child(3){
+          .center-list-detail {
+          display: flex;
+          justify-content: flex-start;}
+      }
+    }
+  }
+  /* 右侧模块 */
+  .forest-right {
+    width: 2133px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    padding-top: 220px;
+    padding-right:252px;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to left, #182734, #182734, #182734, rgba(20, 27, 53, 0.4));
+    box-shadow: 0 0 190px #182734;
+    .forest-right-left {
+      width: 856px;
+      height: auto;
+      .right-left-connection2 {
+        width: 100%;
+        height: 465px;
+        background: url("../../assets/images/forestFire/bg_connection2.png")
+          no-repeat no-repeat center;
+        position: relative;
+        margin-bottom: 30px;
+        padding: 56px 37px 12px 64px;
+        box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        .connection2-tab {
+          width: 100%;
+          height: 60px;
+          display: flex;
+          p {
+            height: 53px;
+            line-height: 53px;
+            color: white;
+            line-height: 53px;
+            font-size: 33px;
+            margin-right: 40px;
+            cursor: pointer;
+          }
+          .active-tab {
+            font-weight: bold;
+            color: #00ffff;
+            border-bottom: 7px #00ffff solid;
+          }
+        }
+        .left-connection2-wrap {
+          margin-top: 40px;
+          height: 242px;
+          width: 100%;
+          overflow: hidden;
+          ul {
+            width: auto;
+            height: 100%;
+            overflow: hidden;
+            li {
+              height: 100%;
+              width: 350px;
+              margin: 0 0 0 32px;
+              background: black;
+              float: left;
+            }
+            li:nth-child(1) {
+              margin-left: 0px;
+            }
+          }
+        }
+      }
+      .right-left-uav2 {
+        width: 100%;
+        height: 619px;
+        background: url("../../assets/images/forestFire/bg_radio_wrap.png") no-repeat
+          no-repeat center;
+        position: relative;
+        padding: 65px 65px 0 60px;
+        box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        border-radius: 40px 40px;
+        .uav-list-wrap {
+          width: auto;
+          height: 200px;
+          overflow: hidden;
+          .left-uav-list {
+            width: 730px;
+            height: 200px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            float: left;
+            li {
+              width: 50%;
+              flex: 2 0 46%;
+              height: 194px;
+              padding: 0 14px 0 14px;
+              div {
+                height: 100%;
+                background: black;
+                border: 1px #04c8e0 dashed;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+        .left-uav-title {
+          width: 100%;
+          font-size: 46px;
+          font-weight: bold;
+          color: #00fffe;
+          text-align: center;
+          margin-bottom: 26px;
+        }
+      }
+    }
+    .forest-right-right {
+      width: 978px;
+      height: auto;
+      // height:100%;
+      .right-left-water {
+        width: 100%;
+        // height:100%;
+        // height:1658px;
+        height:1600px;
+        //height: 780px;
+        background: url("../../assets/images/dragonBoat/bg_event-thing.png") no-repeat
+          no-repeat center;
+        background-size:100% 100%;
+        position: relative;
+        // margin-bottom: 83px;
+        padding:36px 32px 0 32px;
+        box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+      .right-left-fire {
+        width: 100%;
+        height: 780px;
+        background: url("../../assets/images/forestFire/bg_water.png") no-repeat
+          no-repeat center;
+        position: relative;
+        padding:56px 32px;
+        box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+      }
+    }
+  }
+  .forest-message {
+    width: 482px;
+    height: auto;
+    position: absolute;
+    bottom: 50px;
+    right: 2177px;
+    margin-bottom: 26px;
+  }
+  /*植被信息  */
+  .forest-vegetation {
+    width: 482px;
+    // height:716px;
+    height: auto;
+    border: 3px #42c6ae solid;
+    background: #0a1f4e;
+    opacity: 0.6;
+    margin-bottom: 20px;
+    .forest-vegetation-title {
+      width: 100%;
+      height: 58px;
+      border-bottom: 1px #516798 solid;
+      display: flex;
+      align-items: center;
+      position: relative;
+      .vegetation-title-icon {
+        width: 6px;
+        height: 25px;
+        background: #00fefe;
+        margin: 0 16px 0 22px;
+      }
+      .vegetation-title-text {
+        font-size: 32px;
+        color: white;
+        font-weight: bold;
+      }
+      .vegetation-title-close {
+        font-size: 32px;
+        color: white;
+        font-weight: bold;
+        position: absolute;
+        right: 20px;
+        top: 13px;
+        cursor: pointer;
+      }
+    }
+    .forest-vegetation-statices {
+      width: 100%;
+      height: auto;
+      line-height: 45px;
+      color: white;
+      font-size: 28px;
+      margin: 17px 0 28px 0;
+      p {
+        margin-left: 14px;
+        span {
+          color: #42c6ae;
+        }
+      }
+    }
+    .forest-vegetation-list {
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      li {
+        width: 128px;
+        flex-shrink: 0;
+        height: 116px;
+        margin-left: 24px;
+        .li-num {
+          width: 100%;
+          height: 61px;
+          background: url("../../assets/images/forestFire/bg_vegetation.png")
+            no-repeat no-repeat center;
+          background-size: 100% 100%;
+          font-size: 28px;
+          color: #01ffff;
+          text-align: center;
+          line-height: 61px;
+          span {
+            font-size: 16px;
+          }
+        }
+        .li-name {
+          height: 56px;
+          text-align: center;
+          color: white;
+          font-size: 24px;
+          line-height: 56px;
+        }
+      }
+    }
+    .forest-vegetation-hidden {
+      width: 100%;
+      height: 58px;
+      color: #01ffff;
+      font-size: 26px;
+      position: relative;
+      .vegetation-title-center {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        text-align: center;
+        font-weight: bold;
+        line-height: 58px;
+      }
+      .vegetation-title-open {
+        position: absolute;
+        right: 10px;
+        top: 0;
+        line-height: 58px;
+        height: 58px;
+        cursor: pointer;
+      }
+    }
+  }
+  /* 事件轴 */
+  .flex-time-wrap {
+    width: 2990px;
+    // height: 227px;
+    height:6vh;
+    background: url("../../assets/images/bg_time_scroll_03.png") no-repeat
+      no-repeat center;
+    background-size: 100% 100%;
+    position: fixed;
+    bottom: 18px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 13px 15px 12px 12px;
+    box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    .time-inner {
+      width: 100%;
+      height: 100%;
+      border-radius: 30px 30px;
+      display: flex;
+      align-items: center;
+      position:relative;
+      .time-line {
+        width: 100%;
+        height: 12px;
+        background: #01ffff;
+      }
+      .calibration{
+        // width:2772px;
+        width:2700px;
+        height:auto;
+        position:absolute;
+        // background:yellow;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        display:flex;
+        justify-content:space-between ;
+        align-items: center;
+        div{
+          width:2px;
+          height:54px;
+          background:#01ffff;
+          position:relative;
+          .calibration-hours{
+            flex-shrink: 0;
+            height:100%;
+            line-height: 26px;
+            color:#00ffff;
+            font-size:26px;
+            width:120px;
+            text-align: left;
+            position:absolute;
+            top: -36px;
+            left: -30px;
+            width: 120px;
+            height: 26px;
+          }
+          .calibration-time{
+              flex-shrink: 0;
+              height:100%;
+              line-height: 26px;
+              color:#00ffff;
+              font-size:26px;
+              width:120px;
+              text-align: left;
+              position:absolute;
+              bottom: -36px;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 120px;
+              height: 26px;
+              text-align: center;
+          }
+          
+        }
+      }
+      .time-line-green{
+        width: 20%;
+        height: 12px;
+        background:#58fa44;
+        position:absolute;
+        left: 0;
+        top:50%;
+        transform: translateY(-50%;);
+        .time-modle{
+          width:48px;
+          height:90px;
+          background:url("../../assets/images/forestFire/bg_timmer_btn_06.png");
+          background-size:100% 100%;
+          position:absolute;
+          right:-48px;
+          top:50%;
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+      }
+      .hour-number{
+        width:2772px;
+        height:26px;
+        position:absolute;
+        left:50%;
+        top:20px;
+        transform: translateX(-50%);
+        display:flex;
+        justify-content: space-around;
+        p{
+          flex-shrink: 0;
+          height:100%;
+          line-height: 26px;
+          color:#00ffff;
+          font-size:26px;
+          width:120px;
+          text-align: center;
+        }
+      }
+    }
+    .time-period{
+      max-width:2900px;
+      width:auto;
+      height:46px;
+      border-top:1px solid #00fefc;
+      border-left:1px solid #00fefc;
+      border-right:1px solid #00fefc;
+      position:absolute;
+      top:-46px;
+      left:46px;
+      display:flex;
+      p{
+        height:100%;
+        line-height: 46px;
+        color:white;
+        font-size:24px;
+        padding:0 16px;
+        cursor: pointer;  
+        word-break:keep-all;       
+        white-space:nowrap;        /* 不换行 */
+      }
+      p:hover{
+        box-shadow: 0 0 12px #00fefc inset;
+      }
+      .point-active{
+        box-shadow: 0 0 12px #00fefc inset;
+      }
+    }
+    .time-long-show{
+      width:auto;
+      height:72px;
+      position:absolute;
+      top:-103px;
+      left:50%;
+      transform: translateX(-50%);
+      p{
+        color:#00ffff;
+        font-size:32px;
+        line-height: 72px;
+      }
+    }
+  }
+  
+  .right-right-order{
+    width:100%;
+    height:100%;
+    background:url("../../assets/images/forestFire/bg_time_line(2).png") no-repeat no-repeat center;
+    ul{
+      height:100%;
+      width:100%;
+      margin-bottom:10px;
+      display:flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      li{
+        height:33%;
+        width:auto;
+        min-width:30%;
+        max-width:50%;
+        div{
+          height:50%;
+          overflow: auto;
+          width:auto;
+        
+          color:white;
+          font-size:24px;
+        }
+      }
+    }
+  }
+  .right-right-content {
+      width: 100%;
+      height: calc(100% - 92px);
+      overflow: auto;
+      padding-left: 24px;
+      box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      overflow: auto;
+      ul {
+        width: 100%;
+        border-left: 2px #1f4e84 solid;
+        padding:20px 20px 0 0;
+        box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        li {
+          width: 100%;
+          height: auto;
+          padding-left: 23px;
+          padding-bottom: 24px;
+          box-sizing: border-box;
+          -o-box-sizing: border-box;
+          -ms-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          -webkit-box-sizing: border-box;
+          position: relative;
+          .li-event-title {
+            width: 100%;
+            height: 42px;
+            color: white;
+            display: flex;
+            align-items: center;
+            p {
+              width: auto;
+              color: white;
+              font-size: 26px;
+              display: flex;
+              align-items: center;
+              img {
+                display: block;
+                width: 32px;
+                height: 32px;
+                margin-top: 5px;
+                margin-right: 7px;
+              }
+              span {
+                display: block;
+                margin-right: 20px;
+              }
+            }
+            span:nth-child(2){
+              line-height: 36px;
+              padding:10px 10px;
+              background:#3ca8dc;
+              border-radius: 10px 10px;
+              -o-border-radius: 10px 10px;
+              -ms-border-radius: 10px 10px;
+              -moz-border-radius: 10px 10px;
+              -webkit-border-radius: 10px 10px;
+
+            }
+            label {
+              font-size: 26px;
+            }
+            .green {
+              color: #46e777;
+            }
+            .blue {
+              color: #03cff2;
+            }
+          }
+          .li-event-detail {
+            width: 100%;
+            height: auto;
+            //   background-size: 100% 100%;
+            color: white;
+            font-size: 26px;
+            padding: 22px 26px;
+            box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+          }
+          .bg-task {
+            // border: 1px #2dc86c solid;
+           /*  background: url("../../assets/images/dragonBoat/bg_task.png")
+              no-repeat no-repeat center;
+            background-size: 100% 100%; */
+            border: 1px #06872b solid;
+              background: rgba(8, 120, 48, 0.5);
+              border-radius: 10px 10px;
+              -o-border-radius: 10px 10px;
+              -ms-border-radius: 10px 10px;
+              -moz-border-radius: 10px 10px;
+              -webkit-border-radius: 10px 10px;
+              margin-top:18px;
+          }
+          .bg-trouble {
+            // border: 1px #2459b9 solid;
+           /*  background: url("../../assets/images/dragonBoat/bg_trouble.png")
+              no-repeat no-repeat center;
+            background-size: 100% 100%; */
+            border: 1px #00d7e9 solid;
+            background: rgba(7,133,158,0.5);
+            border-radius: 10px 10px;
+            -o-border-radius: 10px 10px;
+            -ms-border-radius: 10px 10px;
+            -moz-border-radius: 10px 10px;
+            -webkit-border-radius: 10px 10px;
+            margin-top:18px;
+          }
+          .li-icon-task {
+            display: block;
+            width: 24px;
+            height: 25px;
+            position: absolute;
+            top: 8.5px;
+            left: -12px;
+          }
+        }
+      }
+    }
+    .time-begin-btn{
+      width:80px;
+      height:80px;
+      border-radius: 50% 50%;
+      border:1px #00fefc solid;
+      box-shadow: 0 0 18px #00fefc inset;
+      position: absolute;
+      top:-140px;
+      left:50%;
+      transform:translateX(-50%);
+      color:white;
+      text-align: center;
+      font-size:46px;
+      line-height:80px;
+      cursor: pointer;
+    }
+    .new-message{
+          animation: circleRun 3s ease;
+        }
+        @keyframes circleRun{
+          0%{
+           /*  box-shadow: 0 0 10px 10px outset #01ffff; */
+            box-shadow: 0 0 10px 10px  #01ffff;
+          }
+           25%{
+           /*  box-shadow: 0 0 20px 20px outset #01ffff; */
+            box-shadow: 0 0 20px 20px  #01ffff;
+          }
+         /*  50%{box-shadow: 0 0 20px 10px outset #01ffff;}
+          100%{box-shadow: 0 0 20px 0px outset #01ffff;} */
+          50%{box-shadow: 0 0 20px 10px  #01ffff;}
+          100%{box-shadow: 0 0 20px 0px  #01ffff;}
+        }
+  

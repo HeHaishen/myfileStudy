@@ -1,0 +1,6852 @@
+{
+    "type": "FeatureCollection",
+    "totalFeatures": 360,
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:EPSG::4326"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "id": "FireFocus_1",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4054,
+                    23.2433
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇良田村",
+                "LX": "煤气站",
+                "BZ": "良田村煤气站",
+                "STID": 1
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_2",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3821,
+                    23.374
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇白土村",
+                "LX": "煤气站",
+                "BZ": "白土村煤气站",
+                "STID": 2
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_3",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4116,
+                    23.3517
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇陈洞村杨梅佛",
+                "LX": "化工厂",
+                "BZ": "广州台实防水补强有限公司",
+                "STID": 3
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_4",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3876,
+                    23.3486
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇光明村委",
+                "LX": "化工厂",
+                "BZ": "广州白云区良田光明化工厂",
+                "STID": 4
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_5",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4475,
+                    23.4234
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇登塘村",
+                "LX": "坟场",
+                "BZ": "登塘坟场",
+                "STID": 5
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_6",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4245,
+                    23.4002
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇湴湖村",
+                "LX": "坟场",
+                "BZ": "湴湖坟场",
+                "STID": 6
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_7",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4209,
+                    23.3979
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇黎塘村",
+                "LX": "山坟集中地",
+                "BZ": "黎塘骨灰楼",
+                "STID": 7
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_8",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3971,
+                    23.3851
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇长腰岭村",
+                "LX": "坟场",
+                "BZ": "长腰坟场",
+                "STID": 8
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_9",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3743,
+                    23.3676
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇梅田村",
+                "LX": "军事禁区",
+                "BZ": "梅田武警",
+                "STID": 9
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_10",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3937,
+                    23.3703
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇茅岗村",
+                "LX": "军事禁区",
+                "BZ": "茅岗特警训练基地",
+                "STID": 10
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_11",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3553,
+                    23.3544
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "钟落潭镇金盆村",
+                "LX": "军事禁区",
+                "BZ": "金盆军事禁区",
+                "STID": 11
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_12",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3693,
+                    23.2914
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇兴太路与白山村村委会附近",
+                "LX": "加油站",
+                "BZ": "加油站",
+                "STID": 12
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_13",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4116,
+                    23.2708
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇穗丰村青背坑",
+                "LX": "高压变电站（220KV以上）",
+                "BZ": "木棉变电站",
+                "STID": 13
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_14",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3451,
+                    23.3071
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇和龙村大隆",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 14
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_15",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4592,
+                    23.2889
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇兴丰村大坑尾",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 15
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_16",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4561,
+                    23.2945
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇兴丰村七社河洋坑",
+                "LX": "易燃工厂",
+                "BZ": "废轮胎交易中心（ 约200亩）",
+                "STID": 16
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_17",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4245,
+                    23.268
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇穗丰村十四社水均田",
+                "LX": "易燃工厂",
+                "BZ": "废轮胎交易中心",
+                "STID": 17
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_18",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4081,
+                    23.3019
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇穗丰村二十八社华沙坑",
+                "LX": "军事禁区",
+                "BZ": "军事禁区",
+                "STID": 18
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_19",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3213,
+                    23.2674
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇大源村4社",
+                "LX": "变电站",
+                "BZ": "南坑变电站",
+                "STID": 19
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_20",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3219,
+                    23.2933
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇米龙村5社",
+                "LX": "加油站",
+                "BZ": "太和加油站",
+                "STID": 20
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_21",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.318,
+                    23.2898
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇米龙村",
+                "LX": "易燃工厂",
+                "BZ": "广州三磊新材料有限公司",
+                "STID": 21
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_22",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3028,
+                    23.2781
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇大源村",
+                "LX": "化工厂",
+                "BZ": "化工厂",
+                "STID": 22
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_23",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2929,
+                    23.2824
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇永兴村",
+                "LX": "加油站",
+                "BZ": "加油站",
+                "STID": 23
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_24",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3232,
+                    23.2792
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇大源村",
+                "LX": "加油站",
+                "BZ": "加油站",
+                "STID": 24
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_25",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3022,
+                    23.3046
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇石湖村",
+                "LX": "加油站",
+                "BZ": "加油站",
+                "STID": 25
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_26",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3114,
+                    23.2875
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇永兴村",
+                "LX": "发电站",
+                "BZ": "李坑发电站",
+                "STID": 26
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_27",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3069,
+                    23.2676
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇大源村",
+                "LX": "发电站",
+                "BZ": "南坑发电站",
+                "STID": 27
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_28",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3139,
+                    23.2473
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇大源村",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 28
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_29",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.369,
+                    23.3058
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇头陂村4社大菜园",
+                "LX": "军事禁区",
+                "BZ": "军事禁区",
+                "STID": 29
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_30",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3593,
+                    23.3213
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇头陂村3社牛背顶",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 30
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_31",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3633,
+                    23.3236
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇头陂村3社火山下",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 31
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_32",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3581,
+                    23.313
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇头陂村3社观光路口",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 32
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_33",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3376,
+                    23.3369
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇沙亭岗9社、10社",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 33
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_34",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.341,
+                    23.3256
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇沙亭岗徐屋背",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 34
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_35",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3399,
+                    23.3118
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇东坑堂打石窿",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 35
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_36",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3423,
+                    23.3143
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇东坑堂猪肝吊胆",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 36
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_37",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3436,
+                    23.308
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇和龙村大窿",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 37
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_38",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4345,
+                    23.3327
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "白云区",
+                "SSQZ": "太和镇华坑村九太路",
+                "LX": "加油站",
+                "BZ": "沙田加油站",
+                "STID": 38
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_82",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.456,
+                    23.4729
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "太平镇",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 82
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_83",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4712,
+                    23.479
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "太平镇",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 83
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_84",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4701,
+                    23.4793
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "太平镇",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 84
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_85",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.488,
+                    23.4928
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "太平镇",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 85
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_86",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5046,
+                    23.5008
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "太平镇",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 86
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_87",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4417,
+                    23.4359
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "太平镇",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 87
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_88",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4522,
+                    23.4322
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "太平镇",
+                "LX": "煤气站",
+                "BZ": " ",
+                "STID": 88
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_89",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4714,
+                    23.4312
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "太平镇",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 89
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_90",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4293,
+                    23.4706
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "太平镇",
+                "LX": "军事禁区",
+                "BZ": "牛心岭军区",
+                "STID": 90
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_91",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4773,
+                    23.4555
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "太平镇",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 91
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_92",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4853,
+                    23.4236
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "太平镇",
+                "LX": "易着火工厂",
+                "BZ": " ",
+                "STID": 92
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_93",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6657,
+                    23.7029
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "良口镇",
+                "LX": "加油站",
+                "BZ": "煤气站",
+                "STID": 93
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_94",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6681,
+                    23.7008
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "良口镇",
+                "LX": "加油站",
+                "BZ": "加油站",
+                "STID": 94
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_95",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6348,
+                    23.6712
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "良口镇",
+                "LX": "加油站",
+                "BZ": "加油站",
+                "STID": 95
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_96",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5676,
+                    23.5849
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "油汽库",
+                "BZ": "军事油库",
+                "STID": 96
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_97",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5737,
+                    23.6025
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 97
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_98",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5752,
+                    23.6037
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "加油站",
+                "BZ": "中国石化安达加油站",
+                "STID": 98
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_99",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5927,
+                    23.6169
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "加油站",
+                "BZ": "加油站",
+                "STID": 99
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_100",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5997,
+                    23.6296
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "加油站",
+                "BZ": "温泉加油站",
+                "STID": 100
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_101",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6142,
+                    23.6354
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "加油站",
+                "BZ": "加油站",
+                "STID": 101
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_102",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6179,
+                    23.6516
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "加油站",
+                "BZ": "中国石油金叶加油站",
+                "STID": 102
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_103",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6479,
+                    23.5776
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 103
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_104",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6717,
+                    23.5727
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 104
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_105",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6226,
+                    23.6537
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 105
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_106",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5686,
+                    23.5843
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "军事禁区",
+                "BZ": " ",
+                "STID": 106
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_107",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.592,
+                    23.6358
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "军事禁区",
+                "BZ": " ",
+                "STID": 107
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_108",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5972,
+                    23.6184
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "高压变电站",
+                "BZ": " ",
+                "STID": 108
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_109",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5775,
+                    23.5923
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "易着火工厂",
+                "BZ": "誉桦木业",
+                "STID": 109
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_110",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.594,
+                    23.5751
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "易着火点",
+                "BZ": " ",
+                "STID": 110
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_111",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6217,
+                    23.6273
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "易着火点",
+                "BZ": " ",
+                "STID": 111
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_112",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5754,
+                    23.6075
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "加油站",
+                "BZ": "桃园油站",
+                "STID": 112
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_113",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5909,
+                    23.5195
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "江埔街道",
+                "LX": "加油站",
+                "BZ": "华从油站",
+                "STID": 113
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_114",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5418,
+                    23.5226
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "江埔街道",
+                "LX": "加油站",
+                "BZ": "从化盈通加油站",
+                "STID": 114
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_115",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5466,
+                    23.5231
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "江埔街道",
+                "LX": "加油站",
+                "BZ": "华山加油站",
+                "STID": 115
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_116",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5639,
+                    23.5721
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "江埔街道",
+                "LX": "加油站",
+                "BZ": "龙珠加油站",
+                "STID": 116
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_117",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5632,
+                    23.5745
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "江埔街道",
+                "LX": "加油站",
+                "BZ": "中国海油加油站",
+                "STID": 117
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_118",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5583,
+                    23.5508
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "江埔街道",
+                "LX": "加油站",
+                "BZ": "长兴加油站",
+                "STID": 118
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_119",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5586,
+                    23.5534
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "江埔街道",
+                "LX": "加油站",
+                "BZ": "中国石化东山加油站",
+                "STID": 119
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_120",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5495,
+                    23.5201
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "江埔街道",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 120
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_121",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6398,
+                    23.505
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "江埔街道",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 121
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_122",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.559,
+                    23.5523
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "江埔街道",
+                "LX": "油汽库",
+                "BZ": "大德园",
+                "STID": 122
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_123",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5118,
+                    23.5483
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "街口街道",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 123
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_124",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5213,
+                    23.5457
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "街口街道",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 124
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_166",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1386,
+                    23.4444
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇义山村",
+                "LX": "金钟墓园",
+                "BZ": " ",
+                "STID": 166
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_167",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1121,
+                    23.4969
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇中心村",
+                "LX": "田美墓园",
+                "BZ": " ",
+                "STID": 167
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_168",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0742,
+                    23.4912
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇联星村",
+                "LX": "高压变电站",
+                "BZ": " ",
+                "STID": 168
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_169",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1122,
+                    23.4945
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇前进村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 169
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_170",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1125,
+                    23.4932
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇西头村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 170
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_171",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1143,
+                    23.4954
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇中心村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 171
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_172",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1028,
+                    23.4874
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇前进村",
+                "LX": "场安墓园",
+                "BZ": " ",
+                "STID": 172
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_173",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1016,
+                    23.4878
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇军田村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 173
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_174",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1127,
+                    23.4907
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇西头村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 174
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_175",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1838,
+                    23.4968
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇旗新村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 175
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_176",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.202,
+                    23.4695
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇旗山社区",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 176
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_177",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0741,
+                    23.3971
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "赤坭镇赤坭居委会",
+                "LX": "加油站",
+                "BZ": "地址：赤坭大道与培正大道交界",
+                "STID": 177
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_178",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1009,
+                    23.4443
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "赤坭镇乌石村",
+                "LX": "加油站",
+                "BZ": "地址：乌石村培正大道",
+                "STID": 178
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_179",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0951,
+                    23.4054
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "赤坭镇剑岭村",
+                "LX": "山坟集中地",
+                "BZ": "地址：剑岭村丫髻山",
+                "STID": 179
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_180",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0666,
+                    23.4141
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "赤坭镇赤坭村",
+                "LX": "山坟集中地",
+                "BZ": "地址：赤坭村打鼓岭",
+                "STID": 180
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_181",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0844,
+                    23.4605
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "赤坭镇石坑村",
+                "LX": "高压变电站",
+                "BZ": " ",
+                "STID": 181
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_182",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0497,
+                    23.4149
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "赤坭镇黄沙塘村",
+                "LX": "高压变电站",
+                "BZ": "地址：古树大道黄沙塘村",
+                "STID": 182
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_183",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.041,
+                    23.3955
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "赤坭镇篮田村",
+                "LX": "高压变电站",
+                "BZ": " ",
+                "STID": 183
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_184",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0081,
+                    23.4302
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "赤坭镇白坭村",
+                "LX": "山坟集中地",
+                "BZ": "地址：白坭村大排山",
+                "STID": 184
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_185",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1063,
+                    23.3991
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇民主村",
+                "LX": "山坟集中地",
+                "BZ": "地址：民主村丫髻山",
+                "STID": 185
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_186",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0831,
+                    23.3715
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇瓦步村",
+                "LX": "油气库",
+                "BZ": "地址：瓦步村鸭一村",
+                "STID": 186
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_187",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1128,
+                    23.383
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇民主村",
+                "LX": "加油站",
+                "BZ": "地址：民主村四角围",
+                "STID": 187
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_188",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.112,
+                    23.3836
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇民主村",
+                "LX": "加油站",
+                "BZ": "地址：民主村四角围",
+                "STID": 188
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_189",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1009,
+                    23.3834
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇鸭湖村",
+                "LX": "加油站",
+                "BZ": "名称：将军潭加油站",
+                "STID": 189
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_190",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.103,
+                    23.3675
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇民主村",
+                "LX": "加油站",
+                "BZ": "地址：民主村水边村",
+                "STID": 190
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_191",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0948,
+                    23.3452
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇东风村",
+                "LX": "加油站",
+                "BZ": "名称：巴江加油站",
+                "STID": 191
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_192",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0855,
+                    23.324
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇环山村",
+                "LX": "煤气站",
+                "BZ": " ",
+                "STID": 192
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_193",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0844,
+                    23.3216
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇环山村",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 193
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_194",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0837,
+                    23.3118
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇环山村",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 194
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_195",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0659,
+                    23.2761
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇文二村",
+                "LX": "煤气站",
+                "BZ": " ",
+                "STID": 195
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_196",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0385,
+                    23.3341
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇大涡村",
+                "LX": "高压变电站",
+                "BZ": " ",
+                "STID": 196
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_197",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1119,
+                    23.3431
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇石南村",
+                "LX": "高压变电站",
+                "BZ": " ",
+                "STID": 197
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_198",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1104,
+                    23.379
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇民主村",
+                "LX": "军事禁区",
+                "BZ": "地址：民主村大田经济社",
+                "STID": 198
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_199",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.1039,
+                    23.3837
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇鸭湖村",
+                "LX": "军事禁区",
+                "BZ": " ",
+                "STID": 199
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_200",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0935,
+                    23.3887
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇鸭湖村",
+                "LX": "军事禁区",
+                "BZ": "地址：鸭湖村鸭髻山",
+                "STID": 200
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_201",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0947,
+                    23.3868
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇鸭湖村",
+                "LX": "军事禁区",
+                "BZ": "地址：鸭湖村狮岭头",
+                "STID": 201
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_202",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.0779,
+                    23.3441
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "炭步镇新太村",
+                "LX": "军事禁区",
+                "BZ": " ",
+                "STID": 202
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_203",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.353,
+                    23.4643
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "花东镇七星村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 203
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_204",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3199,
+                    23.4932
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "花东镇联安村",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 204
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_205",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3241,
+                    23.4398
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "花东镇象山村",
+                "LX": "高压变电站",
+                "BZ": "名称：富力金范城",
+                "STID": 205
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_125",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5316,
+                    23.5359
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "街口街道",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 125
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_126",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7099,
+                    23.6369
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "大岭山林场",
+                "LX": "发电站",
+                "BZ": "金鸡电站",
+                "STID": 126
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_127",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7193,
+                    23.6287
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "大岭山林场",
+                "LX": "发电站",
+                "BZ": "石门电站",
+                "STID": 127
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_128",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.713,
+                    23.6299
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "大岭山林场",
+                "LX": "寺庙",
+                "BZ": "老虎庙",
+                "STID": 128
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_129",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7186,
+                    23.625
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "大岭山林场",
+                "LX": "发电站",
+                "BZ": "大岭山一级电站",
+                "STID": 129
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_130",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7171,
+                    23.6321
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "大岭山林场",
+                "LX": "发电站",
+                "BZ": "大指背电站",
+                "STID": 130
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_131",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7132,
+                    23.7252
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "流溪河林场",
+                "LX": "加油站",
+                "BZ": "加油站",
+                "STID": 131
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_132",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7286,
+                    23.7218
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "流溪河林场",
+                "LX": "发电站",
+                "BZ": "南山电站",
+                "STID": 132
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_133",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7369,
+                    23.7211
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "流溪河林场",
+                "LX": "发电站",
+                "BZ": "三牙亚塘电站",
+                "STID": 133
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_134",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7416,
+                    23.7209
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "流溪河林场",
+                "LX": "发电站",
+                "BZ": "三棵松电站",
+                "STID": 134
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_135",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7493,
+                    23.7186
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "流溪河林场",
+                "LX": "发电站",
+                "BZ": " ",
+                "STID": 135
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_136",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7613,
+                    23.7143
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "流溪河林场",
+                "LX": "发电站",
+                "BZ": " ",
+                "STID": 136
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_137",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7646,
+                    23.7541
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "流溪河林场",
+                "LX": "发电站",
+                "BZ": "石呔角电站",
+                "STID": 137
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_138",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7484,
+                    23.7469
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "流溪河林场",
+                "LX": "发电站",
+                "BZ": "中炉仔电站",
+                "STID": 138
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_139",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7367,
+                    23.743
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "流溪河林场",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 139
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_140",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7062,
+                    23.7252
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "流溪河林场",
+                "LX": "变电站",
+                "BZ": "流溪河林场变电站",
+                "STID": 140
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_141",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6902,
+                    23.7273
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "流溪河林场",
+                "LX": "发电站",
+                "BZ": "流溪河发电厂",
+                "STID": 141
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_142",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7082,
+                    23.7726
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "流溪河林场",
+                "LX": "发电站",
+                "BZ": "谷星电站",
+                "STID": 142
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_143",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3696,
+                    22.9651
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "沙湾镇草河工业区附近",
+                "LX": "气库",
+                "BZ": "沙湾青峰气库",
+                "STID": 143
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_144",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3572,
+                    23.0399
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "南村镇七星岗西北坡",
+                "LX": "液化气站",
+                "BZ": "南村大众液化气站",
+                "STID": 144
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_145",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2836,
+                    23.0588
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "大石镇飘风岗",
+                "LX": "加油站",
+                "BZ": "番石加油站",
+                "STID": 145
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_146",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3989,
+                    23.1037
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "新造镇思贤村",
+                "LX": "储油库",
+                "BZ": "广州市海运局新造储油库",
+                "STID": 146
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_147",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3837,
+                    23.0878
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "新造镇山屋村",
+                "LX": "油库",
+                "BZ": "港茂油库",
+                "STID": 147
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_148",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3915,
+                    23.0936
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "新造镇农场",
+                "LX": "燃油库",
+                "BZ": "中燃油库",
+                "STID": 148
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_149",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4545,
+                    23.0138
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "莲花山浮莲岗",
+                "LX": "加油站",
+                "BZ": "莲兴加油站",
+                "STID": 149
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_150",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2923,
+                    22.9413
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "沙湾镇市良路附近",
+                "LX": "气库",
+                "BZ": "沙湾青峰气库",
+                "STID": 150
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_151",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4421,
+                    23.0211
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "石楼镇大浮莲岗东北坡",
+                "LX": "炸药库",
+                "BZ": "莲花山农业公司炸药库",
+                "STID": 151
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_152",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2941,
+                    22.9508
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "沙湾镇桃源路附近",
+                "LX": "陵园",
+                "BZ": "永乐陵园",
+                "STID": 152
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_153",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2909,
+                    22.959
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "沙湾镇景曙路附近",
+                "LX": "军事禁区",
+                "BZ": "军事禁区",
+                "STID": 153
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_154",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2873,
+                    22.9693
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "沙湾镇福北路附近",
+                "LX": "军事禁区",
+                "BZ": "军事禁区",
+                "STID": 154
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_155",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2862,
+                    22.9659
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "沙湾镇福涌村",
+                "LX": "弹药库",
+                "BZ": "弹药库",
+                "STID": 155
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_156",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2846,
+                    22.9681
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "沙湾镇福涌村",
+                "LX": "射击场",
+                "BZ": "射击场",
+                "STID": 156
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_157",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3579,
+                    23.0377
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "南村镇梅山村",
+                "LX": "墓园",
+                "BZ": "南村永安堂",
+                "STID": 157
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_158",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2595,
+                    23.0479
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "番禺大石镇",
+                "LX": "军事禁区",
+                "BZ": "番禺监狱",
+                "STID": 158
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_159",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2665,
+                    23.0399
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "番禺大石镇",
+                "LX": "垃圾场",
+                "BZ": "垃圾场",
+                "STID": 159
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_160",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3966,
+                    23.0842
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "新造镇思贤村龙津路附近",
+                "LX": "储油库",
+                "BZ": "广州市海运局新造储油库",
+                "STID": 160
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_161",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2807,
+                    22.9845
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "市桥镇南双玉村",
+                "LX": "加油站",
+                "BZ": "南双玉加油站",
+                "STID": 161
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_162",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2836,
+                    23.0588
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "番禺区",
+                "SSQZ": "大石镇飘风岗",
+                "LX": "加油站",
+                "BZ": "番石加油站",
+                "STID": 162
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_163",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.253,
+                    23.5055
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "梯面镇民安村",
+                "LX": "加油站",
+                "BZ": "民安加油站",
+                "STID": 163
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_164",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2805,
+                    23.5539
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "梯面镇联民村",
+                "LX": "加油站",
+                "BZ": "在建",
+                "STID": 164
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_165",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.221,
+                    23.5193
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "狮岭镇集贤村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 165
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_39",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3756,
+                    23.687
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "鳌头镇",
+                "LX": "加油站",
+                "BZ": "高平加油站",
+                "STID": 39
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_40",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3742,
+                    23.6542
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "鳌头镇",
+                "LX": "加油站",
+                "BZ": "龙潭加油站",
+                "STID": 40
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_41",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3765,
+                    23.6274
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "鳌头镇",
+                "LX": "加油站",
+                "BZ": "龙泉油站",
+                "STID": 41
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_42",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3358,
+                    23.5798
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "鳌头镇",
+                "LX": "加油站",
+                "BZ": "石咀加油站",
+                "STID": 42
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_43",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3471,
+                    23.7007
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "鳌头镇",
+                "LX": "煤气站",
+                "BZ": "煤气站（西气东输）",
+                "STID": 43
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_44",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3913,
+                    23.6929
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "鳌头镇",
+                "LX": "军事禁区",
+                "BZ": " ",
+                "STID": 44
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_45",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4174,
+                    23.5633
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "鳌头镇",
+                "LX": "高压变电站",
+                "BZ": " ",
+                "STID": 45
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_46",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4587,
+                    23.5882
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "鳌头镇",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 46
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_47",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4456,
+                    23.6328
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "鳌头镇",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 47
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_48",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3671,
+                    23.5936
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "鳌头镇",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 48
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_49",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8301,
+                    23.7518
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 49
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_50",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7938,
+                    23.8587
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "变电站",
+                "BZ": "供电局变电站",
+                "STID": 50
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_51",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7945,
+                    23.8589
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "煤气站",
+                "BZ": " ",
+                "STID": 51
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_52",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8225,
+                    23.821
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "发电站",
+                "BZ": "东南发电站1",
+                "STID": 52
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_53",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8251,
+                    23.8197
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "发电站",
+                "BZ": "东南发电站2",
+                "STID": 53
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_54",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5924,
+                    23.6357
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "温泉镇",
+                "LX": "军事禁区",
+                "BZ": " ",
+                "STID": 54
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_55",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7107,
+                    23.7969
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "良口镇",
+                "LX": "发电站",
+                "BZ": "水力发电站",
+                "STID": 55
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_56",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7072,
+                    23.8111
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "良口镇",
+                "LX": "发电站",
+                "BZ": "水力发电站",
+                "STID": 56
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_57",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7026,
+                    23.8197
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "良口镇",
+                "LX": "发电站",
+                "BZ": "水力发电站",
+                "STID": 57
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_58",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7063,
+                    23.813
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "良口镇",
+                "LX": "发电站",
+                "BZ": "水力发电站",
+                "STID": 58
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_59",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7205,
+                    23.8219
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "良口镇",
+                "LX": "发电站",
+                "BZ": "小园水力发电站",
+                "STID": 59
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_60",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8711,
+                    23.7511
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "广州蓄能电厂一期出线场",
+                "BZ": " ",
+                "STID": 60
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_61",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8745,
+                    23.746
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "广州蓄能电厂二期出线场",
+                "BZ": " ",
+                "STID": 61
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_62",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8292,
+                    23.7517
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "加油站",
+                "BZ": "安山加油站",
+                "STID": 62
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_63",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.809,
+                    23.7456
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "发电站",
+                "BZ": "长滩水电站",
+                "STID": 63
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_64",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8065,
+                    23.7214
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "发电站",
+                "BZ": " ",
+                "STID": 64
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_65",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7987,
+                    23.7257
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "发电站",
+                "BZ": " ",
+                "STID": 65
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_66",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8602,
+                    23.7784
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "加油站",
+                "BZ": "吕中加油站",
+                "STID": 66
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_67",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8746,
+                    23.7983
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "易发生火灾区",
+                "BZ": " ",
+                "STID": 67
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_68",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8638,
+                    23.7719
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 68
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_69",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.872,
+                    23.791
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "发电站",
+                "BZ": "水厂电站",
+                "STID": 69
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_70",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8703,
+                    23.7921
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "发电站",
+                "BZ": "水厂电站",
+                "STID": 70
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_71",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.9013,
+                    23.7894
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "吕田镇",
+                "LX": "发电站",
+                "BZ": "水厂电站",
+                "STID": 71
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_72",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5111,
+                    23.5573
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "城郊街道",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 72
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_73",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4933,
+                    23.5608
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "城郊街道",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 73
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_74",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5312,
+                    23.6347
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "城郊街道",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 74
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_75",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5104,
+                    23.56
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "城郊街道",
+                "LX": "高压变电站",
+                "BZ": " ",
+                "STID": 75
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_76",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5275,
+                    23.5802
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "城郊街道",
+                "LX": "军事禁区",
+                "BZ": "横江公司社区居委会",
+                "STID": 76
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_77",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6457,
+                    23.6735
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "良口镇",
+                "LX": "高压变电站",
+                "BZ": "养生谷变电站",
+                "STID": 77
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_78",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6682,
+                    23.7001
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "良口镇",
+                "LX": "高压变电站",
+                "BZ": "良口变电站",
+                "STID": 78
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_79",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6741,
+                    23.7074
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "良口镇",
+                "LX": "加油站",
+                "BZ": "穗华油站",
+                "STID": 79
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_80",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4436,
+                    23.4443
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "太平镇",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 80
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_81",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4454,
+                    23.451
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "太平镇",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 81
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_247",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4025,
+                    23.2164
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "联和街道黄陂村",
+                "LX": "加油站",
+                "BZ": "黄陂加油站",
+                "STID": 247
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_248",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3934,
+                    23.2152
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "联和街道黄陂村",
+                "LX": "加油站",
+                "BZ": "运通加油站",
+                "STID": 248
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_249",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3947,
+                    23.2162
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "联和街道黄陂村",
+                "LX": "加油站",
+                "BZ": "金华加油站",
+                "STID": 249
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_250",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3904,
+                    23.217
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "联和街道黄陂村",
+                "LX": "加油站",
+                "BZ": "龙兴加油站",
+                "STID": 250
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_251",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3847,
+                    23.2186
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "联和街道联和社区",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 251
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_252",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4172,
+                    23.1756
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "联和街道玉树社区",
+                "LX": "加油站",
+                "BZ": "姬堂加油站",
+                "STID": 252
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_253",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.51,
+                    23.2216
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "永和街道新庄村",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 253
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_254",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5127,
+                    23.2278
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "永和街道新庄村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 254
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_255",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5012,
+                    23.2251
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "永和街道贤江村",
+                "LX": "加油站",
+                "BZ": "贤江加油站",
+                "STID": 255
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_256",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4974,
+                    23.2414
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "永和街道贤江村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 256
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_257",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5075,
+                    23.2373
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "永和街道禾丰村",
+                "LX": "高压变电站",
+                "BZ": " ",
+                "STID": 257
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_258",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5032,
+                    23.2215
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "永和街道贤江村",
+                "LX": "加气站",
+                "BZ": "港华燃气",
+                "STID": 258
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_259",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5144,
+                    23.2053
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "永和街道永岗村",
+                "LX": "化工厂",
+                "BZ": " ",
+                "STID": 259
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_260",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5175,
+                    23.2057
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "永和街道永岗村",
+                "LX": "化工厂",
+                "BZ": " ",
+                "STID": 260
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_261",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4231,
+                    23.1986
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "联和街道玉树社区",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 261
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_262",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4135,
+                    23.2233
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "联和街道黄陂村",
+                "LX": "军事禁区",
+                "BZ": "武警第二支队",
+                "STID": 262
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_263",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4049,
+                    23.2225
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "联和街道黄陂村",
+                "LX": "军事禁区",
+                "BZ": "军事仓库",
+                "STID": 263
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_264",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4166,
+                    23.2071
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "联和街道迁岗村",
+                "LX": "山坟集中地",
+                "BZ": "暹岗山坟",
+                "STID": 264
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_265",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4044,
+                    23.2052
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "联和街道玉树社区",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 265
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_266",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3819,
+                    23.2265
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "联和街道联和社区",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 266
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_267",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4251,
+                    23.2288
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "萝岗街道水西村",
+                "LX": "加油站",
+                "BZ": "航天加油站",
+                "STID": 267
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_268",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4392,
+                    23.2454
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "萝岗街道长平村",
+                "LX": "高压变电站",
+                "BZ": " ",
+                "STID": 268
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_269",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4493,
+                    23.2045
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "萝岗街道萝岗村",
+                "LX": "加油站",
+                "BZ": "明力加油站",
+                "STID": 269
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_270",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4452,
+                    23.1924
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "萝岗街道萝岗村",
+                "LX": "加油站",
+                "BZ": "萝岗加油站",
+                "STID": 270
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_271",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.426,
+                    23.2235
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "萝岗街道水西村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 271
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_272",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4321,
+                    23.2187
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "萝岗街道水西村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 272
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_273",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5333,
+                    23.302
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇镇龙村",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 273
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_274",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5376,
+                    23.2962
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇九楼村",
+                "LX": "化工厂",
+                "BZ": "东鸿化工厂",
+                "STID": 274
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_275",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5377,
+                    23.2969
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇九楼村",
+                "LX": "化工厂",
+                "BZ": "楚航化工厂",
+                "STID": 275
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_276",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5405,
+                    23.3023
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇镇龙村",
+                "LX": "煤气站",
+                "BZ": " ",
+                "STID": 276
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_277",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5114,
+                    23.3071
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇镇龙村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 277
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_278",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5113,
+                    23.306
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇镇龙村",
+                "LX": "化工厂",
+                "BZ": " ",
+                "STID": 278
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_279",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5133,
+                    23.3014
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇镇龙村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 279
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_280",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4667,
+                    23.2441
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "萝岗街道岭头公司",
+                "LX": "化工厂",
+                "BZ": "好上好胶水厂",
+                "STID": 280
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_281",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5165,
+                    22.8162
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "南沙经济开发区塘坑管理区",
+                "LX": "加油站",
+                "BZ": "加油站",
+                "STID": 281
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_282",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5233,
+                    22.8691
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "南沙经济开发区坦头管理区",
+                "LX": "高压电线塔",
+                "BZ": "中国南方电网高压电线塔",
+                "STID": 282
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_283",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5206,
+                    22.8413
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "南沙经济开发区南沙林场",
+                "LX": "高压电线塔",
+                "BZ": "蝴中线高压电线塔",
+                "STID": 283
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_284",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4533,
+                    22.8794
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "黄阁镇松庐堂",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 284
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_285",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5222,
+                    22.8268
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "南沙经济开发区玉德堂",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 285
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_286",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5204,
+                    22.8274
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "南沙经济开发区安乐堂",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 286
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_287",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4361,
+                    22.8751
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "东涌镇长莫村安乐堂",
+                "LX": "山坟集中地",
+                "BZ": "山坟集中地",
+                "STID": 287
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_288",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.535,
+                    22.8259
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "南沙经济开发区东井村",
+                "LX": "加油站",
+                "BZ": "加油站",
+                "STID": 288
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_289",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4642,
+                    22.8764
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "黄阁镇大井村",
+                "LX": "加油站",
+                "BZ": "亭角加油站",
+                "STID": 289
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_290",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5142,
+                    22.873
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "南沙经济开发区坦头北",
+                "LX": "加油站",
+                "BZ": "坦头北加油站",
+                "STID": 290
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_291",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5264,
+                    22.8655
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "南沙经济开发区坦头南",
+                "LX": "加油站",
+                "BZ": "坦头南加油站",
+                "STID": 291
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_292",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.518,
+                    22.8725
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "南沙经济开发区坦头管理区",
+                "LX": "化工厂",
+                "BZ": "建滔化工厂",
+                "STID": 292
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_293",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5229,
+                    22.8684
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "南沙经济开发区坦头管理区",
+                "LX": "电厂",
+                "BZ": "珠江电厂",
+                "STID": 293
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_294",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5059,
+                    22.8894
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "南沙区",
+                "SSQZ": "黄阁镇小虎村",
+                "LX": "油库",
+                "BZ": "小虎油库",
+                "STID": 294
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_295",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6983,
+                    23.3012
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "荔城街道三联街",
+                "LX": "加油站",
+                "BZ": "名称：加德士加油站,增城区广汕公路511号",
+                "STID": 295
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_296",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6283,
+                    23.2756
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "朱村街道神岗村",
+                "LX": "高压变电站",
+                "BZ": "名称：南方电网，地址：395乡道与朱宁路交叉口附近",
+                "STID": 296
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_297",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6228,
+                    23.3221
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "朱村街道朱村",
+                "LX": "山坟集中地",
+                "BZ": "名称：朱村生态墓园",
+                "STID": 297
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_298",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6917,
+                    23.3174
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "朱村街道山角村",
+                "LX": "山坟集中地",
+                "BZ": "名称：广州市枫源化工有限公司，地址：集丰村九和工业区新新大道附近",
+                "STID": 298
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_299",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7082,
+                    23.4903
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "派潭镇派潭社区",
+                "LX": "加油站",
+                "BZ": "地址：256省道附近",
+                "STID": 299
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_300",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7084,
+                    23.4838
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "派潭镇大埔村",
+                "LX": "煤气站",
+                "BZ": "名称：派潭煤气站，地址：派潭大道中附近",
+                "STID": 300
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_301",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7071,
+                    23.4751
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "派潭镇大埔村",
+                "LX": "加油站",
+                "BZ": "地址：256省道附近",
+                "STID": 301
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_302",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7599,
+                    23.3903
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "小楼镇小楼村",
+                "LX": "加油站",
+                "BZ": "地址：小楼大道南附近",
+                "STID": 302
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_303",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7478,
+                    23.4023
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "小楼镇小楼村",
+                "LX": "高压变电站",
+                "BZ": "地址：256省道附近",
+                "STID": 303
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_304",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7313,
+                    23.4124
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "小楼镇江坳村",
+                "LX": "加油站",
+                "BZ": "地址：256省道附近",
+                "STID": 304
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_305",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7291,
+                    23.4169
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "小楼镇腊圃村",
+                "LX": "易燃气体厂",
+                "BZ": "名称：广州市增城裕城乙炔气厂，地址：256省道附近",
+                "STID": 305
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_306",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7284,
+                    23.4161
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "小楼镇腊圃村",
+                "LX": "易燃气体厂",
+                "BZ": "地址：256省道附近",
+                "STID": 306
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_307",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7227,
+                    23.4235
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "小楼镇腊圃村",
+                "LX": "加油站",
+                "BZ": "地址：256省道附近",
+                "STID": 307
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_308",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5709,
+                    23.3014
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "中新镇中新社区",
+                "LX": "高压变电站",
+                "BZ": "地址：广汕路景星国际旁",
+                "STID": 308
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_309",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5769,
+                    23.3003
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "中新镇集丰村",
+                "LX": "加油站",
+                "BZ": "名称：八一加油站，地址：集丰村风光路附近",
+                "STID": 309
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_310",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5794,
+                    23.3738
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "中新镇福和社区",
+                "LX": "高压变电站",
+                "BZ": "地址：福和社区供电所旁",
+                "STID": 310
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_311",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7912,
+                    23.3768
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "正果镇中西村",
+                "LX": "山坟集中地",
+                "BZ": "地址：中西村上社",
+                "STID": 311
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_312",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8153,
+                    23.422
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "正果镇正果洋村",
+                "LX": "加油站",
+                "BZ": "地址：正果大道林业站对面",
+                "STID": 312
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_313",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8001,
+                    23.4013
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "正果镇石溪村",
+                "LX": "木材厂",
+                "BZ": "地址：石溪村省道S119旁",
+                "STID": 313
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_314",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8166,
+                    23.4225
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "正果镇正果社区",
+                "LX": "高压变电站",
+                "BZ": "地址：正果大道92号",
+                "STID": 314
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_315",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7217,
+                    23.5574
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "派潭镇背阴村",
+                "LX": "高压变电站",
+                "BZ": "名称：大封门二级站，地址：背阴村320乡道附近",
+                "STID": 315
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_316",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.642,
+                    23.3439
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "朱村街道增城林场",
+                "LX": "高压电线塔（50万伏）",
+                "BZ": "地址：增城林场西河工区吊钟水库附近",
+                "STID": 316
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_317",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6444,
+                    23.3446
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "朱村街道增城林场",
+                "LX": "高压电线塔（50万伏）",
+                "BZ": "地址：增城林场西河工区吊钟水库附近",
+                "STID": 317
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_318",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6461,
+                    23.345
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "朱村街道增城林场",
+                "LX": "高压电线塔（50万伏）",
+                "BZ": "地址：增城林场西河工区吊钟水库附近",
+                "STID": 318
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_319",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6502,
+                    23.3462
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "朱村街道增城林场",
+                "LX": "高压电线塔（50万伏）",
+                "BZ": "地址：增城林场牛寮工区朝田岛",
+                "STID": 319
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_320",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7131,
+                    23.3527
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "朱村街道增城林场",
+                "LX": "高压电线塔（110千伏）",
+                "BZ": "地址：增城林场木潭工区上官营",
+                "STID": 320
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_321",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6906,
+                    23.3339
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "朱村街道增城林场",
+                "LX": "高压电线塔（110千伏）",
+                "BZ": "地址：增城林场百花林工区灯心塘",
+                "STID": 321
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_322",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6935,
+                    23.3365
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "朱村街道增城林场",
+                "LX": "高压电线塔（110千伏）",
+                "BZ": "地址：增城林场百花林工区灯心塘",
+                "STID": 322
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_323",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7292,
+                    23.3131
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "荔城街道三联村",
+                "LX": "煤气站",
+                "BZ": "名称：增城区民安煤气有限公司， 地址：增城市荔城大道167号",
+                "STID": 323
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_324",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5155,
+                    23.1912
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇南安村",
+                "LX": "山坟集中地",
+                "BZ": "名称：庵冚山坟，地址：南安村山岗园附近",
+                "STID": 324
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_325",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5725,
+                    23.1625
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇瑶田村",
+                "LX": "煤气站",
+                "BZ": "名称：增城区石油气公司，地址：瑶田村石新路附近",
+                "STID": 325
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_326",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5293,
+                    23.148
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘西州村",
+                "LX": "乙炔气站",
+                "BZ": "名称：广州市粤佳气体有限公司，地址：西州村大王岗工业区",
+                "STID": 326
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_327",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5302,
+                    23.1481
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘西州村",
+                "LX": "乙炔气站",
+                "BZ": "名称：西洲乙炔气厂，地址：西州村大王岗工业区附近",
+                "STID": 327
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_328",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5401,
+                    23.2198
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇塔岗村",
+                "LX": "加油站",
+                "BZ": "名称：嘉和加油站，地址：新新大道中120附近",
+                "STID": 328
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_329",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5416,
+                    23.2234
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇塔岗村",
+                "LX": "塑料厂",
+                "BZ": "名称：广州卓荣塑料有限公司，地址：塔岗村永和外经工业区塔岗",
+                "STID": 329
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_330",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5298,
+                    23.1551
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇白江村",
+                "LX": "加油站",
+                "BZ": "名称：水电加油站，地址：广深大道西252号",
+                "STID": 330
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_331",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5349,
+                    23.1553
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇白江村",
+                "LX": "加油站",
+                "BZ": "名称：万顺达加油站，地址：广深大道西218号附近",
+                "STID": 331
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_332",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5397,
+                    23.1555
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇白江村",
+                "LX": "加油站",
+                "BZ": "名称：通达加油站，地址：广深路4号附近",
+                "STID": 332
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_333",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5534,
+                    23.1546
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇卫山社区",
+                "LX": "加油站",
+                "BZ": "名称：华德加油站，地址：广深大道中155号",
+                "STID": 333
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_334",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5447,
+                    23.187
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇长岗村",
+                "LX": "加油站",
+                "BZ": "名称：和昌加油站，地址：新新大道中附近",
+                "STID": 334
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_335",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.539,
+                    23.2078
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇永和社区",
+                "LX": "加油站",
+                "BZ": "名称：南方加油站，地址：新塘镇永和镇新新公路边",
+                "STID": 335
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_336",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6228,
+                    23.2481
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇下元村",
+                "LX": "山坟集中地",
+                "BZ": "地址：猪牯岭附近",
+                "STID": 336
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_337",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7115,
+                    23.3022
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "荔城街道三联村",
+                "LX": "加油站",
+                "BZ": "名称：联谊加油站，地址：增城区广汕路280号",
+                "STID": 337
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_338",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7415,
+                    23.2946
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "荔城街道五一村",
+                "LX": "加油站",
+                "BZ": "名称：四通加油站，地址：荔新公路五一路段",
+                "STID": 338
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_339",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6034,
+                    23.2395
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇路边村",
+                "LX": "加油站",
+                "BZ": "名称：永发加油站，地址：路边村沙宁路附近",
+                "STID": 339
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_340",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5915,
+                    23.1854
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇白石村",
+                "LX": "山坟集中地",
+                "BZ": "地址：白石村电站路附近",
+                "STID": 340
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_341",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5139,
+                    23.1919
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇南安村",
+                "LX": "山坟集中地",
+                "BZ": "名称：安南墓园，地址：南安村山岗园附近",
+                "STID": 341
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_342",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.6175,
+                    23.2158
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇长巷村",
+                "LX": "加油站",
+                "BZ": "名称：沙埔南加油站，地址：沙浦服务区附近",
+                "STID": 342
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_343",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.606,
+                    23.2134
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇长巷村",
+                "LX": "山坟集中地",
+                "BZ": "地址：沙宁路附近",
+                "STID": 343
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_344",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.583,
+                    23.3011
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "中新镇坑背村",
+                "LX": "加油站",
+                "BZ": "名称：增城区中油中新加油站经营有限公司，地址：坑背村风光路附近",
+                "STID": 344
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_345",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5637,
+                    23.2902
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "中新镇集丰村",
+                "LX": "化工厂",
+                "BZ": "名称：广州市枫源化工有限公司，地址：集丰村九和工业区新新大道附近",
+                "STID": 345
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_346",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5756,
+                    23.3843
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "中新镇泮霞村",
+                "LX": "化工厂",
+                "BZ": "名称：广州市南乔化工有限公司，地址：泮霞村940县道附近",
+                "STID": 346
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_347",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5727,
+                    23.3794
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "中新镇泮霞村",
+                "LX": "木材加工厂",
+                "BZ": "名称：广州市增城兴荣家私厂，地址：中花路附近",
+                "STID": 347
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_348",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7918,
+                    23.3416
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "增江街道联益村",
+                "LX": "炸药厂",
+                "BZ": "名称：广东宏大增化民爆有限责任公司，地址：联益村光大路２８号",
+                "STID": 348
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_349",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7613,
+                    23.3758
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "小楼镇小楼圩",
+                "LX": "加油站",
+                "BZ": "名称：小楼加油站，地址：庆东村256省道附近",
+                "STID": 349
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_350",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7844,
+                    23.271
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "增江街道陆村村",
+                "LX": "山坟集中地",
+                "BZ": "地址：初溪山塘附近",
+                "STID": 350
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_351",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.8368,
+                    23.4934
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "正果镇浪拔村",
+                "LX": "加油站",
+                "BZ": "地址：119省道附近",
+                "STID": 351
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_352",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5099,
+                    23.1787
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "新塘镇新墩村",
+                "LX": "山坟集中地",
+                "BZ": "地址：进岗附近",
+                "STID": 352
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_353",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.7808,
+                    23.3168
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "增城区",
+                "SSQZ": "增江街道光辉村",
+                "LX": "殡仪馆",
+                "BZ": "地址：增江街道光辉村",
+                "STID": 353
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_354",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3254,
+                    23.2389
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "天河区",
+                "SSQZ": "龙洞街道",
+                "LX": "陵园",
+                "BZ": "龙洞永安园",
+                "STID": 354
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_355",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4771,
+                    23.5678
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "岭南村",
+                "LX": "加油站",
+                "BZ": "岭南油站",
+                "STID": 355
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_356",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4184,
+                    23.5841
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "小坑村",
+                "LX": "加油站",
+                "BZ": "棋杆油站",
+                "STID": 356
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_357",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4056,
+                    23.5947
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "人和社区",
+                "LX": "加油站",
+                "BZ": "人和油站",
+                "STID": 357
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_358",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4308,
+                    23.6458
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "民乐社区",
+                "LX": "加油站",
+                "BZ": "民乐油站",
+                "STID": 358
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_359",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3861,
+                    23.6107
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "鳌头社区",
+                "LX": "加油站",
+                "BZ": "鳌头墟油站",
+                "STID": 359
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_360",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4511,
+                    23.5765
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "从化区",
+                "SSQZ": "棋杆社区",
+                "LX": "加油站",
+                "BZ": "鸿运油站",
+                "STID": 360
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_206",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3407,
+                    23.4586
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "花东镇竹湖社区",
+                "LX": "高压变电站",
+                "BZ": "名称：富力金范城",
+                "STID": 206
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_207",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3044,
+                    23.4391
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "花东镇永光村",
+                "LX": "高压变电站",
+                "BZ": "名称：金田变电站",
+                "STID": 207
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_208",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2849,
+                    23.4441
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "花东镇三凤村",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 208
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_209",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2643,
+                    23.5164
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "花山镇城西村",
+                "LX": "山坟集中地",
+                "BZ": "地址：城西村磨刀坑水库附近",
+                "STID": 209
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_210",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2591,
+                    23.516
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "花山镇城西村",
+                "LX": "山坟集中地",
+                "BZ": "地址：城西村磨刀坑水库附近",
+                "STID": 210
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_211",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2593,
+                    23.5174
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "花山镇城西村",
+                "LX": "山坟集中地",
+                "BZ": "地址：城西村磨刀坑水库附近",
+                "STID": 211
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_212",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2661,
+                    23.5198
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "花山镇城西村",
+                "LX": "山坟集中地",
+                "BZ": "地址：城西村禾雀搭墙附近",
+                "STID": 212
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_213",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.3009,
+                    23.5016
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "花山镇花城村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 213
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_214",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.2861,
+                    23.5023
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "花山镇花城村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 214
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_215",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.232,
+                    23.5196
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "花都区",
+                "SSQZ": "花山镇福源村",
+                "LX": "山坟集中地",
+                "BZ": "地址：福源村福源水库附近",
+                "STID": 215
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_216",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4649,
+                    23.126
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "黄埔区穗东街道",
+                "LX": "油汽库",
+                "BZ": " ",
+                "STID": 216
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_217",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4459,
+                    23.1368
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "黄埔区红山街道",
+                "LX": "油汽库",
+                "BZ": " ",
+                "STID": 217
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_218",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4494,
+                    23.1335
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "黄埔区红山街道",
+                "LX": "油汽库",
+                "BZ": " ",
+                "STID": 218
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_219",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4455,
+                    23.1345
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "黄埔区红山街道",
+                "LX": "油汽库",
+                "BZ": " ",
+                "STID": 219
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_220",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4497,
+                    23.1419
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "黄埔区红山街道",
+                "LX": "油汽库",
+                "BZ": " ",
+                "STID": 220
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_221",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4665,
+                    23.1394
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "黄埔区穗东街道",
+                "LX": "油汽库",
+                "BZ": " ",
+                "STID": 221
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_222",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4651,
+                    23.1412
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "黄埔区穗东街道",
+                "LX": "油汽库",
+                "BZ": " ",
+                "STID": 222
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_223",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4947,
+                    23.1223
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "黄埔区南岗街道",
+                "LX": "油汽库",
+                "BZ": " ",
+                "STID": 223
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_224",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5001,
+                    23.1163
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "黄埔区南岗街道",
+                "LX": "油汽库",
+                "BZ": " ",
+                "STID": 224
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_225",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.432,
+                    23.175
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "黄埔区姬堂街道",
+                "LX": "油汽库",
+                "BZ": " ",
+                "STID": 225
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_226",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4986,
+                    23.1167
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "黄埔区南岗街道",
+                "LX": "油汽库",
+                "BZ": " ",
+                "STID": 226
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_227",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4461,
+                    23.1553
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "文冲社区",
+                "LX": "油气库",
+                "BZ": " ",
+                "STID": 227
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_228",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4372,
+                    23.1598
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "文冲社区",
+                "LX": "油气库",
+                "BZ": " ",
+                "STID": 228
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_229",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4708,
+                    23.3693
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇山龙村",
+                "LX": "加油站",
+                "BZ": "九佛加油站",
+                "STID": 229
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_230",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4741,
+                    23.3831
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇佛塱村",
+                "LX": "油漆厂",
+                "BZ": " ",
+                "STID": 230
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_231",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4393,
+                    23.4102
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇凤尾村",
+                "LX": "化工厂",
+                "BZ": " ",
+                "STID": 231
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_232",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5083,
+                    23.3465
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇何棠下村",
+                "LX": "山坟集中地",
+                "BZ": "陵园",
+                "STID": 232
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_233",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4865,
+                    23.1652
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "东区街道笔岗村",
+                "LX": "加油站",
+                "BZ": "南盛加油站",
+                "STID": 233
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_234",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4705,
+                    23.1556
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "东区街道笔岗村",
+                "LX": "高压变电站",
+                "BZ": " ",
+                "STID": 234
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_235",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.463,
+                    23.1393
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "东区街道笔岗村",
+                "LX": "油汽库",
+                "BZ": " ",
+                "STID": 235
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_236",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4663,
+                    23.3012
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇福山村",
+                "LX": "垃圾焚烧厂",
+                "BZ": " ",
+                "STID": 236
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_237",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4676,
+                    23.3142
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇福山村",
+                "LX": "山坟集中地",
+                "BZ": "革命公墓",
+                "STID": 237
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_238",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.475,
+                    23.2927
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇福洞村",
+                "LX": "化工厂",
+                "BZ": " ",
+                "STID": 238
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_239",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5082,
+                    23.3263
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇汤村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 239
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_240",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5089,
+                    23.3182
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇汤村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 240
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_241",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5105,
+                    23.3179
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇汤村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 241
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_242",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5086,
+                    23.3197
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇汤村",
+                "LX": "山坟集中地",
+                "BZ": " ",
+                "STID": 242
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_243",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4888,
+                    23.3064
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇福洞村",
+                "LX": "高压变电站",
+                "BZ": " ",
+                "STID": 243
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_244",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4813,
+                    23.281
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇金坑村",
+                "LX": "加油站",
+                "BZ": "金坑加油站",
+                "STID": 244
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_245",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.5082,
+                    23.2919
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "九龙镇均和村",
+                "LX": "加油站",
+                "BZ": "均和加油站",
+                "STID": 245
+            }
+        },
+        {
+            "type": "Feature",
+            "id": "FireFocus_246",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    113.4089,
+                    23.2172
+                ]
+            },
+            "geometry_name": "the_geom",
+            "properties": {
+                "XZQH": "黄埔区",
+                "SSQZ": "联和街道黄陂村",
+                "LX": "加油站",
+                "BZ": " ",
+                "STID": 246
+            }
+        }
+    ]
+}

@@ -1,0 +1,46 @@
+@import "../../common.less";
+/* 内容 */
+/* 内容---左边 */
+.inner-left {
+  width: calc(100% - 53vw * @w);
+  height: calc(100% - 103vh * @h);
+  // justify-content: space-between;
+  margin: 50vh*@h 0 53vh*@h 37vw * @w;
+  .box-sizing();
+  /*  background: url("../../assets/images/theCitysDanger/bg_left.png") no-repeat
+      center;
+    background-size: 100% 100%; */
+  // padding: 36vh * @h 54vw * @w 36vh * @h 62vw * @w;
+  .box-sizing();
+  position: relative;
+  .inner-left-top{
+    width:100%;
+    height:953vh*@h;
+    margin-bottom:36vh*@h;
+    display:flex;
+    justify-content: flex-start;
+    .left-top-left{
+      width:50%;
+      height:100%;
+      /* background: url("../../assets/images/theCitysDanger/bg_left.png") no-repeat
+      center; */
+      background-size: 102% 102%; 
+    }
+    .left-top-right{
+      width:50%;
+      height:100%;
+    }
+
+  }
+  .inner-left-bottom{
+    width:100%;
+    height:897vh*@h;
+  }
+}
+/* 内容-右侧 */
+.inner-right {
+  width: calc(100% - 105vw * @w);
+  height: calc(100% - 35vh * @h);
+  justify-content: space-between;
+  margin: 0 105vw * @w 0 0;
+}

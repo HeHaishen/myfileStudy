@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>measure</title>
+<script src="../Content/easyui/jquery.min.js" type="text/javascript"></script>
+<link href="../Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="../Content/bootstrap/js/bootstrap.min.js"	type="text/javascript"></script>
+<style>
+body,html{height:100%}
+</style>
+</head>
+<body style="padding: 5px; text-align: center; background-color:transparent; color:#fff;" title="提示：单击按钮激活对应功能,在地图上单击开始，绘制中单击增加点、双击结束。">
+    <div class="btn-group" role="group">
+        <div id="lMeasure" class="btn-group" role="group">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                距离 <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li id="btn_measure_length"><a href="javascript:void(0)">空间距离</a></li><li id="btn_measure_length_td">
+                    <a href="javascript:void(0)">贴地距离</a></li></ul>
+        </div>
+        <div id="hMeasure" class="btn-group" role="group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    高度 <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li id="btn_measure_height"><a href="javascript:void(0)">高度差</a></li><li id="btn_measure_supHeight">
+                        <a href="javascript:void(0)">三角测量</a></li></ul>
+            </div>
+            <button id="btn_measure_angle" type="button" class="btn btn-primary">
+            角度</button>
+            <button id="btn_measure_area" type="button" class="btn btn-primary">
+            面积</button>
+        <button id="btn_measure_section" type="button" class="btn btn-primary">
+            剖面</button>
+        <button id="btn_measure_clear" type="button" class="btn btn-danger">
+            清除</button></div>
+    <div id="measure_unit" style="margin-top: 15px; line-height:36px;">
+        <span style="font-size: 16px; float:left; margin-left:5px;">单位：</span>
+        <select id="measure_length_unit" class="form-control" style="width: 275px">
+            <option value="auto">自动</option>
+            <option value="m">米</option>
+            <option value="km">公里</option>
+            <option value="mile">海里</option>
+            <option value="zhang">丈</option>
+        </select>
+        <select id="measure_area_unit" class="form-control" style="width: 290px; display: none">
+            <option value="auto">自动</option>
+            <option value="m">平方米</option>
+            <option value="km">平方公里</option>
+            <option value="mu">亩</option>
+            <option value="ha">公顷</option>
+        </select>
+	</div>
+	<div id="measure_result" style="margin-top: 15px; line-height:36px;display:none">
+		<span style="font-size: 16px; float:left; margin-left:5px;">结果：</span>
+		<span id="lbl_measure_result" style="font-size: 16px"></span>
+	</div>
+    <script type="text/javascript">
+		document.getElementById('lMeasure').addEventListener('mouseover', function () {
+    		var element = document.getElementById('lMeasure');
+			if (element.className.trim().length > 0) {
+				var allClass = element.className.trim().split(" ");
+				if (allClass.indexOf("open") == -1) {
+					if (element.setAttribute) {
+						element.setAttribute("class", element.getAttribute("class") + " open");
+					} else {
+						element.className = element.className + " open";
+					}
+				}
+			}
+			element = document.getElementById('hMeasure');
+			if (element.className.trim().length > 0) {
+				var allClass = element.className.trim().split(" ");
+				if (allClass.indexOf("open") > -1) {
+					element.className = element.className.replace(" open", "");
+				}
+			}
+    	}, false);
+		document.getElementById('hMeasure').addEventListener('mouseover', function () {
+    		var element = document.getElementById('hMeasure');
+			if (element.className.trim().length > 0) {
+				var allClass = element.className.trim().split(" ");
+				if (allClass.indexOf("open") == -1) {
+					if (element.setAttribute) {
+						element.setAttribute("class", element.getAttribute("class") + " open");
+					} else {
+						element.className = element.className + " open";
+					}
+				}
+			}
+			element = document.getElementById('lMeasure');
+			if (element.className.trim().length > 0) {
+				var allClass = element.className.trim().split(" ");
+				if (allClass.indexOf("open") > -1) {
+					element.className = element.className.replace(" open", "");
+				}
+			}
+    	}, false);
+		document.getElementById('btn_measure_angle').addEventListener('mouseover', function () {
+    		var element = document.getElementById('hMeasure');
+			if (element.className.trim().length > 0) {
+				var allClass = element.className.trim().split(" ");
+				if (allClass.indexOf("open") > -1) {
+					element.className = element.className.replace(" open", "");
+				}
+			}
+			element = document.getElementById('lMeasure');
+			if (element.className.trim().length > 0) {
+				var allClass = element.className.trim().split(" ");
+				if (allClass.indexOf("open") > -1) {
+					element.className = element.className.replace(" open", "");
+				}
+			}
+    	}, false);
+		document.getElementById('btn_measure_area').addEventListener('mouseover', function () {
+    		var element = document.getElementById('hMeasure');
+			if (element.className.trim().length > 0) {
+				var allClass = element.className.trim().split(" ");
+				if (allClass.indexOf("open") > -1) {
+					element.className = element.className.replace(" open", "");
+				}
+			}
+			element = document.getElementById('lMeasure');
+			if (element.className.trim().length > 0) {
+				var allClass = element.className.trim().split(" ");
+				if (allClass.indexOf("open") > -1) {
+					element.className = element.className.replace(" open", "");
+				}
+			}
+    	}, false);
+    	document.getElementById('btn_measure_clear').addEventListener('click', function () {
+    		parent.pGzznCore.measureClear();
+			document.getElementById('btn_measure_clear').blur();
+    	}, false);
+    	document.getElementById('btn_measure_length').addEventListener('click', function () {
+			document.getElementById('measure_length_unit').style.display = '';document.getElementById('measure_area_unit').style.display = 'none';
+    		parent.pGzznCore.measureInit({'Flag':0,'Unit':document.getElementById('measure_length_unit').value});
+    	}, false);
+    	document.getElementById('btn_measure_length_td').addEventListener('click', function () {
+    		document.getElementById('measure_length_unit').style.display = '';document.getElementById('measure_area_unit').style.display = 'none';
+			parent.pGzznCore.measureInit({'Flag':1,'Unit':document.getElementById('measure_length_unit').value});
+    	}, false);
+    	document.getElementById('btn_measure_height').addEventListener('click', function () {
+    		document.getElementById('measure_length_unit').style.display = '';document.getElementById('measure_area_unit').style.display = 'none';
+			parent.pGzznCore.measureInit({'Flag':2,'Unit':document.getElementById('measure_length_unit').value});
+    	}, false);
+    	document.getElementById('btn_measure_supHeight').addEventListener('click', function () {
+    		document.getElementById('measure_length_unit').style.display = '';document.getElementById('measure_area_unit').style.display = 'none';
+			parent.pGzznCore.measureInit({'Flag':3,'Unit':document.getElementById('measure_length_unit').value});
+    	}, false);
+    	document.getElementById('btn_measure_angle').addEventListener('click', function () {
+			document.getElementById('measure_length_unit').style.display = '';document.getElementById('measure_area_unit').style.display = 'none';
+    		parent.pGzznCore.measureInit({'Flag':4,'Unit':document.getElementById('measure_length_unit').value});
+    	}, false);
+    	document.getElementById('btn_measure_area').addEventListener('click', function () {
+    		document.getElementById('measure_length_unit').style.display = 'none';document.getElementById('measure_area_unit').style.display = '';
+			parent.pGzznCore.measureInit({'Flag':5,'Unit':document.getElementById('measure_area_unit').value});
+    	}, false);
+    	document.getElementById('btn_measure_section').addEventListener('click', function () {
+    		parent.pGzznCore.measureInit({'Flag':6,'Unit':document.getElementById('measure_length_unit').value});
+    	}, false);
+    </script>
+</body>
+</html>

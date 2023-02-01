@@ -1,0 +1,57 @@
+@import "../common.less";
+.c-contact-list{
+    min-width: 600vw*@w;
+    min-height:500vh*@h;
+    width: 100%;
+    height:auto;
+    display:flex;
+    justify-content: flex-start;
+    .contact-left{
+        width:30%;
+        height:auto;
+        margin-right:1%;
+    }
+    .contact-right{
+        width:69%;
+        height:auto;
+        .contact-ul{
+            width:100%;
+            height:auto;
+            li{
+                display:flex;
+                height:auto;
+                justify-content: flex-start;
+                div:nth-child(1){
+                    flex-shrink: 0;
+                    width:20vh*@w;
+                    height:20vh*@w;
+                    background:white;
+                }
+                div:nth-child(2){
+                    flex-shrink: 0;
+                    width:50%;
+                    height:20vh*@h;
+                    p{
+                        width:100%;
+                        height:30vh*@h;
+                        font-size:24vh*@h;
+                        line-height:30vh*@h;
+                        color:white;
+                        text-align: center;
+                    }
+                }
+                div:nth-child(3){
+                    flex-shrink: 0;
+                    width:calc(50% - 20vw*@w);
+                    height:20vh*@h;
+                    display:flex;
+                    p{
+                        width:32%;
+                        height:30vh*@h;
+                        line-height: 30vh*@h;
+                    }
+                }
+            }
+        }
+    }
+}

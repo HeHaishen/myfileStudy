@@ -1,0 +1,95 @@
+@w:100 /3840;
+@h:100 /2160;
+.box-sizing() {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.border-radius(@x, @y) {
+  border-radius: @x @y;
+  -o-border-radius: @x @y;
+  -ms-border-radius: @x @y;
+  -moz-border-radius: @x @y;
+  -webkit-border-radius: @x @y;
+}
+.box-shadow() {
+  box-shadow: 0 0 10vh * @h #00eaff inset;
+  -o-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -ms-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -moz-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -webkit-box-shadow: 0 0 10vh * @h #00eaff inset;
+}
+*::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 1px; /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+*::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 2px;
+  box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+  background: #2c98ff;
+}
+*::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+  border-radius: 2px;
+  background: #030c22;
+}
+.sup {
+  display: inline-block;
+      width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    top:5px
+}
+.wind{
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+.areaBox {
+  width: 100%;
+  position: absolute;
+  background: #206685;
+  padding: 5px;
+  top: 0;
+  left: 0;
+  .areaUl {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    li {
+      width: 21%;
+      margin-bottom: 10px;
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #fefe7f;
+      color: #fefe7f;
+      background-color: none !important;
+      height: 30px;
+      border-radius: 5px;
+      font-weight: 600;
+      line-height: 30px;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+}
+.positionImg{
+  display: block;
+  width: 15px;
+  height: 15px;
+}
+.areaShow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: none;
+}

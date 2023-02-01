@@ -1,0 +1,55 @@
+@import "../../common.less";
+.major-contents .c-mybox-position{
+    top:155vh*@h;
+}
+.content-all{
+  width:100%;
+  height: 431vh*@h;
+  .list{
+    width:100%;
+    height:100%;
+    overflow: auto;
+    display:flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    li{
+      width:275vw*@w;
+      height:75vh*@h;
+      border:2vw*@w solid #1659ca;
+      // background: #042f95;
+      background-image: radial-gradient(circle at 20% 20%, #0443cc, #042f95);
+      border-top-right-radius: 27vw*@w;
+      cursor:pointer;
+      margin:20vh*@h 14vw*@w 0 28vw*@w;
+      display:flex;
+      justify-content: flex-start;
+      align-items: center;
+      .img_wrap{
+        width:52vw*@w;
+        height:41vh*@h;
+        margin-left:38vw*@w;
+        img{
+          display:block;
+          width:100%;
+          height:100%;
+        }
+      }
+      .title_text{
+        width:calc(100% - 90vw*@w);
+        text-align: center;
+        height:100%;
+        text-align: center;
+        line-height: 75vh*@h;
+        color:white;
+        font-size:26vh*@h;
+      }
+    }
+    li:hover{
+      background:rgba(24, 28, 36, 0.8);
+    }
+    .click-li{
+      background:rgba(24, 28, 36, 0.8);
+    }
+  }
+}

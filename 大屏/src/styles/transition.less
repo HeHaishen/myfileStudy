@@ -1,0 +1,40 @@
+//globl transition css
+
+/*fade 忽隐忽现 */
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.28s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+/*fade-transform  左进右出*/
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all .5s ease;
+}
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-30px);
+}
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
+}
+
+/*fade-in  上进下出*/
+.fade-in-leave-active,
+.fade-in-enter-active {
+  transition: all .5s ease;
+}
+.fade-in-enter {
+  opacity: 0;
+  transform: translateY(-30px);
+}
+.fade-in-leave-to {
+  opacity: 0;
+  transform: translateY(30px);
+}

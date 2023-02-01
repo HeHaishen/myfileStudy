@@ -1,0 +1,724 @@
+@w:100 / 6400;
+// @h:100 /1079;
+@h:100 / 900;
+.box-sizing() {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+.border-radisu(@x, @y) {
+  border-radius: @x @y;
+  -o-border-radius: @x @y;
+  -ms-border-radius: @x @y;
+  -moz-border-radius: @x @y;
+  -webkit-border-radius: @x @y;
+}
+.box-shadow() {
+  box-shadow: 0 0 10vh * @h #00eaff inset;
+  -o-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -ms-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -moz-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -webkit-box-shadow: 0 0 10vh * @h #00eaff inset;
+}
+.c-construction-achievement {
+  width: 100%;
+  height: 100%;
+  background-image: url("../../assets/images/dustExplosion/bg.png");
+  background-size: 100% 100%;
+}
+/*公共样式 */
+/* 标题 */
+.model-title {
+  height: 30vh * @h;
+  // width: 100%;
+  font-size: 30vh * @h;
+  color: #fff;
+  font-weight: bold;
+  line-height: 30vh * @h;
+  .box-sizing();
+}
+.model-little-title {
+  width: 100%;
+  height: 20vh * @h;
+  line-height: 20vh * @h;
+  font-size: 20vh * @h;
+  color: #fff;
+  // padding-left: 21vw * @w;
+}
+// 按钮正常样式
+.type-btn {
+  height: 34vh * @h;
+  width: auto;
+  padding: 0 12vw * @w;
+  margin: 0 12vw * @w;
+  line-height: 34vh * @h;
+  font-size: 24vh * @h;
+  border: 2px #00eaff solid;
+  color: white;
+  cursor: pointer;
+}
+// 按钮点击的样式
+.btn-active-type {
+  .box-shadow();
+}
+.c-select-wrap {
+  font-size: 24vh * @h;
+  color: white;
+}
+.c-select {
+  height: 34vh * @h;
+  border: 2px solid #00eaff;
+  font-size: 24vh * @h;
+  background: #091c42;
+  color: white;
+}
+.chart-opation {
+  display: flex;
+}
+/* 更新事件 */
+.update-time {
+  width: auto;
+  font-size: 12vh * @h;
+  color: #dce6f1;
+}
+/* 内容 */
+.construction-achievement-content {
+  height: calc(100% - 6vh);
+  width: 100%;
+  position: fixed;
+  top: 6vh;
+  left: 0;
+  padding: 32vh * @h 56vw * @w 36vh * @h 62vw * @w;
+  .box-sizing();
+  display: flex;
+  justify-content: space-around;
+  .left {
+    width: 1511vw * @w;
+    height: 100%;
+  }
+  .center {
+    width: 3260vw * @w;
+    height: 100%;
+    margin-left: 45vw * @w;
+    margin-right: 45vw * @w;
+  }
+  .right {
+    width: 1511vw * @w;
+    height: 100%;
+  }
+}
+/* 内容---左边 */
+.construction-achievement-left {
+  width: 100%;
+  height: 100%;
+  // background-color: red;
+  display: flex;
+  justify-content: space-between;
+  // padding: 28vh * @h 56vw * @w 58vh * @h 78vw * @w;
+  .left-left {
+    width: 728vw * @w;
+    height: 100%;
+    background: url("../../assets/images/constructionAchievements/bg_left.png")
+      no-repeat center center;
+
+    background-size: 100% 100%;
+    position: relative;
+    padding: 0 34vw * @w 24vh * @h 34vw * @w;
+
+    .model-title {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .time {
+      position: absolute;
+      right: 38vw * @w;
+      top: 38vh * @h;
+      .time-list {
+        display: flex;
+
+        li {
+          margin-left: 38vw * @w;
+
+          &:nth-child(1) .out::before {
+            content: none;
+          }
+        }
+      }
+      .year {
+        color: #fff;
+        display: block;
+        text-align: center;
+        font-size: 10vh * @h;
+      }
+
+      .out {
+        width: 23vh * @h;
+        height: 23vh * @h;
+        border-radius: 50%;
+        border: 3vh * @h solid #01d6e6;
+        position: relative;
+
+        .inner {
+          width: 13vh * @h;
+          height: 13vh * @h;
+          line-height: 23vh * @h;
+          border-radius: 50%;
+          background: #fff;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
+      }
+
+      .out::before {
+        width: 38vw * @w;
+        height: 3vh * @h;
+        display: inline-block;
+        content: "";
+        background: #01d6e6;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -41vw * @w;
+      }
+
+      .active-out {
+        border: 3vh * @h solid #fe0000;
+        .inner {
+          background: #fe0000;
+        }
+      }
+      .active-out::before {
+        background: #fe0000;
+      }
+    }
+
+    .infrastructure {
+      width: 100%;
+      margin-top: 98vh * @h;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .infrastructure-child {
+        width: 310vw * @w;
+        .box-sizing();
+        border: 1.5vh * @h solid #007aff;
+        border-top: 3vh * @h solid #0453b0;
+        height: 98vh * @h;
+        margin-bottom: 28vh * @h;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-left: 12vw * @w;
+        padding-right: 12vw * @w;
+        .infrastructure-top {
+          display: flex;
+          width: 100%;
+          // align-items: center;
+          justify-content: space-between;
+          height: 30vh * @h;
+          align-items: center;
+
+          .title {
+            font-size: 16vh * @h;
+            color: #fff;
+            // width: 50%;
+          }
+
+          .number {
+            color: #01ffff;
+            font-size: 18vh * @h;
+            // padding-left: 12vw * @w;
+            // width: 50%;
+            .unit {
+              font-size: 12vh * @h;
+              color: white;
+            }
+          }
+        }
+
+        .infrastructure-bottom {
+          width: 100%;
+          display: flex;
+          line-height: 30vh * @h;
+          height: 30vh * @h;
+
+          .text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // text-align: center;
+            height: 30vh * @h;
+            font-size: 12vh * @h;
+            color: #9499ac;
+            width: 33.3%;
+            margin: auto;
+          }
+          .percentage {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // text-align: center;
+            height: 30vh * @h;
+            font-size: 12vh * @h;
+            color: #fff;
+            width: 33.3%;
+            // padding-left: 12vw * @w;
+            margin: auto;
+          }
+
+          .create-num {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // text-align: center;
+            height: 30vh * @h;
+            // padding-left: 12vw * @w;
+            font-size: 14vh * @h;
+            color: #fff;
+            width: 33.3%;
+            margin: auto;
+
+            .unit {
+              font-size: 12vh * @h;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .left-right {
+    width: 728vw * @w;
+    height: 100%;
+    background: url("../../assets/images/constructionAchievements/bg_left.png")
+      no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+    padding: 44vh * @h 22vw * @w 54vh * @h 22vw * @w;
+    .model-title {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .information {
+      .model-little-title {
+        margin-bottom: 24vh * @h;
+      }
+      .inform-list {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        color: #fff;
+        width: 100%;
+        .inform-child {
+          // width: 130vh * @h;
+          width: 25%;
+          height: 130vh * @h;
+          flex-shrink: 0;
+          // background-color: red;
+          // margin: 0 25vw * @w;
+          margin-bottom: 12vh * @h;
+
+          .inform-bg {
+            position: relative;
+            width: 130vh * @h;
+            height: 130vh * @h;
+            .number {
+              font-size: 16vh * @h;
+              position: absolute;
+              top: 20%;
+              left: 50%;
+              transform: translateX(-50%);
+
+              .unit {
+                font-size: 12vh * @h;
+              }
+            }
+          }
+
+          .system {
+            // width: 130vh * @h;
+            text-align: center;
+            position: absolute;
+            bottom: 20%;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            margin: 0 auto;
+            font-size: 14vh * @h;
+          }
+        }
+
+        .inform-child:nth-child(1) .inform-bg {
+          background: url("../../assets/images/constructionAchievements/bg_blue.png")
+            no-repeat center center;
+          background-size: 100% 100%;
+        }
+
+        .inform-child:nth-child(2) .inform-bg {
+          background: url("../../assets/images/constructionAchievements/bg_blue_green.png")
+            no-repeat center center;
+          background-size: 100% 100%;
+        }
+
+        .inform-child:nth-child(3) .inform-bg {
+          background: url("../../assets/images/constructionAchievements/bg_green.png")
+            no-repeat center center;
+          background-size: 100% 100%;
+        }
+
+        .inform-child:nth-child(4) .inform-bg {
+          background: url("../../assets/images/constructionAchievements/bg_purple.png")
+            no-repeat center center;
+          background-size: 100% 100%;
+        }
+
+        .inform-child:nth-child(5) .inform-bg {
+          background: url("../../assets/images/constructionAchievements/bg_red.png")
+            no-repeat center center;
+          background-size: 100% 100%;
+        }
+        .inform-child:nth-child(6) .inform-bg {
+          background: url("../../assets/images/constructionAchievements/bg_light_blue.png")
+            no-repeat center center;
+          background-size: 100% 100%;
+        }
+      }
+    }
+
+    .network {
+      .model-little-title {
+        margin-top: 5vh * @h;
+        margin-bottom: 30vh * @h;
+      }
+      .network-list {
+        display: flex;
+        // margin-left: 14vw * @w;
+
+        .network-child {
+          width: 164vw * @w;
+          height: 102vh * @h;
+          color: #fff;
+          margin-right: 10vw * @w;
+          margin-bottom: 28vh * @h;
+          .title {
+            width: 100%;
+            text-align: center;
+            font-size: 14vh * @h;
+            height: 16vh * @h;
+            line-height: 16vh * @h;
+            margin-bottom: 10vh * @h;
+          }
+
+          .number {
+            text-align: center;
+            margin-left: 14vw * @w;
+            width: 136vw * @w;
+            height: 75vh * @h;
+            line-height: 75vh * @h;
+            background: url("../../assets/images/constructionAchievements/bg_network.png")
+              no-repeat center center;
+            background-size: 100% 100%;
+            position: relative;
+
+            .num {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              font-size: 24vh * @h;
+              font-weight: 700;
+              display: flex;
+            }
+
+            .unit {
+              font-size: 12vh * @h;
+            }
+          }
+        }
+      }
+    }
+
+    .symbol {
+      .model-little-title {
+        margin-bottom: 20vh * @h;
+      }
+
+      .symbol-list {
+        margin-left: 14vw * @w;
+        margin-right: 14vw * @w;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+
+        .symbol-child {
+          display: flex;
+          background: url("../../assets/images/constructionAchievements/bg_symbol.png")
+            no-repeat center center;
+          background-size: 100% 100%;
+          width: 301vw * @w;
+          height: 50vh * @h;
+          line-height: 50vh * @h;
+          padding-left: 46vw * @w;
+          padding-right: 17vw * @w;
+          display: flex;
+          justify-content: space-between;
+
+          .title {
+            font-size: 18vh * @h;
+          }
+
+          .number {
+            display: flex;
+            font-size: 24vh * @h;
+            color: #00ffff;
+            .unit {
+              font-size: 12vh * @h;
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 内容-中间部分 */
+.construction-achievement-center {
+  width: 100%;
+  height: 100%;
+
+  background: url("../../assets/images/constructionAchievements/bg_center.png")
+    no-repeat center center;
+  // background: red;
+  background-size: 100% 100%;
+  .box-sizing();
+  position: relative;
+
+  .time {
+    position: absolute;
+    left: 56vw * @w;
+    bottom: 40vh * @h;
+    .time-list {
+      display: flex;
+
+      li {
+        margin-left: 38vw * @w;
+
+        &:nth-child(1) .out::before {
+          content: none;
+        }
+      }
+    }
+    .year {
+      color: #fff;
+      display: block;
+      text-align: center;
+      font-size: 10vh * @h;
+    }
+
+    .out {
+      width: 23vh * @h;
+      height: 23vh * @h;
+      border-radius: 50%;
+      border: 3vh * @h solid #01d6e6;
+      position: relative;
+
+      .inner {
+        width: 13vh * @h;
+        height: 13vh * @h;
+        line-height: 23vh * @h;
+        border-radius: 50%;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+      }
+    }
+
+    .out::before {
+      width: 38vw * @w;
+      height: 3vh * @h;
+      display: inline-block;
+      content: "";
+      background: #01d6e6;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -38vw * @w;
+    }
+
+    .active-out {
+      border: 3vh * @h solid #fe0000;
+      .inner {
+        background: #fe0000;
+      }
+    }
+    .active-out::before {
+      background: #fe0000;
+    }
+  }
+
+  .center-fixed-icon {
+    width: auto;
+    height: auto;
+    position: absolute;
+    bottom: 100vh * @h;
+    left: 100vw * @w;
+    width: 88vw * @w;
+    height: 32vh * @h;
+    z-index: 8800;
+    .btn-video {
+      width: 88vw * @w;
+      height: 32vh * @h;
+      cursor: pointer;
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+/* 内容-右侧 */
+.construction-achievement-right {
+  width: 100%;
+  height: 100%;
+  position: relative;
+
+  background: url("../../assets/images/constructionAchievements/bg_right.png")
+    no-repeat center center;
+  background-size: 100% 100%;
+  padding: 40vh * @h 50vw * @w 52vh * @h 68vw * @w;
+
+  .model-title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .data {
+    margin-bottom: 40vh * @h;
+    .model-little-title {
+      margin-bottom: 42vh * @h;
+    }
+    .data-list {
+      height: 195vh * @h;
+      display: flex;
+      .data-child {
+        width: 16.67%;
+        // width: 155vw * @w;
+        height: 195vh * @h;
+        flex-shrink: 0;
+        text-align: center;
+        // text-align: center;
+        // margin-right: 110vw * @w;
+        .num {
+          color: #00ffff;
+          font-size: 22vh * @h;
+          height: 22vh * @h;
+          margin-bottom: 13vh * @h;
+          .unit {
+            font-size: 12vh * @h;
+            color: #fff;
+          }
+        }
+        .bg {
+          // margin-top: 13vh * @h;
+          // margin-bottom: 10vh * @h;
+          margin-left: 34vw * @w;
+          width: 62vw * @w;
+          height: 130vh * @h;
+          background: url("../../assets/images/constructionAchievements/bg_data.png")
+            no-repeat center center;
+          background-size: 100% 100%;
+          margin: 0 auto;
+        }
+        .title {
+          font-size: 18vh * @h;
+          height: 18vh * @h;
+          color: #fff;
+          margin-top: 10vh * @h;
+        }
+      }
+    }
+  }
+
+  .platform {
+    .model-little-title {
+      margin-bottom: 22vh * @h;
+    }
+    .summary {
+      font-size: 26vh * @h;
+      color: #51ec37;
+      border: 1px solid #51ec37;
+      width: 1100vw * @w;
+      height: 58vh * @h;
+      line-height: 58vh * @h;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 42vh * @h;
+    }
+    .platform-list {
+      display: flex;
+      flex-wrap: wrap;
+
+      .platform-child {
+        width: 180vw * @w;
+        height: 70vh * @h;
+        text-align: center;
+        margin-right: 110vw * @w;
+        margin-bottom: 60vh * @h;
+        .title {
+          color: #fff;
+          font-size: 16vh * @h;
+          height: 22vh * @h;
+          line-height: 22vh * @h;
+          margin-bottom: 14vh * @h;
+        }
+        .number {
+          width: 174vw * @w;
+          height: 20vh * @h;
+          background: url("../../assets/images/constructionAchievements/bg_plaform.png")
+            no-repeat center center;
+          background-size: 100% 100%;
+          display: flex;
+          align-items: center;
+
+          .num {
+            width: 174vw * @w;
+            text-align: center;
+            color: #e9811d;
+            font-size: 22vh * @h;
+          }
+          .unit {
+            color: #fff;
+            font-size: 12vh * @h;
+          }
+        }
+      }
+
+      .platform-child:nth-child(5),
+      .platform-child:nth-child(10) {
+        margin-right: 0;
+      }
+    }
+  }
+}

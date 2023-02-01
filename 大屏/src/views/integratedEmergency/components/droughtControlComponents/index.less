@@ -1,0 +1,23 @@
+@import "./common.less";
+/* 内容 */
+/* 内容---左边 */
+.inner-left {
+  width: calc(100% - 62vw * @w);
+  height: calc(100% - 31vh * @h);
+  justify-content: space-between;
+  margin: 0 0 0 40vw * @w;
+  .box-sizing();
+  /*  background: url("../../assets/images/theCitysDanger/bg_left.png") no-repeat
+      center;
+    background-size: 100% 100%; */
+  padding: 36vh * @h 54vw * @w 36vh * @h 62vw * @w;
+  .box-sizing();
+  position: relative;
+}
+/* 内容-右侧 */
+.inner-right {
+  width: calc(100% - 105vw * @w);
+  height: calc(100% - 35vh * @h);
+  justify-content: space-between;
+  margin: 0 105vw * @w 0 0;
+}

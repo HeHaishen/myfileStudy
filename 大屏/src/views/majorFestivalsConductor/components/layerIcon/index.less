@@ -1,0 +1,149 @@
+@import "../../common.less";
+.icon_top{
+    position: fixed;
+    left: 1024vw * @w;
+     top:116vh*@h;
+       z-index: 9999;
+       ul{
+         li{
+          cursor: pointer;
+          width: 60vw * @w;
+          height: 60vh * @h;
+          margin-bottom: 5px;
+          position: relative;
+          img{
+            // width: 100%;
+            // height: 100%;
+            // width: 40vw * @w;
+            // height: 40vh * @h;
+            // display: block;
+            // margin: auto;
+            // line-height: 30vh*@h;
+          }
+    
+         }
+         .li-bg{
+          background:url(../../../../assets/images/majorFestivalsConductor/iconbg.png)no-repeat center ;
+          background-size: 100% 100%;
+          width: 60vw * @w;
+          height: 60vh * @h;
+            padding: 10vh*@h 10vw*@w;
+         }
+         .li-bg-color{
+           background: #028BFF;
+         }
+       }
+       .layerFristShow{
+     width: auto;
+       }  
+    }
+    .map-flex-content {
+        min-width: 500vw *@w;
+        height: auto;
+        position: absolute;
+        background: rgba(15, 22, 24, 0.7);
+        top: 0;
+        left: 70vw *@w;
+        z-index: 9999;
+        padding: 20vh *@h 20vw *@w;
+        box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        div {
+          p {
+            width: 100%;
+            flex: 3 0 0%;
+            height: 58vh *@h;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-align: center;
+            background-image: linear-gradient(
+              to right,
+              rgba(19,37,68,1),
+              rgba(39,83,226,0.2),
+          
+            );
+            span {
+              display: inline-block;
+              width: 30vw*@w;
+              height: 30vh*@h;
+              border: 1px #00ffff solid;
+              border-radius: 4vh*@h 4vw *@w;
+              margin-right: 10vw *@w;
+              margin-left: 6vw *@w;
+              cursor: pointer;
+              text-align: center;
+            
+              i{
+                font-size: 50vh *@h;  
+                line-height:31vh*@h ;
+              }     
+            }
+            label {
+              color: white;
+              font-size: 30vh *@h;
+              text-align: center;
+            }
+            .active-span {
+              background: #00ffff;
+            }
+          }
+          ul {
+            min-width: 100%;
+            width: auto;
+            height: auto;
+            display: flex;
+            justify-content: flex-start;
+            flex-wrap: wrap;
+            padding-left: 23vw *@w;
+            box-sizing: border-box;
+            -o-box-sizing: border-box;
+            -ms-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            li {
+              // flex: 30 0 0%;
+              flex-shrink: 0;
+              min-width: 25%;
+              max-width: auto;
+              height: 58vh *@h;
+              display: flex;
+              align-items: center;
+              justify-content: flex-start;
+              margin-left: 20vw *@w;
+              span {
+                display: block;
+                flex-shrink: 0;
+                width: 31vw*@w;
+                height: 31vh*@h;
+                border: 1px #00ffff solid;
+                border-radius: 4px 4px;
+                margin-right: 10vw *@w;
+                margin-left: 6vw *@w;
+                cursor: pointer;
+                text-align: center;
+                font-size: 25vh *@h;
+                line-height:31vh*@h ;
+              }
+              label {
+                color: white;
+                font-size: 22vh *@h;
+                width: auto;
+                min-width: 80vw *@w;
+              }
+              .active-span {
+                background: #00ffff;
+              }
+            }
+          }
+        }
+      }
+      .FixedModel{
+            top: 0;
+            left: 70vw *@w;
+            position: absolute;
+      }
+        

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+   <head>
+	   <title>视频信息</title>
+       <meta charset="utf-8">
+	   <script src="../Content/config.js" type="text/javascript"></script>
+       <script src="../Content/easyui/jquery.min.js" type="text/javascript"></script>
+	   <script src="../Content/flv.min.js" type="text/javascript"></script>
+	   <style>
+		 body{
+			margin: 0;
+			background-image:url(../Image/bg.png);
+			background-size: 100%;
+			background-repeat:no-repeat;
+		 }
+	   </style>
+   </head>
+   <body style="height: 100%; margin: 0">
+      <video controls="controls" width="700" id="vedioPlayer" style="width: 602px;margin-left: 25px;height: 335px;margin-top: 14px;"></video>
+	  <!--<iframe name="vedioIframe" id="vedioIframe" width="100%" height="100%" src="" style="border-width:0px;width: 602px;margin-left: 25px;height: 335px;margin-top: 14px;"></iframe> -->
+	  <script type="text/javascript">
+		var reg = new RegExp("(^|&)strJson=([^&]*)(&|$)", "i"); 
+		var r = window.location.search.substr(1).match(reg); 
+		var value;
+		var videoElement = null;
+		if (r != null){ 
+			value = unescape(r[2]);
+			/**
+			let pPaasid = getCookie(window.location.hostname);
+			if(pPaasid){
+				pPaasid = 'dpyjzh';
+				webVideoUrl = '/' + pPaasid + webVideoUrl;
+			} */
+			let arrValue = value.split('_');
+			if(arrValue.length>1){ 
+				if(arrValue[0]=='UrbanVideo'){
+					value = arrValue;
+					openVedio();
+				}
+				if(arrValue[arrValue.length-1]=='618'){
+					videoElement = document.getElementById("vedioPlayer");
+					videoElement.style.width = (parseFloat(arrValue[arrValue.length-2]) - 46) + 'px';
+					videoElement.style.height = (parseFloat(arrValue[arrValue.length-1]) - 77) + 'px';
+				}
+			}
+		}
+		function openVedioIframe(){
+			document.getElementById('vedioIframe').src = webVedioPlayUrl + value;
+		}
+		function getCookie(cname){
+			var doname = /^([\w-]+\.)+((com)|(net)|(org)|(gov\.cn)|(info)|(cc)|(com\.cn)|(net\.cn)|(org\.cn)|(name)|(biz)|(tv)|(cn)|(mobi)|(name)|(sh)|(ac)|   (io)|(tw)|(com\.tw)|(hk)|(com\.hk)|(ws)|(travel)|(us)|(tm)|(la)|(me\.uk)|(org\.uk)|(ltd\.uk)|(plc\.uk)|(in)|(eu)|(it)|(jp))$/;
+			var flag_domain = doname.test(cname);
+		   if(!flag_domain){
+				return false;
+		   }
+		   return true;
+		}
+		function openVedio(){
+			let sBody = [];
+			let formData = {};
+			formData.deviceId = value[2];
+			formData.id = value[1];
+			formData.playUrlMap = {};
+			formData.success = true;
+			formData.cause = '';
+			sBody.push(formData);
+			$.ajax({
+				url : webVedioFlvUrl,
+				type : 'POST',
+				data : JSON.stringify(sBody),
+				contentType : "application/json;charset-UTF-8",
+				dataType : "JSON",
+				timeout:15000,
+				success : function(data) {
+					if (data.success) {
+						if(data.body[0].playUrlMap){
+							let droneVedioPlayer = flvjs.createPlayer({
+								type: 'flv',
+								url: data.body[0].playUrlMap.FLV,
+								hasAudio: false,
+								hasVideo: true,
+								isLive: true,
+								withCredentials: false,
+								cors: true, 
+							});
+							videoElement = document.getElementById("vedioPlayer");
+							if(videoElement!=null){
+								droneVedioPlayer.attachMediaElement(videoElement);
+								droneVedioPlayer.load();
+								droneVedioPlayer.play();
+							}
+							setInterval(startBeat,15 * 1000);
+						}
+						else{
+							console.log('data.body[0].playUrlMap is null.');
+						}
+					}
+
+				},
+				error : function() {
+					
+				}
+			});
+		}
+		// 启动转码心跳
+		function startBeat(){
+		    let sBody = [];
+			let formData = {};
+			formData.deviceId = value[2];
+			formData.id = value[1];
+			formData.playUrlMap = {};
+			formData.success = true;
+			formData.cause = '';
+			sBody.push(formData);
+			$.ajax({
+				url : webVedioFlvTouchUrl,
+				type : 'POST',
+				data : JSON.stringify(sBody),
+				contentType : "application/json;charset-UTF-8",
+				dataType : "JSON",
+				cache:false,
+				async:true,
+				success : function(data) {},
+				error : function() {}
+			});
+		}
+		
+		$(window).resize(function(){
+			let clientWidth = document.body.clientWidth;
+			let clientHeight = document.body.clientHeight;
+			if(videoElement!=null){
+				videoElement.style.width = (clientWidth - 42) + 'px';
+				videoElement.style.height = (clientHeight - 28) + 'px';
+			}
+			else{
+				videoElement = document.getElementById("vedioPlayer");
+			}
+		});
+		
+		/**
+		var intervalId = setInterval(function(){ 
+			let oIframe = document.getElementById('vedioIframe');
+			if(oIframe!=undefined){
+				let mPtz = oIframe.contentWindow.document.getElementsByClassName('ptz-block');
+				for(let i=0;i<mPtz.length;i++){
+					mPtz[i].style.height = "154px";
+				}
+				if(mPtz!=undefined&&mPtz.length>0){
+					clearInterval(intervalId);
+				}
+			}
+		}, 3000); */
+	</script>
+   </body>
+</html>

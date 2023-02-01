@@ -1,0 +1,125 @@
+@import '../../common.less';
+
+.public-content {
+    width: 100%;
+    height: calc(100% - 84px);
+    overflow: auto;
+
+    .list {
+        margin-left: 34px;
+        width: 100%;
+        height: auto;
+        border-left: 3px #5a6f8c solid;
+
+        li {
+            width: 100%;
+            height: auto;
+            margin-bottom: 28px;
+            position: relative;
+
+            &:after {
+                content: '';
+                height: 0;
+                line-height: 0;
+                display: block;
+                visibility: hidden;
+                clear: both;
+            }
+
+            .title-message {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                width: 100%;
+                height: 80px;
+                line-height: 80px;
+                color: white;
+                // font-size: 24px;
+                font-size: 40px;
+                margin-bottom: 8px;
+
+                .step-p {
+                    width: 38px;
+                    height: 38px;
+
+                    border-radius: 4px 4px;
+                    text-align: center;
+                    line-height: 38px;
+                    margin: 0 5px 0 21px;
+                }
+
+                .step-green {
+                    background: rgba(48, 255, 137, 0.6);
+                    border: 1px rgba(48, 255, 137, 1) solid;
+                }
+
+                .step-yellow {
+                    background: rgba(255, 232, 68, 0.6);
+                    border: 1px rgba(255, 232, 68, 1) solid;
+                }
+
+                .title-p {
+                    margin-right: 14px;
+                    padding: 7px 13px;
+                    .box-sizing();
+                    border-radius: 6px 6px;
+                    font-size: 40px;
+                    line-height: 56px;
+                }
+
+                .title-green {
+                    background: rgba(7, 180, 114, 1);
+                    margin-left: 30px;
+                }
+
+                .title-yellow {
+                    background: rgba(255, 232, 68, 1);
+                    color: black;
+                    // margin-left: 28px;
+                }
+
+                p:last-child {
+                    // font-size: 24px;
+                    font-size: 40px;
+                }
+            }
+
+            .content-detail {
+                float: right;
+                width: 95%;
+                padding: 0 30px;
+                .box-sizing();
+                font-size: 42px;
+                line-height: 65px;
+            }
+
+            .white-color {
+                color: white;
+            }
+
+            .gray-color {
+                color: #92add8;
+            }
+
+            .color-box {
+                width: 16px;
+                height: 16px;
+                position: absolute;
+                left: -8px;
+                top: 28px;
+                transform: rotate(-45deg);
+
+            }
+
+            .color-box-green {
+                background: #07b671;
+                box-shadow: 0 0 10px rgba(48, 255, 137, 1);
+            }
+
+            .color-box-yellow {
+                background: #fee844;
+                box-shadow: 0 0 10px rgba(254, 232, 68, 1);
+            }
+        }
+    }
+}

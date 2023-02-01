@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>location</title>
+<script src="../Content/easyui/jquery.min.js" type="text/javascript"></script>
+<link href="../Content/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<script src="../Content/bootstrap/js/bootstrap.min.js"	type="text/javascript"></script>
+<style>
+	img:hover{		
+		background-color: rgba(30,36,50,.8);
+	}
+</style>
+</head>
+<body style="text-align: center; background-color:transparent">
+<div style="padding:5px">
+	<div class="input-group" style="padding-top:5px;padding-left: 10px;">
+		<img id="aPlotting" title="直线箭头" src="../Image/straightarrow.svg"  alt="直线箭头" style="width: 32px;height: 32px;margin-left: 16px;cursor:pointer;"/>
+		<img id="bPlotting" title="攻击箭头"  src="../Image/bentarrow.svg"  alt="攻击箭头" style="width: 33px;height: 33px;margin-left: 20px;cursor:pointer;"/>
+		<img id="cPlotting" title="钳击箭头"  src="../Image/doublearrow.svg"  alt="钳击箭头" style="width: 32px;height: 32px;margin-left: 20px;cursor:pointer;"/>
+		<img id="dPlotting" title="圆" src="../Image/circle.svg"  alt="圆" style="width: 30px;height: 30px;margin-left: 20px;cursor:pointer;"/>
+		<img id="hPlotting" title="曲面" src="../Image/ellipse.svg"  alt="曲面" style="width: 34px;height: 34px;margin-left: 20px;cursor:pointer;"/>
+		<img id="iPlotting" title="旗织"  src="../Image/flag.svg"  alt="旗织" style="width: 34px;height: 34px;margin-left: 20px;cursor:pointer;"/>
+	</div>
+	<div class="input-group" style="padding-top:10px;padding-left: 10px;">
+		<img id="jPlotting" title="矩形" src="../Image/rectangle.svg"  alt="矩形" style="width: 30px;height: 30px;margin-left: 17px;cursor:pointer;"/>
+		<img id="kPlotting" title="多边形" src="../Image/rectangle.svg"  alt="多边形" style="width: 30px;height: 30px;margin-left: 20px;cursor:pointer;"/>
+		<img id="lPlotting" title="线条" src="../Image/line.svg"  alt="线条" style="width: 34px;height: 34px;margin-left: 20px;cursor:pointer;"/>
+	</div>
+	<div class="input-group text-right" style="width:100%;padding-top:20px;">
+		<input id="btnCenterClear" title="清除所有标绘" type="button" class="btn btn-danger" value="清空" style="width:80px;margin-right: 20px;">
+		<input id="btnCenterDel" title="删除前一个标绘" type="button" class="btn btn-danger" value="删除" style="width:80px;margin-right: 20px;">
+		<input id="btnCenterXY" title="保存所有标绘" type="button" class="btn btn-primary" value="确定" style="width:80px;margin-right: 20px;">
+	</div>
+</div>
+<script type="text/javascript">
+document.getElementById('aPlotting').addEventListener('click', function () {
+	parent.pGzznCore.measureInit({'Flag':20}); //画直线
+}, false);
+document.getElementById('bPlotting').addEventListener('click', function () {
+	parent.pGzznCore.measureInit({'Flag':21}); //攻击
+}, false);
+document.getElementById('cPlotting').addEventListener('click', function () {
+	parent.pGzznCore.measureInit({'Flag':22}); //钳击箭头
+}, false);
+document.getElementById('dPlotting').addEventListener('click', function () {
+	parent.pGzznCore.measureInit({'Flag':23}); //画圆
+}, false);
+document.getElementById('hPlotting').addEventListener('click', function () {
+	parent.pGzznCore.measureInit({'Flag':24}); //画椭圆
+}, false);
+document.getElementById('iPlotting').addEventListener('click', function () {
+	parent.pGzznCore.measureInit({'Flag':25}); //打点
+}, false);
+document.getElementById('jPlotting').addEventListener('click', function () {
+	parent.pGzznCore.measureInit({'Flag':26}); //矩形
+}, false);
+document.getElementById('kPlotting').addEventListener('click', function () {
+	parent.pGzznCore.measureInit({'Flag':27}); //多边形
+}, false);
+document.getElementById('lPlotting').addEventListener('click', function () {
+	parent.pGzznCore.measureInit({'Flag':28}); //线条
+}, false);
+document.getElementById('btnCenterClear').addEventListener('click', function () {
+	parent.pGzznCore.measureClear(1); //清空
+	document.getElementById('btnCenterClear').blur();
+}, false);
+document.getElementById('btnCenterDel').addEventListener('click', function () {
+	parent.pGzznCore.measureDel(); //删除
+	document.getElementById('btnCenterDel').blur();
+}, false);
+document.getElementById('btnCenterXY').addEventListener('click', function () {
+	parent.pGzznCore.measureBtn(); //保存
+	document.getElementById('btnCenterXY').blur();
+}, false);
+</script>
+</body>
+</html>

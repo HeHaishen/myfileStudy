@@ -1,0 +1,223 @@
+// @w: 100 /15360;
+// @h: 100 /2160;
+
+.box-sizing() {
+  box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+.border-radius(@x, @y) {
+  border-radius: @x @y;
+  -o-border-radius: @x @y;
+  -ms-border-radius: @x @y;
+  -moz-border-radius: @x @y;
+  -webkit-border-radius: @x @y;
+}
+
+.box-shadow() {
+  box-shadow: 0 0 10vh * @h #00eaff inset;
+  -o-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -ms-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -moz-box-shadow: 0 0 10vh * @h #00eaff inset;
+  -webkit-box-shadow: 0 0 10vh * @h #00eaff inset;
+}
+
+*::-webkit-scrollbar {
+  /*滚动条整体样式*/
+  width: 1px;
+  /*高宽分别对应横竖滚动条的尺寸*/
+  height: 1px;
+}
+
+*::-webkit-scrollbar-thumb {
+  /*滚动条里面小方块*/
+  border-radius: 2px;
+  box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+  background: #2c98ff;
+}
+
+*::-webkit-scrollbar-track {
+  /*滚动条里面轨道*/
+  box-shadow: inset 0 0 1px rgba(44, 152, 255, 0.2);
+  border-radius: 2px;
+  background: #030c22;
+}
+
+//* 公共 边框角标
+.angel {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: 10px solid;
+
+  &.lt {
+    left: 5px;
+    top: 5px;
+    border-color: #015ebd transparent transparent #015ebd;
+  }
+
+  &.rt {
+    right: 5px;
+    top: 5px;
+    border-color: #015ebd #015ebd transparent transparent;
+  }
+
+  &.rb {
+    bottom: 5px;
+    right: 5px;
+    border-color: transparent #015ebd #015ebd transparent;
+  }
+
+  &.lb {
+    bottom: 5px;
+    left: 5px;
+    border-color: transparent transparent #015ebd #015ebd;
+  }
+}
+
+//* 模块标题
+.public-head {
+  width: 100%;
+  height: 84px;
+  padding: 0 40px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 84px;
+  position: relative;
+
+  &:after {
+    content: ' ';
+    background: #1b77ff;
+    width: 8%;
+    height: 5px;
+    position: absolute;
+    left: 40px;
+    bottom: 0;
+  }
+}
+
+.public-content {
+  padding: 37px 22px;
+}
+
+// 大屏模式 分页
+.big_pagination {
+  &.pagination {
+    padding: 10px 0 10px 10px;
+
+    /deep/ .c-page-all {
+      .ant-pagination-prev {
+        min-width: 32px;
+        height: 32px;
+        line-height: 32px;
+
+        .ant-pagination-item-link {
+          font-size: 18px;
+        }
+      }
+
+      .ant-pagination-item {
+        font-size: 18px;
+        min-width: 32px;
+        height: 32px;
+        line-height: 32px;
+      }
+
+      .ant-pagination-next {
+        min-width: 32px;
+        height: 32px;
+        line-height: 32px;
+
+        .ant-pagination-item-link {
+          font-size: 18px;
+        }
+      }
+
+      .ant-pagination-jump-next {
+        font-size: 18px;
+
+        .ant-pagination-item-link {
+          .ant-pagination-item-container {
+            font-size: 18px;
+
+            i {
+              font-size: 18px;
+            }
+
+            span {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .ant-pagination-jump-prev {
+        font-size: 18px;
+
+        .ant-pagination-item-link {
+          .ant-pagination-item-container {
+            font-size: 18px;
+
+            i {
+              font-size: 18px;
+            }
+
+            span {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+
+      .ant-pagination-jump-next-custom-icon {
+        .ant-pagination-item-link {
+          .ant-pagination-item-container {
+            .ant-pagination-item-ellipsis {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+
+    /deep/ .ant-pagination-item-ellipsis,
+    /deep/ .ant-pagination-item-container i,
+    /deep/ .ant-pagination-item-container .ant-pagination-item-ellipsis,
+    /deep/ .ant-pagination-jump-next .ant-pagination-item-container .ant-pagination-item-ellipsis,
+    /deep/ .ant-pagination-jump-prev .ant-pagination-item-container .ant-pagination-item-ellipsis {
+      font-size: 18px;
+    }
+  }
+}
+
+// 大屏模式 弹窗
+.big_pop_up_layer {
+  /deep/ .layer-title {
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    padding-left: 10px;
+
+    &::before {
+      font-size: 16px;
+    }
+  }
+
+  /deep/ .layer-close {
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    right: 10px;
+    top: 2px;
+    width: 32px;
+
+    p {
+      line-height: 32px;
+      font-size: 16px;
+    }
+  }
+}

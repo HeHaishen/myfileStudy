@@ -1,0 +1,89 @@
+@import "../common.less";
+.send-message{
+    min-width:430vw*@w;
+    min-height:600vh*@h;
+    width:auto;
+    height:auto;
+    .layer-contents{
+        width:100%;
+        height: 100%;
+        height:auto;
+    }
+}
+.detail-content{
+    width:100%;
+    min-height:100%;
+    display:flex;
+    justify-content: flex-start;
+    .calling-left{
+        height:100%;
+        max-width:100%;
+        width:100%;
+        position:relative;
+        .calling-icon{
+            width:100%;
+            height:auto;
+            p{
+                width:100%;
+                
+            }
+            .audio-icon{
+                width: 100%;
+                height:120vh*@h;
+                font-size:80vh*@h;
+                color:rgb(241, 52, 77);
+                text-align: center;
+               display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .audio-text{
+                width:100%;
+                height:32vh*@h;
+                line-height: 32vh*@h;
+                font-size:30vh*@h;
+                color:white;
+                text-align: center;
+            }
+        }
+        .call-message{
+            width:100%;
+            p{
+                width:100%;
+                height:30vh*@h;
+                font-size:24vh*@h;
+                color:white;
+                text-align: center;
+                line-height: 30vh*@h;
+            }
+        }
+        .calling-btn-wrap{
+            width:100%;
+            height:36vh*@h;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 20vh*@h 0;
+            p{
+                width:auto;
+                height:28vh@h;
+                font-size:24vh*@h;
+                color:white;
+                cursor: pointer;
+                padding: 0 12vw*@w;
+                .box-sizing();
+                margin:14vw*@w 10vw*@w;
+                border-radius:4px 4px;
+            }
+            p:hover{
+                opacity: 0.6;
+            }
+            .green_btn{
+                background:#40f134;
+            }
+            .red_btn{
+                background:#dd2626;
+            }
+        }
+    }
+}

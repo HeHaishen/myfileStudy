@@ -1,0 +1,63 @@
+@import "../../common.less";
+.major-contents .c-mybox-position{
+    top:155vh*@h;
+    // left:unset;
+    // right:32vw*@w;
+}
+.content-all{
+    width:100%;
+    height:450vh*@h;
+    .list{
+        width:100%;
+        height:100%;
+        overflow: auto;
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            width:100%;
+            height:auto;
+            display:flex;
+            padding:13vh*@h 32vw*@w 13vh*@h 0;
+            color:white;
+            .li-label{
+               width:188vw*@w;
+               flex-shrink: 0;
+               label{
+                   display:inline-block;
+                   width:100%;
+                   text-align: right;
+                   font-size:29vh*@h;
+               } 
+            }
+            .li-content{
+                width:calc(100% - 188vw*@w);
+                font-size:29vh*@h;
+                display: flex;
+                align-items: center;
+                .text-btn{
+                        color:#1deafd;
+                        cursor: pointer;
+                }
+            }
+           
+        }
+        // li:nth-child(1){
+        //     .li-content{
+        //         color:#1deafd;
+        //     }
+        // }
+
+        .li-gird{
+            width: 50%;
+        }
+    }
+
+}
+.detail-btn{
+    position: absolute;
+    top: 10vh*@h;
+    right: 15vw*@w;
+    font-size: 16vh*@h;
+    color: rgb(0,254,254);
+    cursor: pointer;
+}
